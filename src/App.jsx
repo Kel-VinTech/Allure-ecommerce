@@ -1,6 +1,6 @@
 import React from 'react'
-import reactLogo from './assets/react.svg'
-import MainPage from './MainPage'
+import { ChakraProvider } from '@chakra-ui/react'
+import MainPage from './components/MainPage'
 
 function App() {
 
