@@ -1,12 +1,11 @@
 import React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import MainPage from './components/MainPage'
+import HeroContent from './components/HeroContent'
 
 function App() {
 
   return (
     <div>
-        <MainPage />
+      <HeroContent/>
     </div>
   )
 }
