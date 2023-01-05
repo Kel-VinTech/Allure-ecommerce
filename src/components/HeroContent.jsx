@@ -8,15 +8,17 @@ const HeroContent = () => {
     >
         <nav>
             <h1 className="logo">ALLURE.</h1>
+           <div className="links">
             <div className="primary_link">
-                <Link to="">Home</Link>
-                <Link id="links">Home</Link>
-                <Link id="links">Home</Link>
-                <Link>Home</Link>   
-            </div>
-            <div className="secondary_link">
-                <Link>search</Link>   
-            </div>
+                    <Link to="">Home</Link>
+                    <Link id="links">Home</Link>
+                    <Link id="links">Home</Link>
+                    <Link>Home</Link>   
+                </div>
+                <div className="secondary_link">
+                    <Link>search</Link>   
+                </div>
+           </div>
         </nav>
         <div className="hero-content">
             <h1 className="hero-title">Allure : Skin for days</h1>
