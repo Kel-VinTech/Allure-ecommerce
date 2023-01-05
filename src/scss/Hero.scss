@@ -1,0 +1,63 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+section{
+    font-family: 'Cardo', serif;
+    background: url(../assets/HEADER.png) no-repeat center center/cover fixed;
+    min-height:100vh;
+    
+ }
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    color: #fff;
+    width:100%;
+}
+
+
+.primary_link{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+#link{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.hero-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height:400px;
+    letter-spacing:2px;
+    color:#fff;
+    line-height: 40px;
+}
+
+.hero-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-text{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.hero-content button{
+    padding:11px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
