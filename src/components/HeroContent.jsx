@@ -26,7 +26,7 @@ const HeroContent = () => {
              sapiente ullam hic maiores odit? Pariatur ipsum dolor obcaecati quae ea.</p>
              <button>Shop now</button>
         </div>
-
+        <div className="products_collection"></div>
     </section>   
     )
 }
