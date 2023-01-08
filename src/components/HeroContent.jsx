@@ -27,7 +27,8 @@ const HeroContent = () => {
              <button>Shop now</button>
         </div>
         <div className="products_collection">
-            <h2>All</h2>
+           <h2>All</h2>
+           <h2>cream</h2>
             
         </div>
     </section>   
