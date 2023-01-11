@@ -27,8 +27,7 @@ const HeroContent = () => {
         </div>
         <div className="products_collection">
            <h2>All</h2>
-           <h2>cream</h2>
-            
+           <h2>cream</h2>  
         </div>
     </section>   
     )
