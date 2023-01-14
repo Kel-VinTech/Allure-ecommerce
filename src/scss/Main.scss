@@ -1,0 +1,35 @@
+.main{
+    background: #F1F5F2;
+    top:100%;
+    position: relative;
+}
+
+.elipse{
+    position: absolute;
+    left: -80px;
+    
+}
+
+main h1{
+    position: absolute;
+}
+
+.content{
+
+}
+.content button{
+    padding:8px 10px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    background: #2f4333;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.content-text{
+    width:86%;
+    padding: 12px;
+}
