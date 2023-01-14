@@ -1,4 +1,5 @@
 import React from "react";
+// import {AiOutlineMenu} from 'react-icons/fa';
 import { Link } from "@chakra-ui/react";
 import '../scss/Hero.scss'
 
@@ -8,8 +9,9 @@ const HeroContent = () => {
     >
         <nav>
             <h1 className="logo">ALLURE.</h1>
+            {/* <AiOutlineMenu /> */}
            <div className="links">
-            <div className="primary_link">
+                <div className="primary_link">
                     <Link to="">Home</Link>
                     <Link id="links">Home</Link>
                     <Link id="links">Home</Link>
