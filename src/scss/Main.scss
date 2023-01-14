@@ -1,90 +1,89 @@
-.main{
-    background: #F1F5F2;
-    padding-top: 10rem;
-    position: relative;
-    min-width: 450px;
+.main {
+  background: #f1f5f2;
+  padding-top: 10rem;
+  position: relative;
+  min-width: 450px;
+  width:100%;
 }
-img{
-    max-width: 100%;
-}
-
-.image{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+img {
+  max-width: 100%;
 }
 
-.elipse{
-    position: absolute;
-    left: -90px;  
-    width: 200px;
-}
-.elipse7{
-    position: absolute;
-    left: -80px; 
-    top: 80px; 
-    width: 145px;
+.image {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
-main h1{
-    position: absolute;
+.elipse {
+  position: absolute;
+  left: -90px;
+  width: 200px;
+}
+.elipse7 {
+  position: absolute;
+  left: -80px;
+  top: 80px;
+  width: 145px;
 }
 
-
-.content button{
-    padding:10px 15px;
-    border-radius: 3px;
-    font-size: 0.8rem;
-    font-weight: 400;
-    cursor: pointer;
-    border: none;
-    background: #2f4333;
-    color: #fff;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 50px;
+main h1 {
+  position: absolute;
 }
 
-.content-text{
-    position: relative;
-    width:86%;
-    padding-bottom: 12px;
-    text-align: left;
-}
-.content-text h4{
-    text-align: center;
-    font-size: 0.8rem;
-    color: #292929;
-    margin-bottom: 30px;
-}
-
-.content-text h2{
-font-family: 'Cardo';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 40px;
-color: #703E2D;
-margin-bottom: 20px;
-
+.content button {
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  background: #2f4333;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 50px;
 }
 
-.content-text p{
-font-family: 'Rubik', sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 25px;
-color: #292929;
+.content-text {
+  position: relative;
+  width: 86%;
+  padding-bottom: 12px;
+  text-align: left;
+}
+.content-text h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #292929;
+  margin-bottom: 30px;
 }
 
-.message p{
-font-family: 'Rubik', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size:15px;
-margin-bottom: 20px;
+.content-text h2 {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  color: #703e2d;
+  margin-bottom: 20px;
 }
 
-.message img{
-    max-width: 250px;
+.content-text p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #292929;
+}
+
+.message p {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.message img {
+  max-width: 300px;
 }
