@@ -33,10 +33,17 @@ main h1 {
   position: absolute;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .content button {
-  padding: 10px 18px;
+  padding: 10px 22px;
   border-radius: 3px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 400;
   cursor: pointer;
   border: none;
@@ -50,7 +57,10 @@ main h1 {
   position: relative;
   width: 86%;
   padding-bottom: 12px;
-  text-align: left;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .content-text h4 {
   text-align: center;
@@ -72,17 +82,25 @@ main h1 {
 .content-text p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 25px;
   color: #292929;
+  margin-bottom: 25px;
 }
 
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .message p {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 20px;
+  
 }
 
 .message img {
