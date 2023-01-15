@@ -6,22 +6,24 @@ import '../scss/Main.scss';
 const MainContent = () => {
     return(
         <section className="row main">
-            <div className="image">
-                <img className="elipse" src={eli7} />
-                <img className="elipse7" src={eli7} />
-            </div>
+            <div className="main-content">
+            <img className="elipse" src={eli7} />
+            <img className="elipse7" src={eli7} />
+            
+            <h4>ABOUT US</h4>
             <div className="content">
                 <div className="content-text">
-                    <h4>ABOUT US</h4>
                     <h2>EARTH IS OUR <br/>TRUE SOURCE <br/>OF BEAUTY</h2>
                     <p>Allure is a cosmetic brand of face <br/> oils,body care and wellness products <br/> for all skin types. </p>
                 </div>
-                <button>LEARN MORE</button>
             </div>
+            <button>LEARN MORE</button>
             <div className="message">
                 <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
                 <img className="image1" src={image1} />
             </div>
+            </div>
+            
         </section>
     )
 }

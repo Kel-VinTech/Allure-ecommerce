@@ -1,6 +1,5 @@
 .main {
   background: #f1f5f2;
-  padding-top: 10rem;
   position: relative;
   max-width: 500px;
   width:100%;
@@ -10,11 +9,12 @@ img {
   max-width: 100%;
 }
 
-.image {
+.main-content{
+  padding:4rem 0;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+   justify-items: center;
+    align-items: center;
 }
 
 .elipse {
@@ -25,22 +25,18 @@ img {
 .elipse7 {
   position: absolute;
   left: -80px;
-  top: 80px;
+  top: 140px;
   width: 145px;
-}
-
-main h1 {
-  position: absolute;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    text-align: center;
+    padding: 4rem 0;
 }
-.content button {
+.main-content button {
   padding: 10px 25px;
   border-radius: 3px;
   font-size: 1rem;
@@ -55,7 +51,6 @@ main h1 {
 
 .content-text {
   position: relative;
-  width: 86%;
   padding-bottom: 12px;
   display: flex;
     flex-direction: column;
@@ -73,7 +68,7 @@ main h1 {
   font-family: "Cardo";
   font-style: normal;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 30px;
   line-height: 40px;
   color: #703e2d;
   margin-bottom: 20px;
@@ -82,10 +77,9 @@ main h1 {
 .content-text p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 25px;
   color: #292929;
-  margin-bottom: 25px;
 }
 
 .message{
@@ -93,16 +87,18 @@ main h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .message p {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   
 }
 
 .message img {
-  max-width: 250px;
+  width: 350px;
+  border-radius: 3px;
 }
