@@ -1,4 +1,6 @@
 import React from "react";
+import {FaAngleRight} from 'react-icons/fa';
+
 import eli7 from '../assets/Ellipse 7.png';
 import image1 from '../assets/Rectangle 4.png'
 import '../scss/Main.scss';
@@ -28,6 +30,7 @@ const MainContent = () => {
                 <h3>WHY YOU SHOULD CHOOSE ALLURE</h3>
                 <div className="table">
                 <table>
+                    <tbody>
                     <tr>
                         <td>
                             <h3>SKIN HEALTH</h3>
@@ -56,7 +59,15 @@ const MainContent = () => {
                             it from the negative effects of other unwanted environmental factors.</p>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
+                </div>
+            </div>
+
+            <div className="content_3">
+                <div>
+                    <h2>Popular Products</h2>
+                    <FaAngleRight className="direction"/>
                 </div>
             </div>
             

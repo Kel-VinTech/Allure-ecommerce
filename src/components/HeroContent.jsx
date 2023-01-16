@@ -1,5 +1,5 @@
 import React from "react";
-// import {AiOutlineMenu} from 'react-icons/fa';
+import {FaUser,FaBars,FaCartPlus,FaHeart} from 'react-icons/fa';
 import { Link } from "@chakra-ui/react";
 import '../scss/Hero.scss'
 
@@ -9,7 +9,12 @@ const HeroContent = () => {
     >
         <nav>
             <h1 className="logo">ALLURE.</h1>
-            {/* <AiOutlineMenu /> */}
+            <div className="icons">
+                <FaUser className="icons"/>
+                <FaHeart className="icons"/>
+                <FaCartPlus className="icons"/>
+            </div>
+            <FaBars className="icons twitter"/>
            <div className="links">
                 <div className="primary_link">
                     <Link to="">Home</Link>
