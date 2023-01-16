@@ -24,7 +24,6 @@ nav{
 .logo{
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 22px;
     color:#e9e9e9;
 
 }
@@ -68,7 +67,7 @@ nav{
 .hero-title{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 86%;
     line-height: 50px;
     font-family: 'Cardo', sans-serif;
@@ -121,4 +120,84 @@ nav{
     gap: 15px;
     font-size: 20px;
     color: #E9E9E9;
+}
+
+// media queries
+
+@media screen
+ and (min-width:768px)
+and (max-width:1024px) {
+    section{
+        max-width: 100%;  
+    }
+    .logo{
+        font-size: 1.7rem;
+    }
+    .links{
+        
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        font-size: 30px;
+        color: #E9E9E9;
+    }
+    .hero-content{ 
+        letter-spacing:2px;
+        top:40%;
+    }
+    .hero-title{
+        font-size: 2.8rem;
+        width: 90%; 
+    }
+    
+    .hero-text{
+        font-size: 1.04rem;
+        width: 75%;  
+    }
+    .hero-content button{
+        padding:13px 38px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen 
+and (min-width:1200px) 
+and (max-width:1600px){
+    section{
+        max-width: 100%;  
+    }
+    .logo{
+        font-size: 1.7rem;
+    }
+    .links{
+        
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        font-size: 30px;
+        color: #E9E9E9;
+    }
+    .hero-content{ 
+        letter-spacing:2px;
+        top:35%;
+    }
+    .hero-title{
+        font-size: 3rem;
+        width: 90%; 
+    }
+    
+    .hero-text{
+        font-size: 1.1rem;
+        width: 75%;  
+    }
+    .hero-content button{
+        padding:13px 38px;
+        font-size: 1.3rem;
+    }
 }

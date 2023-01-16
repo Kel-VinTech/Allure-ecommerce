@@ -139,6 +139,7 @@ img {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 30px;
  }
 
  .grid_container > div{
@@ -147,6 +148,7 @@ img {
   height: 100%;
   padding: 1rem;
   text-align: left;
+  
  }
 
 .grid_container h3{
@@ -161,11 +163,10 @@ margin-bottom: 1rem;
 
 
 .grid_container p{
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-family: 'Rubik';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
 }
 
 .content_3{
@@ -220,9 +221,71 @@ font-size: 20px;
 
 
 
-@media screen and (max-width:768px) {
+@media screen
+ and (min-width:768px)
+and (max-width:1024px) {
   .main {
     max-width: 100%; 
+  }
+  .elipse {
+    position: absolute;
+    left: -169px;
+    width: 400px;
+  }
+  .elipse7 {
+    position: absolute;
+    left: -104px;
+    top: 180px;
+    width: 260.99px;
+  }
+
+  .content-message{
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .main-content h4{
+    font-size: 1.04rem;
+  }
+  .content-text h4 {
+    font-size: 1.2rem;
+    
+  }
+
+  .content-text h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  .content-text p {
+    font-size:1.05rem;
+  }
+  .message p {
+    font-size: 1.2rem;
+  }
+  .message img {
+    width: 320px;
+  }
+  .main-content button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+  .content_2 h3{
+    font-size: 1.7rem;
+ }
+ .grid_container{
+  grid-template-columns: repeat(4, 1fr);
+ }
+ .grid_container h3{
+  font-size: 1.1rem;
+}
+
+.grid_container p{
+  font-size: 0.85rem;
+}
+   
+
+  .content_3 h2{
+      font-size: 1.5rem;   
   }
 }
 
@@ -293,9 +356,9 @@ and (max-width:1600px){
       font-size: 0.7rem;
   }
   .content_3 h2{
-      font-size: 1.8rem;
-      
+      font-size: 1.8rem;   
   }
+
   .direction{
     flex-direction: row;
   }

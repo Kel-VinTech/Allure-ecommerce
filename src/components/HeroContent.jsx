@@ -13,8 +13,9 @@ const HeroContent = () => {
                 <FaUser className="icons"/>
                 <FaHeart className="icons"/>
                 <FaCartPlus className="icons"/>
+                <FaBars className="icons"/>
             </div>
-            <FaBars className="icons twitter"/>
+            
            <div className="links">
                 <div className="primary_link">
                     <Link to="">Home</Link>
