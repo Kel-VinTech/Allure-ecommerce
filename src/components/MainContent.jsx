@@ -1,5 +1,5 @@
 import React from "react";
-import {FaAngleRight} from 'react-icons/fa';
+import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
 import eli7 from '../assets/Ellipse 7.png';
 import image1 from '../assets/Rectangle 4.png'
@@ -65,9 +65,10 @@ const MainContent = () => {
             </div>
 
             <div className="content_3">
-                <div>
-                    <h2>Popular Products</h2>
-                    <FaAngleRight className="direction"/>
+                <h2>Popular Products</h2>
+                <div className="direction_icons">
+                    <FaAngleLeft className="direction left"/>
+                    <FaAngleRight className="direction right"/>
                 </div>
             </div>
             

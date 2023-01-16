@@ -164,8 +164,37 @@ table td{
     text-align: center;
 }
 
+
 .content_3 h2{
-  font-size: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: 'Cardo';
+font-style: normal;
+font-weight: 700;
+}
+
+.direction_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.direction{
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #292929;
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.left{
+  color:#A5A2A2;
+}
+
+.right{
+  color: #292929;
 }
 
 
