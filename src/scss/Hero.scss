@@ -122,6 +122,13 @@ nav{
     color: #E9E9E9;
 }
 
+.icon{
+    display: none;
+}
+.menu{
+    font-size: 20px;
+}
+
 // media queries
 
 @media screen
@@ -131,18 +138,19 @@ and (max-width:1024px) {
         max-width: 100%;  
     }
     .logo{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .links{
-        
-    }
-    .icons{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 35px;
-        font-size: 30px;
-        color: #E9E9E9;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .icons{
+        gap: 28px;
+        font-size: 25px;
     }
     .hero-content{ 
         letter-spacing:2px;
@@ -173,16 +181,22 @@ and (max-width:1600px){
         font-size: 1.7rem;
     }
     .links{
-        
-    }
-    .icons{
         display: flex;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .icons{
         gap: 35px;
         font-size: 30px;
-        color: #E9E9E9;
     }
+
+    .icon{
+        display: flex;
+    }
+    
     .hero-content{ 
         letter-spacing:2px;
         top:35%;
