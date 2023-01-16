@@ -9,66 +9,74 @@ const MainContent = () => {
     return(
         <section className="row main">
             <div className="main-content">
-            <img className="elipse" src={eli7} />
-            <img className="elipse7" src={eli7} />
-            
-            <h4>ABOUT US</h4>
-            <div className="content">
-                <div className="content-text">
-                    <h2>EARTH IS OUR <br/>TRUE SOURCE <br/>OF BEAUTY</h2>
-                    <p>Allure is a cosmetic brand of face <br/> oils,body care and wellness products <br/> for all skin types. </p>
-                </div>
-            </div>
-            <button>LEARN MORE</button>
-            <div className="message">
-                <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
-                <img className="image1" src={image1} />
-            </div>
+                <img className="elipse" src={eli7} />
+                <img className="elipse7" src={eli7} />
+                
+                
+               <div className="content-message">
+                    <div className="content">
+                        <div className="content-text">
+                        <h4>ABOUT US</h4>
+                            <h2>EARTH IS OUR <br/>TRUE SOURCE <br/>OF BEAUTY</h2>
+                            <p>Allure is a cosmetic brand of face <br/> oils,body care and wellness products <br/> for all skin types. </p>
+                        </div>
+                    </div>
+                    <button>LEARN MORE</button>
+                    <div className="message">
+                        <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
+                        <img className="image1" src={image1} />
+                    </div>
+               </div>
             </div>
 
             <div className="content_2">
-                <h3>WHY YOU SHOULD CHOOSE ALLURE</h3>
-                <div className="table">
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>
+                <h2>WHY YOU SHOULD CHOOSE ALLURE</h2>
+                <div className="grid_container">
+                    <div>
+                        <div className="grid_text">
                             <h3>SKIN HEALTH</h3>
                             <p>Our products contain only natural variants that are essential for your skin, oil and additives contained 
                             in natural skincare have anti-inflammatory effects.</p>
-                        </td>
-                        <td></td>
-                        <td>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div className="grid_text">
                             <h3>SKIN HEALTH</h3>
                             <p>Our products contain only natural variants that are essential for your skin, oil and additives contained 
                             in natural skincare have anti-inflammatory effects.</p>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                        <td>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <div className="grid_text">
                             <h3>ORIGINALITY</h3>
                             <p>Our products are unique, original
                              and made carefully with good attention to details.</p>
-                        </td>
-                        <td></td>
-                        <td>
-                            <h3>GENTLE CARE</h3>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div className="grid_text">
+                        <h3>GENTLE CARE</h3>
                             <p>The products do not only cleanse the skin, but also protects 
                             it from the negative effects of other unwanted environmental factors.</p>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
 
             <div className="content_3">
-                <h2>Popular Products</h2>
-                <div className="direction_icons">
-                    <FaAngleLeft className="direction left"/>
-                    <FaAngleRight className="direction right"/>
+                
+                <div className="direction">
+                    <h2>Popular Products</h2>
+                    <div className="direction_icons">
+                        <FaAngleLeft className="direction_icons left"/>
+                        <FaAngleRight className="direction_icons right"/>
+                    </div>
+                    
                 </div>
             </div>
             

@@ -7,3 +7,12 @@
 .row{
     padding:1.5rem;
 }
+
+@media screen 
+and (min-width:1200px) 
+and (max-width:1600px) {
+    .row{
+        padding:3rem;
+    }
+     
+}
