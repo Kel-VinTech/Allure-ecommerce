@@ -13,8 +13,11 @@ const FooterContent = () => {
                         <p>INGREDIENTS THAT KEEP IN MIND YOUR PURITY, POWER, AND INTEGRITY.</p>
                         <h2>Moisture</h2>
                     </div>
-                    <img className="elipse1" src={elipse} alt="circle" />
-
+                    {/* <img className="elipse1" src={elipse} alt="circle" /> */}
+                    <div className="line">
+                    <div className="line_2"></div>
+                    </div>
+                    
                 </div>
             </div>
         </footer>

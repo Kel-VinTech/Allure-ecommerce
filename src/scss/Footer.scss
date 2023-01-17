@@ -28,12 +28,26 @@ img{
     max-width: 100%;
 }
 
-.elipse1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
+
+
+.line{
+    width: 210px;
+    height: 210px;
+    border: 1px solid #DADADA;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 17px;
 }
+
+.line_2{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #DADADA;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+
 .foot_text p{
     font-size: 0.7rem;
     left: 200px;
