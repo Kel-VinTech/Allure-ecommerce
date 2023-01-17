@@ -13,14 +13,15 @@ const HeroContent = () => {
            <div className="links">
                 <div className="primary_link">
                     <Link to="">Home</Link>
-                    <Link id="links">Home</Link>
-                    <Link id="links">Home</Link>
-                    <Link>Home</Link>   
+                    <Link id="links">Products</Link>
+                    <Link id="links sales">Sales</Link>
+                    <Link>Blogs</Link> 
+                    <Link>About Us</Link>   
                 </div>
            </div>
            <div className="icons">
                 <FaSearch className="icon"/>
-                <FaHeart className="icons"/>
+                <FaHeart className=" heart"/>
                 <FaCartPlus className="icons"/> 
                 <FaUser className="icons"/>
             </div>

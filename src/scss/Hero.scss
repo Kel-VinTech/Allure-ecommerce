@@ -51,6 +51,12 @@ nav{
     gap:20px;
 }
 
+#sales{
+    border:0.3px solid red;
+    font-size: 1.4rem;
+    border-radius: 50px;
+}
+
 .hero-content{
     position: absolute;
     display: flex;
@@ -117,7 +123,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     font-size: 20px;
     color: #E9E9E9;
 }
@@ -128,6 +134,10 @@ nav{
 .menu{
     font-size: 20px;
 }
+.heart{
+    display: none;
+}
+
 
 // media queries
 
@@ -146,6 +156,9 @@ and (max-width:1024px) {
 
     .menu{
         display: none;
+    }
+    .heart{
+        display: flex;
     }
 
     .icons{
@@ -183,7 +196,9 @@ and (max-width:1600px){
     .links{
         display: flex;
     }
-
+    .heart{
+        display: flex;
+    }
     .menu{
         display: none;
     }
