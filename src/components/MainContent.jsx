@@ -42,9 +42,9 @@ const MainContent = () => {
                     <div></div>
                     <div>
                         <div className="grid_text">
-                            <h3>SKIN HEALTH</h3>
-                            <p>Our products contain only natural variants that are essential for your skin, oil and additives contained 
-                            in natural skincare have anti-inflammatory effects.</p>
+                            <h3>NATURAL INGREDIENTS</h3>
+                            <p>Our skincare products are handmade in batches.
+                                 They are made using only natural oils and they contain no chemicals.</p>
                         </div>
                     </div>
                     <div></div>

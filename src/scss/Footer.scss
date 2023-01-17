@@ -2,6 +2,7 @@ footer{
     max-width: 550px;
     width: 100%;
     padding-top: 2rem;
+    color: #E9E9E9;
 }
 
 .foot_1{
@@ -13,7 +14,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     padding: 1.5rem 0;
-    color: #E9E9E9;
 }
 
 .foot_text h2{
@@ -27,8 +27,6 @@ footer{
 img{
     max-width: 100%;
 }
-
-
 
 .line{
     width: 210px;
@@ -58,3 +56,79 @@ img{
     align-self: center;
     line-height: 20px;
 }
+
+.foot_2{
+    background: #2F4333;
+    margin: 0 auto;
+}
+
+// .foot_2 .text{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+.foot_2 .text h2{
+    font-size: 1.1rem;
+    font-family: 'Cardo';
+font-style: normal;
+font-weight: 700;
+margin-bottom: 24px;
+}
+.foot_2 .mess{
+    font-size: 0.8rem;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+.foot_2 .copyright{
+    font-size: 0.68rem;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.foot_line{
+    border: 0.3px solid #E9E9E9;
+    border-radius: 20px;
+    padding: 1px 0;
+    width: 90%;
+    background: none;
+    margin-bottom: 20px;
+}
+
+.foot_links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem; 
+    margin-bottom: 25px;   
+}
+.text_2 p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem; 
+    margin-bottom: 25px;
+    width: 100%;
+}
+.foot_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    font-style: normal;
+    
+}
+
