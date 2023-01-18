@@ -1,8 +1,8 @@
 footer{
     max-width: 550px;
     width: 100%;
-    padding-top: 2rem;
     color: #E9E9E9;
+    position: relative;
 }
 
 .foot_1{
@@ -42,8 +42,7 @@ img{
     height: 150px;
     border: 1px solid #DADADA;
     border-radius: 50%;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 
 .foot_text p{
@@ -99,7 +98,7 @@ margin-bottom: 24px;
     border: 0.3px solid #E9E9E9;
     border-radius: 20px;
     padding: 1px 0;
-    width: 90%;
+    width: 100%;
     background: none;
     margin-bottom: 20px;
 }
@@ -132,3 +131,43 @@ margin-bottom: 24px;
     
 }
 
+
+// media query
+
+@media screen 
+and (min-width:1200px) 
+and (max-width:1600px){
+    footer{
+        max-width: 100%;
+    }
+    .extra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+    .foot_text h2{
+        font-size: 5rem;
+        line-height: 100px;
+        
+    }
+    .foot_text p{
+        font-size: 0.9rem;
+        line-height: 22px;
+        width: 40%;
+        padding: 4rem 0;
+    }
+    .line{
+        width: 210px;
+        height: 210px;
+        margin: 0 auto;
+        padding: 17px;
+    }
+    
+    .line_2{
+        width: 150px;
+        height: 150px;
+        margin: 10px;   
+    }
+}

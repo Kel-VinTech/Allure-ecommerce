@@ -14,7 +14,7 @@ const FooterContent = () => {
                         <h2>Moisture</h2>
                     </div>
                     <div className="line">
-                    <div className="line_2"></div>
+                        <div className="line_2"></div>
                     </div> 
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
-import eli7 from '../assets/Ellipse 7.png';
+import eli7 from '../assets/Ellipse 8.png';
 import image1 from '../assets/Rectangle 4.png'
 import '../scss/Main.scss';
 
