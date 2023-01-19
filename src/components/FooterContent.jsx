@@ -19,6 +19,7 @@ const FooterContent = () => {
                 </div>
             </div>
             <div className="foot_2 row">
+                <div className="foot_2_content">
                 <div className="text">
                     <h2>ALLURE.</h2>
                     <p className="mess">Skin care is a science, Allure makes it art.
@@ -26,7 +27,9 @@ const FooterContent = () => {
                       Say HI to a new found glow routine.</p>
                       <p className="copyright">Allurebeauty © 2023. All Rights Reserved.</p>
                 </div>
-                <div className="foot_line"></div>
+                
+                    <div className="foot_line"></div>
+
                 <div className="text_2">
                     <div className="foot_links">
                         <Link>Info</Link>
@@ -41,6 +44,7 @@ const FooterContent = () => {
                         <FaGithub />
                         <FaLinkedin />
                     </div>
+                </div>
                 </div>
             </div>
         </footer>

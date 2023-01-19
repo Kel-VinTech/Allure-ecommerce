@@ -24,6 +24,17 @@ footer{
     line-height: 40px;
     padding: 1.4rem 0;
 }
+
+.foot_text p{
+    font-size: 0.7rem;
+    left: 200px;
+    width: 60%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    align-self: center;
+    line-height: 20px;
+}
 img{
     max-width: 100%;
 }
@@ -45,16 +56,7 @@ img{
     margin: 10px;   
 }
 
-.foot_text p{
-    font-size: 0.7rem;
-    left: 200px;
-    width: 60%;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    align-self: center;
-    line-height: 20px;
-}
+
 
 .foot_2{
     background: #2F4333;
@@ -90,7 +92,6 @@ margin-bottom: 24px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 
@@ -100,7 +101,7 @@ margin-bottom: 24px;
     padding: 1px 0;
     width: 100%;
     background: none;
-    margin-bottom: 20px;
+    margin: 3rem 0;
 }
 
 .foot_links{
@@ -123,7 +124,6 @@ margin-bottom: 24px;
 }
 .foot_icons{
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
     font-size: 22px;
@@ -159,15 +159,51 @@ and (max-width:1600px){
         padding: 4rem 0;
     }
     .line{
-        width: 210px;
-        height: 210px;
+        width: 450px;
+        height: 450px;
         margin: 0 auto;
-        padding: 17px;
+        padding: 35px;
     }
     
     .line_2{
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 350px;
         margin: 10px;   
+    }
+    .foot_2_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        gap:0;
+        padding: 0 8rem;
+    }
+    .foot_2 .text{
+        width: 80%;
+    }
+    .foot_2 .text h2{
+        font-size: 1.9rem;
+    }
+    .foot_2 .mess{
+        font-size: 1rem;
+        line-height: 30px;
+        width: 70%;
+    }
+    
+    .foot_2 .copyright{
+        font-size: 0.88rem;
+    }
+    .foot_line{
+        margin: 0 3rem;
+        align-items: center;
+        width: 30%;
+        transform: rotate(90deg);
+    }
+    .text_2 p {
+        font-size: 0.9rem;     
+    }
+    .foot_icons{
+        gap: 22px;
+        font-size: 26px;      
     }
 }
