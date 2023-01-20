@@ -5,6 +5,10 @@ footer{
     position: relative;
 }
 
+img{
+    max-width: 100%;
+}
+
 .foot_1{
     background: url(../assets/PHOTO.png) no-repeat center center/cover;
 }
@@ -34,9 +38,6 @@ footer{
     font-weight: 600;
     align-self: center;
     line-height: 20px;
-}
-img{
-    max-width: 100%;
 }
 
 .line{
@@ -96,7 +97,6 @@ margin-bottom: 24px;
     padding: 1px 0;
     width: 100%;
     background: none;
-    margin: 3rem 0;
 }
 
 .foot_links{
@@ -165,18 +165,20 @@ and (max-width:1600px){
         height: 350px;
         margin: 10px;   
     }
+
     .foot_container{
-        width: 90%;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 0 0.8rem;
     }
     .foot_2_content{
         display: flex;
         justify-content: center;
         align-items: center;
-        align-self: center;
-        gap:0;
-        padding: 0 8rem;
+        
     }
     .foot_2 .text{
         width: 85%;

@@ -222,7 +222,7 @@ font-weight: 400;
 
 
 @media screen
- and (min-width:768px)
+ and (min-width:550px)
 and (max-width:1024px) {
   .main {
     max-width: 100%; 
@@ -363,9 +363,6 @@ and (max-width:1600px){
     flex-direction: row;
   }
   .direction_icons{
-    // display: flex;
-    // justify-items: last baseline;
-    // align-items: center;
     border-radius: 50px;
     font-size: 40px;
     float: right;
