@@ -97,6 +97,7 @@ margin-bottom: 24px;
     padding: 1px 0;
     width: 100%;
     background: none;
+    margin:2rem 0;
 }
 
 .foot_links{
@@ -167,18 +168,17 @@ and (max-width:1600px){
     }
 
     .foot_container{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        padding: 0 0.8rem;
+      display: inline-flex;
+       margin: 0 auto;
+       justify-items: center;
     }
     .foot_2_content{
         display: flex;
+        align-self: center;
         justify-content: center;
         align-items: center;
-        
+        padding: 0 1rem;
+        width: 100%;
     }
     .foot_2 .text{
         width: 85%;
