@@ -19,8 +19,9 @@ const FooterContent = () => {
                 </div>
             </div>
             <div className="foot_2 row">
-                <div className="foot_container">
+                
                     <div className="foot_2_content">
+
                         <div className="text">
                             <h2>ALLURE.</h2>
                             <p className="mess">Skin care is a science, Allure makes it art.
@@ -30,7 +31,7 @@ const FooterContent = () => {
                             <p className="copyright">Made by - Kelvin.eth</p>
                         </div>
                     
-                        <div className="foot_line"></div>
+                        <hr />
 
                         <div className="text_2">
                             <div className="foot_links">
@@ -48,7 +49,7 @@ const FooterContent = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                
     
             </div>
         </footer>

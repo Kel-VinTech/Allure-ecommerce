@@ -91,12 +91,11 @@ margin-bottom: 24px;
 }
 
 
-.foot_line{
+hr{
     border: 0.3px solid #E9E9E9;
     border-radius: 20px;
-    padding: 1px 0;
     width: 100%;
-    background: none;
+    height: 4px;
     margin:2rem 0;
 }
 
@@ -167,18 +166,10 @@ and (max-width:1600px){
         margin: 10px;   
     }
 
-    .foot_container{
-      display: inline-flex;
-       margin: 0 auto;
-       justify-items: center;
-    }
     .foot_2_content{
         display: flex;
-        align-self: center;
         justify-content: center;
         align-items: center;
-        padding: 0 1rem;
-        width: 100%;
     }
     .foot_2 .text{
         width: 85%;
@@ -195,10 +186,11 @@ and (max-width:1600px){
     .foot_2 .copyright{
         font-size: 0.88rem;
     }
-    .foot_line{
+
+    hr{
         margin: 0 3rem;
-        width: 60%;
-        transform: rotate(90deg);
+        height:100%;
+        // width: 100%;
     }
     .text_2 p {
         font-size: 0.9rem;
