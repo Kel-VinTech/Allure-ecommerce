@@ -26,6 +26,7 @@ const FooterContent = () => {
                      <br/>Reduce fine lines & wrinkles with alpha hydroxy acid skin care products.
                       Say HI to a new found glow routine.</p>
                       <p className="copyright">Allurebeauty © 2023. All Rights Reserved.</p>
+                      <p className="copyright">Made by - Kelvin.eth</p>
                 </div>
                 
                     <div className="foot_line"></div>
