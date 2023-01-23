@@ -19,6 +19,7 @@ const FooterContent = () => {
                 </div>
             </div>
             <div className="foot_2 row">
+                <div className="foot_container">
                 <div className="foot_2_content">
                 <div className="text">
                     <h2>ALLURE.</h2>
@@ -47,6 +48,8 @@ const FooterContent = () => {
                     </div>
                 </div>
                 </div>
+                </div>
+    
             </div>
         </footer>
     )
