@@ -1,6 +1,6 @@
 import React from "react";
 import {FaUser,FaBars,FaCartPlus,FaHeart, FaSearch} from 'react-icons/fa';
-import { Link } from "@chakra-ui/react";
+
 import '../scss/Hero.scss'
 
 const HeroContent = () => {
@@ -12,11 +12,11 @@ const HeroContent = () => {
             
            <div className="links">
                 <div className="primary_link">
-                    <Link to="">Home</Link>
+                    {/* <Link to="">Home</Link>
                     <Link id="links">Products</Link>
                     <Link id="links sales">Sales</Link>
                     <Link>Blogs</Link> 
-                    <Link>About Us</Link>   
+                    <Link>About Us</Link>    */}
                 </div>
            </div>
            <div className="icons">
