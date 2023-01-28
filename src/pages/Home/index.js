@@ -1,3 +1,5 @@
-import React from 'react';
-import HeroContent from '../../components/HeroContent';
-import styles from '../Home/Styles';
+
+import Home from './Home';
+import Styles from '../Home/Styles';
+
+export default Home;
