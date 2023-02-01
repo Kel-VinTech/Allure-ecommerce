@@ -10,11 +10,9 @@ function App() {
 
   return (
     <div className='container'>
-  
         <HeroContent/>
         <MainContent />
         <FooterContent />
-      
     </div>
   )
 }
