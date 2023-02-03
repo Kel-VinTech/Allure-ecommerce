@@ -1,9 +1,8 @@
 import React from "react";
 import '../scss/Footer.scss';
-import { Link } from "@chakra-ui/react";
 import { FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa';
 
-const FooterContent = () => {
+const Footer = () => {
     return(
         <footer className="">
             <div className="foot_1">
@@ -59,4 +58,4 @@ const FooterContent = () => {
     )
 }
 
-export default FooterContent;
+export default Footer;
