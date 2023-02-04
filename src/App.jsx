@@ -1,7 +1,7 @@
 import React from 'react'
 import{
  Footer
-} from "./components";
+} from "./components/Footer";
 import { Route, Routes,BrowserRouter } from "react-router-dom"
 import './scss/_reset.scss'
 
