@@ -1,6 +1,7 @@
 import React from "react";
-import '../scss/Footer.scss';
+import "/src/scss/Footer.scss";
 import { FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -35,11 +36,11 @@ const Footer = () => {
 
                         <div className="text_2">
                             <div className="foot_links">
-                                <Link>Info</Link>
+                                {/* <Link to="./">Info</Link>
                                 <Link>Shipping & Returns</Link>
                                 <Link>Privacy Policy</Link>
                                 <Link>FAQs</Link>
-                                <Link>Contact</Link>
+                                <Link>Contact</Link> */}
                             </div>
                             <p>Soft Avenue, House 15, Ibeju <br/> Lekki,Lagos,Nigeria.</p>
                             <div className="foot_icons">
