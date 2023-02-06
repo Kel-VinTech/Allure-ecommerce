@@ -36,11 +36,11 @@ const Footer = () => {
 
                         <div className="text_2">
                             <div className="foot_links">
-                                {/* <Link to="./">Info</Link>
-                                <Link>Shipping & Returns</Link>
-                                <Link>Privacy Policy</Link>
-                                <Link>FAQs</Link>
-                                <Link>Contact</Link> */}
+                                <Link to="">Info</Link>
+                                <Link to ="">Shipping & Returns</Link>
+                                <Link to="">Privacy Policy</Link>
+                                <Link to="">FAQs</Link>
+                                <Link to="">Contact</Link>
                             </div>
                             <p>Soft Avenue, House 15, Ibeju <br/> Lekki,Lagos,Nigeria.</p>
                             <div className="foot_icons">
