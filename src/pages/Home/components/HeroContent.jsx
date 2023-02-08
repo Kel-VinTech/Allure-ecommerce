@@ -8,17 +8,7 @@ const HeroContent = () => {
     <section className="hero row"
     >
         <nav>
-            <h1 className="logo">ALLURE.</h1> 
             
-           <div className="links">
-                <div className="primary_link">
-                    {/* <Link to="">Home</Link>
-                    <Link id="links">Products</Link>
-                    <Link id="links sales">Sales</Link>
-                    <Link>Blogs</Link> 
-                    <Link>About Us</Link>    */}
-                </div>
-           </div>
            <div className="icons">
                 <FaSearch className="icon"/>
                 <FaHeart className=" heart"/>
