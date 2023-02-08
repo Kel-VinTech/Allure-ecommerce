@@ -102,12 +102,18 @@ margin-bottom: 24px;
 .foot_links{
     display: flex;
     flex-direction: column;
+       
+}
+
+.foot_links a{
     gap: 1.5rem;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 0.85rem; 
-    margin-bottom: 25px;   
+    margin-bottom: 25px;
+    color: #E9E9E9;
+    text-decoration: none;
 }
 .text_2 p {
     font-family: 'Rubik';
@@ -122,8 +128,7 @@ margin-bottom: 24px;
     align-items: center;
     gap: 20px;
     font-size: 22px;
-    font-style: normal;
-    
+    font-style: normal;  
 }
 
 
