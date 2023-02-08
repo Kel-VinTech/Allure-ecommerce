@@ -1,9 +1,9 @@
 import React from "react";
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
-import eli7 from '../assets/images/Ellipse 8.png';
-import image1 from '../assets/images/Rectangle 4.png'
-import '../scss/Main.scss';
+import eli7 from '/src/assets/images/Ellipse 8.png';
+import image1 from '/src/assets/images/Rectangle 4.png'
+import "/src/scss/Main.scss";
 
 const MainContent = () => {
     return(

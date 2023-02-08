@@ -1,7 +1,7 @@
 import React from "react";
 import {FaUser,FaBars,FaCartPlus,FaHeart, FaSearch} from 'react-icons/fa';
 
-import '../scss/Hero.scss'
+import '/src/scss/Hero.scss'
 
 const HeroContent = () => {
     return (
