@@ -1,3 +1,5 @@
+import "/src/scss/Blog.scss";
+
 const BlogContent = () => {
     return (
         <main>
@@ -7,3 +9,5 @@ const BlogContent = () => {
         </main>
     )
 }
+
+export default BlogContent;
