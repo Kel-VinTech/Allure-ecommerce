@@ -15,14 +15,13 @@ and (max-width:1600px){
     .Heading{
         flex-direction: row;
         gap: 0;
-        margin: 0 auto;
 
         h1{
             text-align: center;
             font-size: 30px;
         }
         .direction_icons{
-            justify-items: flex-end;
+            float: right;
             font-size: 20px;
         }
     }
