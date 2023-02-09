@@ -7,7 +7,7 @@ import "/src/scss/Main.scss";
 
 const MainContent = () => {
     return(
-        <section className="row main">
+        <main className="row main">
             <div className="main-content">
                 <img className="elipse" src={eli7} />
                 <img className="elipse7" src={eli7} />
@@ -80,7 +80,7 @@ const MainContent = () => {
                 </div>
             </div>
             
-        </section>
+        </main>
     )
 }
 
