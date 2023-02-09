@@ -7,7 +7,7 @@ const BlogContent = () => {
             <div className="row">
                 <div className="Heading">
                     <h1>Allure's Blog</h1>
-                    <div className="direction_icons">
+                    <div className="Heading_icons">
                         <FaAngleLeft className="direction_icons left"/>
                         <FaAngleRight className="direction_icons right"/>
                     </div>
