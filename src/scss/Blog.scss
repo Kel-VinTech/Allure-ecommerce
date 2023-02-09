@@ -1,25 +1,44 @@
-.Heading{
+
+.content{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
 
-    h1{
-        font-size: 20px;
-    }
-
-    .Heading_icons{
+    .Heading{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-        font-size: 23px;
+        flex-direction: column;
         gap: 15px;
+        margin-bottom: 40px;
+
+        h1{
+            font-size: 20px;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 700;          
+        }
+
+        .Heading_icons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 23px;
+            gap: 15px;
+        }
+        
+        
     }
-    
+    .text{
+        width: 90%;
+        font-size: 15px;
+        flex-wrap: wrap;
+        font-family: 'Rubik';
+        text-align: center;
+        
+    }
 }
-
-
 
 // media queries
 
