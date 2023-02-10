@@ -40,6 +40,23 @@
     }
 }
 
+.Slider{
+    max-width: 350px;
+    
+    .data_container{
+        display:flex;
+        justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         padding: 1rem 0;
+         text-align: center;
+
+         .user-image{
+            max-width: 350px;
+         }
+    }
+}
+
 // media queries
 
 @media screen 

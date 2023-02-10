@@ -1,6 +1,6 @@
 import "/src/scss/Blog.scss";
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
-import data from '/src/data/Blog.json';
+import data from '/src/data/Blog.js';
 
 
 
@@ -31,8 +31,8 @@ const BlogContent = (props) => {
                 </div>
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
-                        spaceBetween={30}
-                        slidesPerView={3}
+                        spaceBetween={50}
+                        slidesPerView={1}
                         
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
@@ -40,12 +40,15 @@ const BlogContent = (props) => {
                         onSlideChange={() => console.log('slide change')}
                     >
                     {data.map(user => (
-                        <SwiperSlide key={user.id}>
-                            <div>
-                                
-                                {user.title}
-                                
+                        <SwiperSlide key={user.id} className="Slider">
+                            <div className="data_container">
+                                <div className="user-image">
+                                    <img src="/src/assets/images/PHOTO.png" alt="yesy"/>
+                                </div>
+                                <h2>{user.title}</h2>
+                                <p>{user.text}</p>
                             </div>
+                            
                         </SwiperSlide>
                     ))}
                         
