@@ -25,10 +25,11 @@ const data = [
     {
         "image": "",
         "title": "Reviews from First Week Of Release of Aly Serum",
-        "id": 1,
+        "id": 4,
         "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",
         "link": "Read more"
     }
+    
 ]
 
 export default data;

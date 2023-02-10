@@ -42,6 +42,9 @@
 
 .Slider{
     max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     .data_container{
         display:flex;
@@ -53,6 +56,15 @@
 
          .user-image{
             max-width: 350px;
+         }
+         
+         h2{
+            font-size: 1rem;
+            padding: 1rem;
+         }
+
+         p{
+            font-size: 12px;
          }
     }
 }

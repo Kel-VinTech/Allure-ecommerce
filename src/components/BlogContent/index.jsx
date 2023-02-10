@@ -31,19 +31,18 @@ const BlogContent = (props) => {
                 </div>
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
-                        spaceBetween={50}
-                        slidesPerView={1}
-                        
+                        spaceBetween={100}
+                        slidesPerView={3}
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
                     >
                     {data.map(user => (
-                        <SwiperSlide key={user.id} className="Slider">
+                        <SwiperSlide key={user.id} className="Slider row">
                             <div className="data_container">
                                 <div className="user-image">
-                                    <img src="/src/assets/images/PHOTO.png" alt="yesy"/>
+                                    <img src="/src/assets/images/Rectangle 9.png" alt="yesy"/>
                                 </div>
                                 <h2>{user.title}</h2>
                                 <p>{user.text}</p>
