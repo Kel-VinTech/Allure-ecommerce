@@ -1,6 +1,6 @@
 import "/src/scss/Blog.scss";
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
-import BlogCards from '../BlogCards';
+import data from '/src/data/Blog.js';
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {FreeMode,Pagination,Scrollbar} from 'swiper';
@@ -9,7 +9,7 @@ import "swiper/scss/free-mode";
 import 'swiper/scss/pagination';
 
 
-const BlogContent = () => {
+const BlogContent = (props) => {
     // <div className="content">
     //                 <div className="heading">
     //                     <h1 className="heading_text">Allure’s Blog</h1>
@@ -25,9 +25,35 @@ const BlogContent = () => {
     
     return (
         <main>
-            <div className="row">
-                
-         </div>
+            <Swiper className="container_card row"
+                modules={[Pagination]}
+                spaceBetween={10}
+                slidesPerView={3}
+                pagination={{ clickable: true }}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                breakpoints={{
+                    350: {
+                      slidesPerView: 1,
+                      spaceBetween:30,
+                    },
+                    768: {
+                      
+                      slidesPerView: 2,
+                    },
+                  }}
+            >
+              {data.map(user => (
+                  <SwiperSlide key={user.id} className="single_container">
+                    <div className="swiper_image">
+                    <img src={user.image} />
+                    </div>
+                  <h2>{user.title}</h2>
+                  <p>{user.text}</p>
+              </SwiperSlide>
+              
+              ))}
+         </Swiper>
         </main>
  )}
 
