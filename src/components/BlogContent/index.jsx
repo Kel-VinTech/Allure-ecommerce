@@ -27,7 +27,7 @@ const BlogContent = (props) => {
         <main>
             <Swiper className="container_card row"
                 modules={[Pagination]}
-                spaceBetween={20}
+                spaceBetween={25}
                 slidesPerView={3}
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
@@ -37,9 +37,9 @@ const BlogContent = (props) => {
                       slidesPerView: 1,
                       spaceBetween:30,
                     },
-                    768: {
+                    450: {
                       
-                      slidesPerView: 3,
+                      slidesPerView: 1,
                     },
                   }}
             >
@@ -48,7 +48,7 @@ const BlogContent = (props) => {
                     <div className="swiper_image">
                         <img src={user.image} />
                     </div>
-                  <h2>{user.title}</h2>
+                  <h2 className="title">{user.title}</h2>
                   <p>{user.text}</p>
               </SwiperSlide>
               

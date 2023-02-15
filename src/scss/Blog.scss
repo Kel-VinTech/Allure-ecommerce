@@ -39,6 +39,7 @@
     }
     .container_card{
         width: 100%;
+        margin: 30px 0;
 
         .swiper-wrapper {
             margin-bottom: 10px;
@@ -55,21 +56,18 @@
                 max-width: 100%;
             }
 
-            h2{
+            .container_card .single_container h2{
                 font-size: 0.5rem;
-                margin-bottom: 8px;
                 font-family: Rubik;
                 font-weight: 500;
                 line-height: 30px;
                 text-align: center;
-                color: #292929; 
-                margin: 14px 0;
+                color: #292929 !important; 
+                margin: 14px 0 !important;
             }
-            p{
+            .container_card .single_container p{
                 font-size: 0.4rem;
-                width: 60%;
-            }
-        }
+        }}
     }
     
     
@@ -110,7 +108,7 @@ and (max-width:1600px){
                 
                 width: 100%;
                 max-width: 350px;
-                color: #292929; 
+                // color: #292929; 
                 gap: 100px;
                 h2{
                     font-size: 1.2rem;
