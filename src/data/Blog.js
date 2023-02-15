@@ -19,7 +19,7 @@ const data = [
     },
     {
         "image": image3,
-        "title": "The Absolute Best Skin Product For Men at Allure",
+        "title": "Reviews from First Week Of Release of Aly Serum",
         "id": 3,
         "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",
         "link": "read more"
@@ -30,7 +30,23 @@ const data = [
         "id": 4,
         "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",
         "link": "Read more"
-    }
+    },
+    {
+        "image": image1,
+        "title": "Reviews from First Week Of Release of Aly Serum",
+        "id": 5,
+        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",
+        "link": "Read more"
+    },
+    {
+        "image":image2,
+        "title": "The Absolute Best Skin Product For Men at Allure",
+        "id": 6,
+        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",
+        "link": "read more"
+    },
+
+    
     
 ]
 
