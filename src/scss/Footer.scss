@@ -134,6 +134,88 @@ margin-bottom: 24px;
 
 // media query
 
+@media screen
+ and (min-width:550px)
+and (max-width:1024px){
+    footer{
+        max-width: 100%;
+    }
+    .extra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+    .foot_text h2{
+        font-size: 5rem;
+        line-height: 100px;
+        
+    }
+    .foot_text p{
+        font-size: 0.9rem;
+        line-height: 22px;
+        width: 40%;
+        padding: 4rem 0;
+    }
+    .line{
+        width: 450px;
+        height: 450px;
+        margin: 0 auto;
+        padding: 35px;
+    }
+    
+    .line_2{
+        width: 350px;
+        height: 350px;
+        margin: 10px;   
+    }
+
+
+    .foot_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+
+    }
+    .foot_2_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 75%;
+        
+    }
+    
+    .foot_2 .text h2{
+        font-size: 1.9rem;
+    }
+
+    .foot_2 .mess{
+        font-size: 1rem;
+        line-height: 30px;
+        width: 70%;
+    }
+    
+    .foot_2 .copyright{
+        font-size: 0.88rem;
+    }
+
+    .foot_container hr{
+        width: 50%;
+        transform: rotate(90deg);
+    }
+    .text_2 p {
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+    .foot_icons{
+        gap: 22px;
+        font-size: 26px;      
+    }
+}
+
 @media screen 
 and (min-width:1200px) 
 and (max-width:1600px){

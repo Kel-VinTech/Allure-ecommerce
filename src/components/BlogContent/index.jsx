@@ -44,6 +44,10 @@ const BlogContent = (props) => {
                       slidesPerView: 1,
                       spaceBetween:30,
                     },
+                    648: {
+                      slidesPerView: 2,
+                      spaceBetween:30,
+                    },
                     768: {
                       
                       slidesPerView: 2,
