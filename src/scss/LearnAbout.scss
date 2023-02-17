@@ -1,0 +1,34 @@
+main{
+
+    .head-text{
+        text-align: center;
+    }
+    .learn_container{
+        max-width: 550px;
+        width: 100%;
+        text-align: center;
+    
+        .single-container{
+            display: grid;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+    
+            img{
+                max-width: 100%;
+            }
+            .learn-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px 0;
+    
+                h2{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

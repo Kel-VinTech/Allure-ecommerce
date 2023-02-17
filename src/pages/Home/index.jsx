@@ -1,10 +1,11 @@
-import { MainContent, HeroContent, BlogContent } from "../../components";
+import { MainContent, HeroContent, BlogContent,LearnAbout } from "../../components";
 
 const Home = ( ) => {
     return (
         <main>
             <HeroContent />
             <MainContent />
+            <LearnAbout />
             <BlogContent />
         </main>
     )
