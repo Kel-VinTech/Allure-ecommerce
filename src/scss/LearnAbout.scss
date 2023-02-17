@@ -3,7 +3,8 @@ main{
     text-align: left;
     .head-text{
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
     }
     .learn_container{
         max-width: 100%;
@@ -11,11 +12,10 @@ main{
         text-align: left;
         display: grid;
     
-        // .single-container{
-        //     display: grid;
-        //     width: 100%;
-        //     margin: 0 auto;
-        //     margin-bottom: 30px;
+        .single-container{
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
     
             img{
                 max-width: 100%;
@@ -23,27 +23,24 @@ main{
             .learn-text{
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
                 flex-direction: column;
                 padding: 20px 0;
     
                 h2{
                     font-family: 'Cardo';
                     font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.2rem;
-                   margin: 15px 0;
-
-
+                    font-size: 1.3rem;
+                    margin: 15px 0;
                 }
                 p{
                     font-family: 'Rubik';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: .8rem;
+                    font-size: .9rem;
                 }
             }
-        
+        }
     }
 }
 
@@ -52,28 +49,80 @@ main{
 @media screen
  and (min-width:550px)
 and (max-width:1024px){
+    .head-text{
+        font-size: 1.3rem; 
+    }
     .learn_container{
         grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        display: grid;
+        padding:0 3rem;
        }
-
-       .single-container{
-        display: flex;
-        margin: 0 auto;
-        margin-bottom: 30px;
-       }
+        
+    
+        .single-container{
+            .learn-text{
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                flex-direction: column;
+                padding: 20px 0;
+    
+                h2{
+                    font-size: 1.4rem;
+                    margin: 15px 0;
+                }
+                p{
+                    font-size: 1rem;
+                    width: 85%;
+                }
+            }
+        }
+    
 }
+
+
+
 @media screen 
 and (min-width:1024px) 
 and (max-width:1600px){
+    main{
+        .head-text{
+            font-size: 1.5rem; 
+        }
+        .learn_container .learn-text {
+        
+            p {
+                font-size: 1rem;
+                width: 90%;
+            }
+            h2{
+                font-size: 1.3rem;
+                margin: 15px 0;
+    
+    
+            }
+        }
+
+    }
     .learn_container{
         grid-template-columns: repeat(2, 1fr);
+       
        }
-
+    
        .single-container{
         display: flex;
         flex-direction: row;
         width: 100%;
         gap: 40px;
         padding:30px 10px;
+           
        }
-  }
+    
+}
+
+
+
+
