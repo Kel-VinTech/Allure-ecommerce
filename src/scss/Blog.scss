@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #292929;
+
 
     .blog_content1{
         display: flex;
@@ -18,18 +20,6 @@
             align-items: center;
             flex-direction: column;
     
-            .heading_text{
-                font-size: 10px;
-                font-family: 'Cardo';
-                font-style: normal;
-                font-weight: 700;  
-                text-align: center;        
-            }
-    
-            .Heading_icons{
-                float: right;
-
-            }
            
             
         }
@@ -76,6 +66,7 @@ main{
                     font-family: 'Rubik';
                     font-style: normal;
                     font-weight: 400;
+                    margin-bottom: 10px;
                 }
                 
             }
@@ -86,34 +77,46 @@ main{
             
         }
 
+        .heading_text{
+            font-size: 1.5rem;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 700;  
+            text-align: center;  
+            color: #292929;
+      
+        }
 
 
+        .Heading_icons{
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            left: 420px;
+            top: 0;
+            bottom: 0; 
+             
+        }
+        .directions-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .direction_icons{
+            font-size: 35px; 
+        }
+        .read-link a{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: #2F4333;
+            font-family: Rubik;
+            font-size: .9rem;
+            font-weight: 500;
 
-
-
-
-
-
-
-
-    // .swiper_text{
-    //     padding-bottom: 20px;
-    //     color: #292929;
-    // }
-    // .swiper h2{
-    //         padding: 20px 0;
-    //         font-size: 18px;
-    //         font-family: 'Rubik';
-    //         font-style: normal;
-    //     }
-    //     .swiper p{
-    //         font-size: 15px;
-    //         margin-bottom: 20px;
-    //         font-family: 'Rubik';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //     }
-    //     
+        }
 }
     
 
@@ -157,7 +160,7 @@ and (max-width:1600px){
         .direction_icons{
             font-size: 35px; 
         }
-  
+        
     }
         
     
@@ -183,7 +186,11 @@ and (max-width:1600px){
                 }
                 
             }
-            
+            .read-link a{
+                font-size: 1rem;
+
+    
+            }
         }
     
     

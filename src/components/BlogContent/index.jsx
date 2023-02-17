@@ -1,7 +1,7 @@
 import "/src/scss/Blog.scss";
-import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 import data from '/src/data/Blog.js';
-
+import { Link } from "react-router-dom";
+import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper';
 import 'swiper/scss';
@@ -19,8 +19,8 @@ const BlogContent = (props) => {
                     <h1 className="heading_text">Allure’s Blog</h1>
                     <div className="Heading_icons">
                         <div className="directions-icon">
-                          <FaAngleLeft className="direction_icons left"/>
-                          <FaAngleRight className="direction_icons right"/>
+                          <MdChevronLeft className="direction_icons left"/>
+                          <MdChevronRight className="direction_icons right"/>
                           
                         </div>
                         
@@ -64,6 +64,9 @@ const BlogContent = (props) => {
                   <div className="swiper_text">
                     <h2 className="title">{user.title}</h2>
                     <p >{user.text}</p>
+                  </div>
+                  <div className="read-link">
+                      <Link to="#">Read more <MdEast/> </Link>
                   </div>
               </SwiperSlide>
               
