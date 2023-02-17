@@ -11,7 +11,11 @@ import 'swiper/scss/pagination';
 
 const BlogContent = (props) => {
     
-    
+    const mobileStyle = {
+      padding: '15px 0',
+      color: '#292929',
+      fontSize: '18px'
+    }
     return (
         <main>
           <div className="content">
@@ -35,9 +39,11 @@ const BlogContent = (props) => {
                 breakpoints={{
                     0: {
                       slidesPerView: 1,
+                      spaceBetween:30,
                     },
                     480: {
                       slidesPerView: 1,
+                      spaceBetween:30,
                     },
                     768: {
                       
@@ -56,8 +62,10 @@ const BlogContent = (props) => {
                     <div className="swiper_image">
                         <img src={user.image} />
                     </div>
-                  <h2 className="title">{user.title}</h2>
-                  <p>{user.text}</p>
+                  <div className="swiper_text">
+                    <h2 className="title">{user.title}</h2>
+                    <p >{user.text}</p>
+                  </div>
               </SwiperSlide>
               
               ))}
