@@ -1,3 +1,20 @@
+main{
+    .swiper_text{
+        padding-bottom: 30px;
+    }
+    .swiper h2{
+            padding: 20px 0;
+            font-size: 17px;
+        }
+        .swiper p{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .swiper-pagination{
+            padding-bottom: 30px;
+        }
+}
+    
 
 .content{
     display: flex;
@@ -27,10 +44,7 @@
             gap: 15px;
             margin-bottom:20px;
         }
-        .swiper_text h2{
-            font-size: 12px;
-            padding:12px 0;
-        }
+       
         
     }
     .text{
@@ -41,7 +55,7 @@
         text-align: center;
         
     } 
-   
+    
 }
 
 
@@ -93,9 +107,7 @@ and (max-width:1600px){
                 }
                 
             }
-            .swiper-pagination{
-                padding: 30px 0;
-            }
+            
         }
     
     

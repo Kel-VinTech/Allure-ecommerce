@@ -29,7 +29,7 @@ const BlogContent = (props) => {
                     </div>
                     <p className="text">A close look at the skin care life and routine of celebrities, customers’  reviews about products,and inside scoop from our aesthetic experts.
                     </p>
-                </div>
+            </div>
 
             <Swiper className="container_card row"
                 modules={[Pagination]}
