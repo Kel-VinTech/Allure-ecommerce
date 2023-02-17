@@ -10,6 +10,7 @@
         align-items: center;
         flex-direction: column;
         width:100%;
+        text-align: center;
         
         .Heading{
             display: flex;
@@ -17,7 +18,7 @@
             align-items: center;
             flex-direction: column;
     
-            h1{
+            .heading_text{
                 font-size: 10px;
                 font-family: 'Cardo';
                 font-style: normal;
@@ -26,25 +27,21 @@
             }
     
             .Heading_icons{
-                display: flex;
-                justify-content: flex-end;
-                align-self: flex-end;
-                font-size: 23px;
-                gap: 15px;
-                margin-bottom:20px;
+                float: right;
+
             }
            
             
         }
         .text{
             width: 100%;
-            font-size: 1rem;
+            font-size: 1.1rem;
             padding-top: 50px; 
             font-family: 'Rubik';
             font-style: normal;
             font-weight: 400;
             line-height: 30px;
-            text-align: center;
+            // text-align: center;
         } 
         
     }
@@ -83,7 +80,8 @@ main{
                 
             }
             .swiper-pagination{
-                        padding-bottom: 20px;
+                padding-bottom: 20px;
+                --swiper-theme-color: #2f4333;
             }
             
         }
@@ -133,7 +131,7 @@ and (max-width:1600px){
     .heading{
         display: flex;
         justify-content: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
        
 
@@ -141,15 +139,28 @@ and (max-width:1600px){
             text-align: center;
             font-size: 1.8rem;
          }
-        .Heading_icons{
+         .Heading_icons{
+            position: relative;
             display: flex;
-            justify-content: space-between;
-            
+            justify-content: center;
+            left: 420px;
+            top: 0;
+            bottom: 0; 
+             
         }
-        
+        .directions-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .direction_icons{
+            font-size: 35px; 
+        }
   
     }
         
+    
 
     .container_card{
         width: 100%;

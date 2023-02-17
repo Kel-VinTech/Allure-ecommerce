@@ -18,9 +18,12 @@ const BlogContent = (props) => {
                 <div className="heading">
                     <h1 className="heading_text">Allure’s Blog</h1>
                     <div className="Heading_icons">
-                        {/* <FaAngleLeft className="direction_icons left"/>
-                        <FaAngleRight className="direction_icons right"/> */}
-                        <p>hello</p>
+                        <div className="directions-icon">
+                          <FaAngleLeft className="direction_icons left"/>
+                          <FaAngleRight className="direction_icons right"/>
+                          
+                        </div>
+                        
                     </div>
                 </div>
                 <p className="text">A close look at the skin care life and routine of celebrities, customers’ <br />  reviews about products,and inside scoop from our aesthetic experts.
