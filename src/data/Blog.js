@@ -32,7 +32,7 @@ const data = [
         "link": "Read more"
     },
     {
-        "image": image1,
+        "image": image3,
         "title": "Reviews from First Week Of Release of Aly Serum",
         "id": 5,
         "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, volutpat nunc, amet laoreet odio dolor nec. Penatibus nisi amet dolor mattis",

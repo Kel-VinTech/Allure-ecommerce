@@ -10,26 +10,22 @@ import 'swiper/scss/pagination';
 
 
 const BlogContent = (props) => {
-    
-    const mobileStyle = {
-      padding: '15px 0',
-      color: '#292929',
-      fontSize: '18px'
-    }
+   
     return (
-        <main>
-          <div className="content">
-                    <div className="heading">
-                        <h1 className="heading_text">Allure’s Blog</h1>
-                        <div className="Heading_icons">
-                            {/* <FaAngleLeft className="direction_icons left"/>
-                            <FaAngleRight className="direction_icons right"/> */}
-                            <p>hello</p>
-                        </div>
+        <main className="row">
+          <div className="blog_content">
+            <div className="blog_content1 row">
+                <div className="heading">
+                    <h1 className="heading_text">Allure’s Blog</h1>
+                    <div className="Heading_icons">
+                        {/* <FaAngleLeft className="direction_icons left"/>
+                        <FaAngleRight className="direction_icons right"/> */}
+                        <p>hello</p>
                     </div>
-                    <p className="text">A close look at the skin care life and routine of celebrities, customers’  reviews about products,and inside scoop from our aesthetic experts.
-                    </p>
-            </div>
+                </div>
+                <p className="text">A close look at the skin care life and routine of celebrities, customers’ <br />  reviews about products,and inside scoop from our aesthetic experts.
+                </p>
+              </div>
 
             <Swiper className="container_card row"
                 modules={[Pagination]}
@@ -41,7 +37,7 @@ const BlogContent = (props) => {
                       slidesPerView: 1,
                       spaceBetween:30,
                     },
-                    480: {
+                    500: {
                       slidesPerView: 1,
                       spaceBetween:30,
                     },
@@ -70,6 +66,7 @@ const BlogContent = (props) => {
               
               ))}
          </Swiper>
+          </div>
         </main>
  )}
 
