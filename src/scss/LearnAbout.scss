@@ -1,19 +1,21 @@
 main{
-
+    color: #292929;
+    text-align: left;
     .head-text{
         text-align: center;
+        font-size: 1rem;
     }
     .learn_container{
-        max-width: 550px;
+        max-width: 100%;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        display: grid;
     
-        .single-container{
-            display: grid;
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 30px;
+        // .single-container{
+        //     display: grid;
+        //     width: 100%;
+        //     margin: 0 auto;
+        //     margin-bottom: 30px;
     
             img{
                 max-width: 100%;
@@ -23,12 +25,55 @@ main{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: 10px 0;
+                padding: 20px 0;
     
                 h2{
-                    font-size: 10px;
+                    font-family: 'Cardo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                   margin: 15px 0;
+
+
+                }
+                p{
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .8rem;
                 }
             }
-        }
+        
     }
 }
+
+// media query
+
+@media screen
+ and (min-width:550px)
+and (max-width:1024px){
+    .learn_container{
+        grid-template-columns: repeat(2, 1fr);
+       }
+
+       .single-container{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 30px;
+       }
+}
+@media screen 
+and (min-width:1024px) 
+and (max-width:1600px){
+    .learn_container{
+        grid-template-columns: repeat(2, 1fr);
+       }
+
+       .single-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 40px;
+        padding:30px 10px;
+       }
+  }
