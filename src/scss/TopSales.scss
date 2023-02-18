@@ -1,0 +1,44 @@
+main{
+    .heading-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+@media screen
+ and (min-width:1024px)
+and (max-width:1600px){
+
+ main{
+
+    .Heading_icons{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 420px;
+        top: 0;
+        bottom: 0; 
+         
+    }
+    .directions-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .direction_icons{
+        font-size: 35px; 
+    }
+    
+
+ }
+    
+    
+}
+
