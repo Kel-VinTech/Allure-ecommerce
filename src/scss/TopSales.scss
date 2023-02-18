@@ -3,7 +3,82 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
+        h2{
+        font-size: 1.1rem;
+        color: #292929;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 700; 
+        margin-bottom: 20px;
+        }
+
+        
     }
+
+    .directions-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    .direction_icons{
+        font-size: 35px; 
+    }
+
+    .container_card{
+        width: 100%;
+        
+            .single_container{
+                width: 100%;
+                max-width: 500px;
+                color: #292929; 
+                padding-bottom: 40px;
+                h3{
+                    margin: 10px 0;
+                    font-size: 1.3rem;
+                    font-family: 'Rubik';
+                    font-style: normal; 
+                    font-weight: 400; 
+                }
+                .swiper-prices{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+                span{
+                    color: #2F4333;
+                    font-family: 'Cardo';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1.03rem;
+        
+                    s{
+                        font-weight: 400;
+                    }
+                }
+                
+            }
+            .swiper-pagination{
+                padding-bottom: 20px;
+                --swiper-theme-color: #2f4333;
+            }
+            
+            .add-link a{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                text-decoration: none;
+                color: #2F4333;
+                font-family: Rubik;
+                font-size: .9rem;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+        }
+    
 }
 
 
@@ -16,12 +91,19 @@ main{
 and (max-width:1600px){
 
  main{
+    .heading-container{
+        flex-direction: row;
 
-    .Heading_icons{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+
+    .Heading_icon{
         position: relative;
         display: flex;
         justify-content: center;
-        left: 420px;
+        left: 380px;
         top: 0;
         bottom: 0; 
          
