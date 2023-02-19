@@ -1,4 +1,19 @@
 main{
+    width: 100%;
+
+
+
+// .swiper-wrapper {
+//     padding: 1rem;
+// }
+
+    .sale-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
     .heading-container{
         display: flex;
         justify-content: center;
@@ -30,12 +45,18 @@ main{
 
     .container_card{
         width: 100%;
+        padding: 2rem;
+        
         
             .single_container{
                 width: 100%;
                 max-width: 500px;
                 color: #292929; 
-                padding-bottom: 40px;
+               
+                img{
+                    max-width: 100%;
+                }
+                
                 h3{
                     margin: 10px 0;
                     font-size: 1.3rem;
@@ -49,7 +70,7 @@ main{
                     gap: 15px;
                 }
                 span{
-                    color: #2F4333;
+                    color: #292929;
                     font-family: 'Cardo';
                     font-style: normal;
                     font-weight: 700;
@@ -57,6 +78,7 @@ main{
         
                     s{
                         font-weight: 400;
+                        color: #2F4333;
                     }
                 }
                 

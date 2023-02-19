@@ -11,6 +11,7 @@ import 'swiper/scss/pagination';
 const TopSales = (props) => {
     return (
         <main>
+            <div className="sale-content">
             <div className="heading-container">
                 <h2>Top picks from <s>SALES</s> </h2>
                 <div className="Heading_icon">
@@ -40,12 +41,12 @@ const TopSales = (props) => {
                     },
                     768: {
                       
-                      slidesPerView: 2,
+                      slidesPerView: 3,
                       spaceBetween:30,
                     },
                     1024: {
                       
-                      slidesPerView: 3,
+                      slidesPerView: 4,
                       spaceBetween:60,
                     },
                   }}
@@ -66,6 +67,7 @@ const TopSales = (props) => {
                 </SwiperSlide>
                 ))}
             </Swiper>
+            </div>
         </main>
     )
 }
