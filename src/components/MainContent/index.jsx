@@ -68,7 +68,7 @@ const MainContent = () => {
                 
             </div>
 
-            <div className="content_3">
+            {/* <div className="content_3">
                 
                 <div className="direction">
                     <h2>Popular Products</h2>
@@ -78,7 +78,7 @@ const MainContent = () => {
                     </div>
                     
                 </div>
-            </div>
+            </div> */}
             
         </main>
     )
