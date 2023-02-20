@@ -1,6 +1,6 @@
 import image1 from "/src/assets/images/Rectangle 9.png"
-import image2 from "/src/assets/images/Rectangle 12.png"
-import image3 from "/src/assets/images/Rectangle 11.png"
+import image2 from "/src/assets/images/Rectangle 20.png"
+import image3 from "/src/assets/images/Rectangle 13.png"
 
 const data = [
     {

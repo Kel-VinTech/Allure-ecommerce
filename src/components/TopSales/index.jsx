@@ -12,15 +12,15 @@ const TopSales = (props) => {
     return (
         <main>
             <div className="sale-content">
-            <div className="heading-container">
-                <h2>Top picks from <s>SALES</s> </h2>
-                <div className="Heading_icon">
-                        <div className="directions-icon">
-                          <MdChevronLeft className="direction_icons left"/>
-                          <MdChevronRight className="direction_icons right"/> 
-                        </div>  
-                </div>
-            </div>
+              <div className="heading-container">
+                  <h2>Top picks from <s>SALES</s> </h2>
+                  <div className="Heading_icon">
+                          <div className="directions-icon">
+                            <MdChevronLeft className="direction_icons left"/>
+                            <MdChevronRight className="direction_icons right"/> 
+                          </div>  
+                  </div>
+              </div>
             <Swiper className="container_card row"
                 modules={[Pagination]}
                 spaceBetween={30}
@@ -54,7 +54,7 @@ const TopSales = (props) => {
                 {data.map(item => (
                     <SwiperSlide key={item.id} className="single_container">
                     <div className="swiper-image">
-                        <img src={item.image} alt="image" />
+                        <img src={item.image} />
                     </div>
                     <h3>{item.title}</h3>
                     <div className="swiper-prices">

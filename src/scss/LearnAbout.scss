@@ -6,6 +6,16 @@ main{
         font-size: 1.1rem;
         margin-bottom: 20px;
         padding-top: 3rem;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+    .learn_container .single-container .learn-text h2 {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-size: 1.3rem;
+        margin: 15px 0;
     }
     .learn_container{
         max-width: 100%;
@@ -27,13 +37,7 @@ main{
                 // align-items: center;
                 flex-direction: column;
                 padding: 20px 0;
-    
-                h2{
-                    font-family: 'Cardo';
-                    font-style: normal;
-                    font-size: 1.3rem;
-                    margin: 15px 0;
-                }
+
                 p{
                     font-family: 'Rubik';
                     font-style: normal;
@@ -43,7 +47,7 @@ main{
             }
         }
     }
-}
+
 
 // media query
 
@@ -91,20 +95,16 @@ and (min-width:1024px)
 and (max-width:1600px){
     main{
         .head-text{
-            font-size: 1.5rem; 
+            font-size: 2rem; 
         }
-        .learn_container .learn-text {
-        
-            p {
-                font-size: 1rem;
-                width: 90%;
-            }
-            h2{
-                font-size: 1.3rem;
-                margin: 15px 0;
-    
-    
-            }
+
+        .learn_container .single-container .learn-text h2 {
+            font-size: 1.6rem;
+            margin: 15px 0;
+        }
+        .learn_container .single-container .learn-text p {
+            font-size: 1.05rem;
+            width: 90%;
         }
 
     }
