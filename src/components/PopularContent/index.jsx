@@ -14,6 +14,21 @@ const PopularContent = () => {
                             </div>  
                     </div>
                 </div>
+
+                <div className="popular_cards row">
+                    <div className="single_card first">
+                        
+                    </div>
+                    <div className="single_card second">
+                        
+                    </div>
+                    <div className="single_card third">
+                        
+                    </div>
+                    <div className="single_card fourth">
+                        
+                    </div>
+                </div>
             </div>
         </main>
     )
