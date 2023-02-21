@@ -1,6 +1,20 @@
 main{
     width: 100%;
 
+    .elipse8 {
+        position: absolute;
+        left: -60px;
+        width: 550px;
+        margin-top: 58px;
+        // top: 0;
+      }
+      .elipse9 {
+        position: absolute;
+        margin: 100px 10px;
+        left: -46px;
+        width: 320.99px;
+      }
+
     .popular_cards{
         // display: flex;
         // flex-direction: column;
@@ -11,6 +25,10 @@ main{
         }
         .single_card{
             padding:1rem;
+        }
+        .second{
+            position: relative;
+            z-index: 1;
         }
     }
 }
