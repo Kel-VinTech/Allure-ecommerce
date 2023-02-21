@@ -15,6 +15,65 @@ main{
     }
 }
 
+
+// media queries
+@media screen
+ and (min-width:550px)
+and (max-width:1024px){
+    main{
+        .popular_cards{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .first-content{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .first{
+            top: -150px;
+            position: relative;
+        }
+        .second{
+            position: relative;
+            // left: 300px;
+            top: 100px;
+            right: 30px;
+        }
+
+        .third{
+            float: right;
+        }
+        .fourth{
+            position: relative;
+            left: -30px;
+        }
+        .second-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .elipse8 {
+            position: absolute;
+            left: -60px;
+            width: 350px;
+            margin-top: 58px;
+            // top: 0;
+          }
+          .elipse9 {
+            position: absolute;
+            margin: 83px 10px;
+            left: -46px;
+            width: 200.99px;
+          }
+    }
+}
+
 @media screen
  and (min-width:1024px)
 and (max-width:1600px){
