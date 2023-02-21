@@ -25,8 +25,8 @@ const PopularContent = () => {
                         <div className="single_card first">
                             <img src={image1}/>
                                 <div className="text">
-                                    <span className="title">Allure skincare</span>
-                                    <span className="price">$60</span>
+                                    <span className="title">ALLEY FACE CREAM</span>
+                                    <span className="price">$45.00</span>
                                 </div>
                                 <div className="add-link">
                                         <Link to="#">Add to cart <MdEast/> </Link>
@@ -38,7 +38,7 @@ const PopularContent = () => {
                         <div className="single_card second">
                             <img src={image1}/>
                                     <div className="text">
-                                        <span className="title">Allure skincare</span>
+                                        <span className="title">PHILAE HAIR SERUM</span>
                                         <span className="price">$60</span>
                                     </div>
                                     <div className="add-link">
@@ -51,8 +51,8 @@ const PopularContent = () => {
                         <div className="single_card third">
                                 <img src={image1}/>
                                         <div className="text">
-                                            <span className="title">Allure skincare</span>
-                                            <span className="price">$60</span>
+                                            <span className="title">ALLY BODY WASH</span>
+                                            <span className="price">$45.00</span>
                                         </div>
                                         <div className="add-link">
                                                 <Link to="#">Add to cart <MdEast/> </Link>
@@ -61,7 +61,7 @@ const PopularContent = () => {
                         <div className="single_card fourth">
                             <img src={image1}/>
                             <div className="text">
-                                <span className="title">Allure skincare</span>
+                                <span className="title">ALLEY 2X CLEANSER</span>
                                 <span className="price">$60</span>
                             </div>
                             <div className="add-link">
