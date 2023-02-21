@@ -1,4 +1,5 @@
 import "/src/scss/Popular.scss";
+import image1 from "/src/assets/images/Rectangle 6.jpg"
 // import data from '/src/data/TopSales.js';
 import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
 const PopularContent = () => {
@@ -17,6 +18,7 @@ const PopularContent = () => {
 
                 <div className="popular_cards row">
                     <div className="single_card first">
+                        <img src={image1}/>
                         
                     </div>
                     <div className="single_card second">

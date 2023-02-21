@@ -1,7 +1,9 @@
-import image1 from "/src/assets/images/Rectangle 6.png"
-import image2 from "/src/assets/images/Rectangle 8.png"
-import image3 from "/src/assets/images/Rectangle 19.png"
-import image4 from "/src/assets/images/Rectangle 21.png"
+import image1 from "/src/assets/images/Rectangle 6.jpg"
+import image2 from "/src/assets/images/kadarius-seegars-0FHNXqyqgg4-unsplash.jpg"
+import image3 from "/src/assets/images/Rectangle 27.jpg"
+import image4 from "/src/assets/images/liubov-ilchuk-zN4bP2kmv3c-unsplash.jpg"
+import image5 from "/src/assets/images/Rectangle 30.jpg"
+import image6 from "/src/assets/images/Rectangle 31.jpg"
 
 const data = [
     {
@@ -34,7 +36,7 @@ const data = [
     },
     {
         id:5,
-        image: image1,
+        image: image5,
         title: "Ayla skin repair serum",
 
         price1: 30,
@@ -42,27 +44,11 @@ const data = [
     },
     {
         id:6,
-        image: image3,
+        image: image6,
         title: "Allure peeling solution",
         price1: 30,
         price2: 60
-    },
-    // {
-    //     id:7,
-    //     image: image2,
-    //     title: "Moisturizers",
-    //     text: "Moisturizers",
-    //     price1: 30,
-    //     price2: 60
-    // },
-    // {
-    //     id:8,
-    //     image: image4,
-    //     title: "Moisturizers",
-    //     text: "Moisturizers",
-    //     price1: 30,
-    //     price2: 60
-    // },
+    }
    
 ]
 
