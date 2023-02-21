@@ -1,7 +1,10 @@
 import "/src/scss/Popular.scss";
 import image1 from "/src/assets/images/Rectangle 6.jpg"
+import { Link } from "react-router-dom";
 // import data from '/src/data/TopSales.js';
 import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
+import eli7 from '/src/assets/images/Ellipse 3.png';
+
 const PopularContent = () => {
     return(
         <main>
@@ -17,20 +20,57 @@ const PopularContent = () => {
                 </div>
 
                 <div className="popular_cards row">
-                    <div className="single_card first">
-                        <img src={image1}/>
-                        
+
+                    <div className="first-content">
+                        <div className="single_card first">
+                            <img src={image1}/>
+                                <div className="text">
+                                    <span className="title">Allure skincare</span>
+                                    <span className="price">$60</span>
+                                </div>
+                                <div className="add-link">
+                                        <Link to="#">Add to cart <MdEast/> </Link>
+                                </div>
+                                <img className="elipse8" src={eli7} />
+                                <img className="elipse9" src={eli7} />      
+                        </div>
+                       
+                        <div className="single_card second">
+                            <img src={image1}/>
+                                    <div className="text">
+                                        <span className="title">Allure skincare</span>
+                                        <span className="price">$60</span>
+                                    </div>
+                                    <div className="add-link">
+                                            <Link to="#">Add to cart <MdEast/> </Link>
+                                    </div>
+                        </div>
                     </div>
-                    <div className="single_card second">
-                        
-                    </div>
-                    <div className="single_card third">
-                        
-                    </div>
-                    <div className="single_card fourth">
-                        
+                    
+                    <div className="second-content">
+                        <div className="single_card third">
+                                <img src={image1}/>
+                                        <div className="text">
+                                            <span className="title">Allure skincare</span>
+                                            <span className="price">$60</span>
+                                        </div>
+                                        <div className="add-link">
+                                                <Link to="#">Add to cart <MdEast/> </Link>
+                                        </div>
+                        </div>
+                        <div className="single_card fourth">
+                            <img src={image1}/>
+                            <div className="text">
+                                <span className="title">Allure skincare</span>
+                                <span className="price">$60</span>
+                            </div>
+                            <div className="add-link">
+                                    <Link to="#">Add to cart <MdEast/> </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </main>
     )

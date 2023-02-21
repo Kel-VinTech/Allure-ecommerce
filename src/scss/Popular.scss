@@ -2,14 +2,72 @@ main{
     width: 100%;
 
     .popular_cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        margin-bottom: 30px;
+        img{
+            max-width:100%;
+        }
         .single_card{
-            background: red;
-            height: 100px;
-            width: 100px;
+            padding:1rem;
         }
     }
+}
+
+@media screen
+ and (min-width:1024px)
+and (max-width:1600px){
+    main{
+        .popular_cards{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .first-content{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .first{
+            top: -150px;
+            position: relative;
+        }
+        .second{
+            position: relative;
+            // left: 300px;
+            top: 200px;
+        }
+
+        .third{
+            float: right;
+        }
+        .fourth{
+            position: relative;
+            left: -150px;
+        }
+        .second-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .elipse8 {
+            position: absolute;
+            left: -100px;
+            width: 407px;
+            margin-top: 58px;
+            // top: 0;
+          }
+          .elipse9 {
+            position: absolute;
+            margin: 95px -14px;
+            left: -48px;
+            width: 240.99px;
+          }
+    }
+
 }
