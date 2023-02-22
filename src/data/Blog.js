@@ -1,4 +1,4 @@
-import image1 from "/src/assets/images/Rectangle 9.png"
+import image1 from "/src/assets/images/Rectangle 19.png"
 import image2 from "/src/assets/images/Rectangle 20.png"
 import image3 from "/src/assets/images/Rectangle 13.png"
 

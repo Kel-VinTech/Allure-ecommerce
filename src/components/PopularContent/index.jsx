@@ -1,7 +1,9 @@
 import "/src/scss/Popular.scss";
-import image1 from "/src/assets/images/Rectangle 6.jpg"
+import image1 from "/src/assets/images/Rectangle 6.png"
+import image2 from "/src/assets/images/rectangle 1.jpg"
+import image3 from "/src/assets/images/Rectangle 3.png"
+import image4 from "/src/assets/images/Rectangle 7.png"
 import { Link } from "react-router-dom";
-// import data from '/src/data/TopSales.js';
 import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
 import eli7 from '/src/assets/images/Ellipse 3.png';
 
@@ -36,7 +38,7 @@ const PopularContent = () => {
                         </div>
                        
                         <div className="single_card second">
-                            <img src={image1}/>
+                            <img src={image2}/>
                                     <div className="text">
                                         <span className="title">PHILAE HAIR SERUM</span>
                                         <span className="price">$60</span>
@@ -49,7 +51,7 @@ const PopularContent = () => {
                     
                     <div className="second-content">
                         <div className="single_card third">
-                                <img src={image1}/>
+                                <img src={image4}/>
                                         <div className="text">
                                             <span className="title">ALLY BODY WASH</span>
                                             <span className="price">$45.00</span>
@@ -59,7 +61,7 @@ const PopularContent = () => {
                                         </div>
                         </div>
                         <div className="single_card fourth">
-                            <img src={image1}/>
+                            <img src={image3}/>
                             <div className="text">
                                 <span className="title">ALLEY 2X CLEANSER</span>
                                 <span className="price">$60</span>

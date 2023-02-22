@@ -30,12 +30,21 @@ main{
             position: relative;
             z-index: 1;
         }
-        span{
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 8px 0;
+
+            span{
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 17px;
+            }
         }
+        
     }
 }
 
