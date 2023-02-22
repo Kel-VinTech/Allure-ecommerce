@@ -1,8 +1,8 @@
 import "/src/scss/Popular.scss";
 import image1 from "/src/assets/images/Rectangle 6.png"
-import image2 from "/src/assets/images/Rectangle 1.jpg"
-import image3 from "/src/assets/images/Rectangle 3.png"
-import image4 from "/src/assets/images/Rectangle 7.png"
+import image2 from "/src/assets/images/Rectangle 7.png"
+import image3 from "/src/assets/images/Rectangle 7.png"
+import image4 from "/src/assets/images/Rectangle 3.png"
 import { Link } from "react-router-dom";
 import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
 import eli7 from '/src/assets/images/Ellipse 3.png';
@@ -57,7 +57,7 @@ const PopularContent = () => {
                                             <span className="price">$45.00</span>
                                         </div>
                                         <div className="add-link">
-                                                <Link to="#">Add to cart <MdEast/> </Link>
+                                            <Link to="#">Add to cart <MdEast/> </Link>
                                         </div>
                         </div>
                         <div className="single_card fourth">

@@ -43,8 +43,20 @@ main{
                 font-weight: 600;
                 font-size: 17px;
             }
+            
         }
-        
+        .single_card{
+            .add-link a{
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                text-decoration: none;
+                color: #2F4333;
+                font-family: Rubik;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
     }
 }
 
@@ -101,8 +113,8 @@ and (max-width:1024px){
           .elipse9 {
             position: absolute;
             margin: 83px 10px;
-            left: -46px;
-            width: 200.99px;
+            left: -45px;
+            width: 179.99px;
           }
     }
 }
@@ -156,9 +168,9 @@ and (max-width:1600px){
           }
           .elipse9 {
             position: absolute;
-            margin: 95px -14px;
-            left: -48px;
-            width: 240.99px;
+            margin: 100px -12px;
+            left: -50px;
+            width: 270.99px;
           }
     }
 

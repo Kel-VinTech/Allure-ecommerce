@@ -1,7 +1,7 @@
-import image1 from "/src/assets/images/Rectangle 6.jpg"
+import image1 from "/src/assets/images/priscilla-du-preez-KtFiOgyz5IU-unsplash.jpg"
 import image2 from "/src/assets/images/kadarius-seegars-0FHNXqyqgg4-unsplash.jpg"
 import image3 from "/src/assets/images/Rectangle 27.jpg"
-import image4 from "/src/assets/images/liubov-ilchuk-zN4bP2kmv3c-unsplash.jpg"
+import image4 from "/src/assets/images/collins-lesulie-7lFGxDph5KQ-unsplash.jpg"
 import image5 from "/src/assets/images/Rectangle 30.jpg"
 import image6 from "/src/assets/images/Rectangle 31.jpg"
 
