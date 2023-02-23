@@ -1,7 +1,7 @@
 import "/src/scss/Popular.scss";
 import image1 from "/src/assets/images/Rectangle 6.png"
 import image2 from "/src/assets/images/Rectangle 7.png"
-import image3 from "/src/assets/images/Rectangle 7.png"
+import image3 from "/src/assets/images/Rectangle 81.png"
 import image4 from "/src/assets/images/Rectangle 3.png"
 import { Link } from "react-router-dom";
 import { MdChevronLeft,MdChevronRight, MdEast } from "react-icons/md";
