@@ -1,4 +1,5 @@
 export { default as NavBar } from "./NavBar";
+export { default as Navigations } from "./Navigations";
 export { default as MainContent } from "./MainContent";
 export { default as PopularContent} from "./PopularContent";
 export { default as TopSales} from "./TopSales";

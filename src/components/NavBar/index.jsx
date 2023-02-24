@@ -1,6 +1,6 @@
 import{
     Logo
-   } from "../Navigations/Logo";
+   } from "./Logo";
 const NavBar =() => {
     return (
         <div className="navbar">
