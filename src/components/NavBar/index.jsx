@@ -1,12 +1,12 @@
-import{
-    Logo
-   } from "./Logo";
+import "/src/scss/Navbar.scss";
+
+
 const NavBar =() => {
     return (
         <div className="navbar">
-            <Logo />
+            <h1>hello</h1>
             <nav className="nav_links">
-
+            
             </nav>
         </div>
     )
