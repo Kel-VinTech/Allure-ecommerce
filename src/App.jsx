@@ -3,7 +3,8 @@ import{
  Footer
 } from "../src/components";
 import {
-  Home
+  Home,
+  AboutUs
 } from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 import './scss/_reset.scss'
@@ -14,6 +15,7 @@ function App() {
     <div className='container'>
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='about' element={<AboutUs />}/>
       </Routes>
         <Footer />
     </div>
