@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Logo = () => {
     return (
-        <nav className="Logo">
+        <header className="Logo">
             <Link to="/">ALLURE.</Link>
-        </nav>
+        </header>
     )
 }
 

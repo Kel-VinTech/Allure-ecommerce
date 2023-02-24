@@ -1,5 +1,6 @@
 import React from 'react'
 import{
+NavBar,
  Footer
 } from "../src/components";
 import {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className='container'>
+      <NavBar />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='about' element={<AboutUs />}/>
