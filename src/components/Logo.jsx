@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+
 
 const Logo = () => {
     return (
         <header className="Logo">
-            <Link to="/">ALLURE.</Link>
+            <h1>ALLURE.</h1>
         </header>
     )
 }

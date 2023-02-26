@@ -1,10 +1,10 @@
 import "/src/scss/Navbar.scss";
-
+import Logo from "../Logo";
 
 const NavBar =() => {
     return (
         <div className="navbar">
-            <h1>hello</h1>
+            <Logo />
             <nav className="nav_links">
             
             </nav>
