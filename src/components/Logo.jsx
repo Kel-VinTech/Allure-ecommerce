@@ -1,3 +1,4 @@
+import "/src/scss/Logo.scss";
 
 
 const Logo = () => {

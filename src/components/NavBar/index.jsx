@@ -3,8 +3,9 @@ import Logo from "../Logo";
 
 const NavBar =() => {
     return (
-        <div className="navbar">
+        <div className="navbar row">
             <Logo />
+
             <nav className="nav_links">
             
             </nav>
