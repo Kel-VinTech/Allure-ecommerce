@@ -3,8 +3,8 @@ import "/src/scss/Logo.scss";
 
 const Logo = () => {
     return (
-        <header className="Logo">
-            <h1>ALLURE.</h1>
+        <header className="logo">
+            <h1 c>ALLURE.</h1>
         </header>
     )
 }
