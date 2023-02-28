@@ -19,9 +19,11 @@
                     gap: 20px;
                     list-style: none;
                         li a{
-                                color:#fff;
-                                text-decoration: none;
-                               
+                                color: #E9E9E9;
+                                text-decoration: none;  
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 600;
                                 
                         }
 
@@ -30,8 +32,42 @@
                                 border-radius: 50%;
                                 padding: 14px;
                                 margin: 10px;
-                                font-size: 10px;
+                                font-size: 18px;
                         }
                 }
         }
+}
+
+
+@media screen
+ and (min-width:1024px)
+and (max-width:1600px){
+        .nav_links{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    list-style: none;
+                        li a{
+                                text-decoration: none; 
+                                font-size: 17px;   
+                        }
+
+                        .sales{
+                                border: 1px solid blue;
+                                border-radius: 100%;
+                                padding: 14px;
+                                margin: 10px;
+                                font-weight: 400;
+                                font-size: 20px;
+                        }
+                }
+        }
+
 }

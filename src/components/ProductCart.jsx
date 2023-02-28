@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
+import "/src/scss/Cart.scss";
 
 const ProductCart = () => {
     return (
        <>
-        <Link to="#">
-            <h2>Cart<span>(2)</span></h2>
+        <Link className="cart" to="#">
+            <h3>Cart<span>(2)</span></h3>
         </Link>
         </>
     )

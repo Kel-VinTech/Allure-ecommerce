@@ -1,0 +1,19 @@
+.cart{
+    color: #E9E9E9;
+    font-family: 'Cardo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px; 
+    text-decoration: underline;
+    h3{
+        display: flex;
+        gap: 6px;    
+    }
+}
+@media screen
+ and (min-width:1024px)
+and (max-width:1600px){
+    .cart{
+        font-size: 17px; 
+    }
+}
