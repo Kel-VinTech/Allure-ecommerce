@@ -1,14 +1,17 @@
 import "/src/scss/Navbar.scss";
 import Logo from "../Logo";
+import ProductCart from "../ProductCart";
 
 const NavBar =() => {
     return (
         <div className="navbar row">
+            <div className="logo">
             <Logo />
+            </div>
             <nav className="nav_links">
             
             </nav>
-            <h2>Cart<span>(2)</span></h2>
+            <ProductCart />
         </div>
     )
 }
