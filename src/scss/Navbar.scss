@@ -26,11 +26,26 @@
                                 font-weight: 600;
                                 
                         }
+                        li a:focus{
+                                text-decoration: underline;    
+                        }
 
                         .sales{
-                                border: 1px solid blue;
                                 border-radius: 50%;
                                 font-size: 18px;
+                        }
+                        .oval {
+                                width: 100px;
+                                height: 45px;
+                                border: 1px solid #E9E9E9;
+                                border-radius: 50%;
+                               position: relative;
+                               display: flex;
+                               justify-content: center;
+                               align-items: center;
+                        }
+                        .oval :focus{
+                                text-decoration: none;  
                         }
                 }
         }
@@ -58,10 +73,23 @@ and (max-width:1600px){
                         }
 
                         .sales{
-                                border: 1px solid blue;
-                                border-radius: 20px;
+                                border-radius: 100%;
+                                padding: 14px;
+                                margin: 10px;
                                 font-weight: 400;
                                 font-size: 20px;
+                                position: relative;;
+                        }
+                        .oval {
+                                width: 100px;
+                                height: 45px;
+                                border: 1px solid #E9E9E9;
+                                ;
+                                border-radius: 50%;
+                               position: relative;
+                               display: flex;
+                               justify-content: center;
+                               align-items: center;
                         }
                 }
         }
