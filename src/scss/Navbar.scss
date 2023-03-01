@@ -2,15 +2,26 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         position: absolute;
         background-color: none;
         gap: 20px;
+
+
+        .secondary_link{
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                gap: 20px;
+        }
 
         .nav_links{
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                
 
                 ul{
                     display: flex;
