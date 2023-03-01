@@ -47,11 +47,22 @@ main{
                 max-width: 500px;
                 color: #292929; 
                 padding-bottom: 40px;
-               
+                
+                    .swiper-images{
+                        overflow: hidden;
+                    }
+
                     img{
                         max-width: 100%;
+                        transition: .5s all ease;
                     }
+
+                    .swiper-images img:hover{
+                      transform: scale(1.5);
+                    }
+
                     
+
                     h3{
                         margin: 10px 0;
                         font-size: 1.4rem;
@@ -76,6 +87,8 @@ main{
                             color: #2F4333;
                         }
                     }
+
+                    
                 
             }
             .swiper-pagination{

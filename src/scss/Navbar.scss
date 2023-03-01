@@ -14,6 +14,10 @@
                 align-items: center;  
                 gap: 20px;
         }
+        .secondary_link svg{
+                font-size: 28px;
+                color: #E9E9E9;
+        }
 
         .nav_links{
                 position: relative;
@@ -24,11 +28,12 @@
                 
 
                 ul{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px;
-                    list-style: none;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: 20px;
+                //     list-style: none;
+
                         li a{
                                 color: #E9E9E9;
                                 text-decoration: none;  
@@ -59,6 +64,9 @@
                                 text-decoration: none;  
                         }
                 }
+                .hambuger{
+                        display: block;
+                }
         }
 }
 
@@ -71,6 +79,11 @@ and (max-width:1600px){
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
+                .secondary_link svg{
+                        font-size: 30px;
+                        color: #E9E9E9;
+                }
 
                 ul{
                     display: flex;
@@ -78,6 +91,7 @@ and (max-width:1600px){
                     align-items: center;
                     gap: 20px;
                     list-style: none;
+
                         li a{
                                 text-decoration: none; 
                                 font-size: 17px;   

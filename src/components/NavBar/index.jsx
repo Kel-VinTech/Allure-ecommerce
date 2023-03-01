@@ -2,7 +2,7 @@ import "/src/scss/Navbar.scss";
 import Logo from "../Logo";
 import ProductCart from "../ProductCart";
 import { Link } from "react-router-dom";
-import { MdSearch } from "react-icons/md";
+import { MdSearch,MdMenu, MdPerson } from "react-icons/md";
 
 const NavBar =() => {
     return (
@@ -20,7 +20,9 @@ const NavBar =() => {
                     <li><Link to="/">About Us</Link></li>
                 </ul>
             </nav>
+            <MdMenu className="hambuger"/>
             <div className="secondary_link">
+                <MdPerson/>
                 <MdSearch />
                 <ProductCart />
             </div>

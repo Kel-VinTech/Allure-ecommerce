@@ -53,7 +53,7 @@ const TopSales = (props) => {
             >
                 {data.map(item => (
                     <SwiperSlide key={item.id} className="single_container">
-                    <div className="swiper-image">
+                    <div className="swiper-images">
                         <img src={item.image} />
                     </div>
                     <h3>{item.title}</h3>

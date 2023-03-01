@@ -5,7 +5,7 @@ const ProductCart = () => {
     return (
        <>
         <Link className="cart" to="#">
-            <h3>Cart<span>(2)</span></h3>
+            <h3>Cart<span>(0)</span></h3>
         </Link>
         </>
     )
