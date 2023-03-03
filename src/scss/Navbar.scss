@@ -27,10 +27,11 @@
                                 text-decoration: none;  
                                 font-family: 'Rubik';
                                 font-style: normal;
-                                font-weight: 600;   
+                                font-weight: 400;   
                         }
                         li a:focus{
-                                text-decoration: underline;    
+                                text-decoration-line: underline; 
+                                font-weight: 600;    
                         }
 
                         .sales{

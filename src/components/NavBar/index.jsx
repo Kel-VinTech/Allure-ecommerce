@@ -19,7 +19,7 @@ const NavBar =() => {
         backgroundColor: "#f1f5f2;"
     }
     const colorPage={
-        color: "#292929",
+        color: "#292929"
     }
     return (
 
@@ -58,10 +58,15 @@ const NavBar =() => {
                 
             </nav>
            
-            <div className="secondary_link">
-                <MdPerson/>
-                <MdSearch />
-                <ProductCart />
+            <div className="secondary_link"
+            >
+                <MdPerson
+                style={{color: isHome ? '#E9E9E9': '#292929'}}
+                />
+                <MdSearch
+                style={{color: isHome ? '#E9E9E9': '#292929'}} />
+                <ProductCart
+                />
                 <button className="nav-links-mobile" onClick={() => setMobile(!Mobile)}>
                     {Mobile? "yes": <MdMenu />}
                 </button>
