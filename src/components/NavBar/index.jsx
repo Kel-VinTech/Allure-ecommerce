@@ -16,7 +16,8 @@ const NavBar =() => {
     }
     const otherPage = {
         position: 'relative',
-        backgroundColor: "#f1f5f2;"
+        backgroundColor: "#f1f5f2",
+        bottom: "40%",
     }
     const colorPage={
         color: "#292929"
