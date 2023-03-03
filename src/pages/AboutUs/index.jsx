@@ -1,4 +1,4 @@
-import data from '/src/data/AboutUs.js';
+
 import "/src/scss/AboutUs.scss";
 import image1 from "/src/assets/images/Rectangle 48.png"
 import image2 from "/src/assets/images/Rectangle 49.png"
@@ -8,8 +8,8 @@ const AboutUs = ( props) => {
 
     return (
         <main>
-            <div className="about_container">
-            <div className="single-item row">
+            <div className="about_container row">
+            <div className="single-item">
                     <div className="about-image">
                         <img src={image1} alt="" />
                     </div>
@@ -22,12 +22,10 @@ const AboutUs = ( props) => {
                         <p className="message">
                         We recognise nature as bold and full of surprises,but we also saw that “natural beauty” brands were predictable and flat. So with our deliberate use of minimal colours, Art Deco grandeur, and modern aesthetics, 
                         we are unveiling what is actually ‘natural’ in beauty ;which are power,intrigue, and a bit of whimsy too.
-
-                            </p>
+                         </p>
                     </div>
                 </div>
                 <div className="single-item row">
-                    
                     <div className="about-text">
                         <h3>OUR PHILOSOPHY</h3>
                         <p className="text">
@@ -58,7 +56,7 @@ const AboutUs = ( props) => {
                         <p className="message">There is good news. The right skin care from Allure can improve how your skin feels — and looks.</p>
                     </div>
                 </div>
-                <div key={props.id} className="single-item row">
+                <div key={props.id} className="single-item row ">
                     <div className="about-text">
                         <p className="message">
                          Our high-performance skin care line helps you achieve a healthy, 
@@ -72,7 +70,7 @@ const AboutUs = ( props) => {
 
                         </p>
                     </div>
-                    <div className="about-image">
+                    <div className="about-image right-pt ">
                         <img src={image4} alt="" />
                     </div>
                 </div>

@@ -4,7 +4,6 @@ import ProductCart from "../ProductCart";
 import { Link ,useLocation} from "react-router-dom";
 import { MdSearch,MdMenu, MdPerson } from "react-icons/md";
 import { useState } from "react";
-import { color } from "@chakra-ui/react";
 
 const NavBar =() => {
     const [Mobile, setMobile] = useState(false) 
@@ -12,21 +11,24 @@ const NavBar =() => {
     const isHome = location.pathname === '/';
     const isAbout = location.pathname === '/about';
     const homeStyle ={
-        position: 'absolute',
+        position: isHome? "absolute" : isAbout ? "relative": "absolute",
+        backgroundColor:isHome? "" : "#f1f5f2",
+        color:isHome ? "" : "#292929"
     }
-    const otherPage = {
-        position: 'relative',
-        backgroundColor: "#f1f5f2",
-        bottom: "40%",
-    }
-    const colorPage={
-        color: "#292929"
-    }
+    // }
+    // const otherPage = {
+    //     position: 'relative',
+    //     backgroundColor: "#f1f5f2",
+    //     bottom: "40%",
+    // }
+    // const colorPage={
+    //     color: "#292929"
+    // }
     return (
 
         
         <div className="navbar row"
-        style={{position: isHome ? 'homeStyle' :  'otherPage' }}
+        style={homeStyle}
         >
             <Logo 
             

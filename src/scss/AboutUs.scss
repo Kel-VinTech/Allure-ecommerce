@@ -1,5 +1,5 @@
 .about_container{
-    width: 100%;
+    width: 90%;
     position: relative;
     padding:8rem 0;
     
@@ -7,17 +7,16 @@
     .single-item{
         display: flex;
         justify-content: center;
-        flex-direction: column-reverse;
         align-items: center;  
         
         img{
-            max-width: 100%;
+            max-width: 80%;
         }
     }
     .about-text{
         display: flex;
         flex-direction: column;
-        width: 63%;
+        // width: 63%;
     }
 }
 
@@ -28,21 +27,22 @@ and (max-width:1600px){
     .about_container{
         width: 100%;
         position: relative;
-        padding:10rem 0;
-        
+        padding:2rem 0;
     
         .single-item{
             display: flex;
-            justify-content: center;
-            gap: 70px;
-            align-items: center;    
+            justify-content: space-evenly;
+            gap: 80px;
+            align-items: center;
+            
+            
         }
         .about-text{
             display: flex;
             flex-direction: column;
-            width: 45%;
             font-family: 'Rubik';
                 font-style: normal;
+                width: 40%;
 
 
             h3{
