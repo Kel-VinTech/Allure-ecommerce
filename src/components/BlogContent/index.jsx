@@ -12,8 +12,8 @@ import 'swiper/scss/pagination';
 const BlogContent = (props) => {
    
     return (
-        <main className="row">
-          <div className="blog_content">
+        <main id="#blog" className="row">
+          <div id="#blog" className="blog_content">
             <div className="blog_content1 row">
                 <div className="heading">
                     <h1 className="heading_text">Allure’s Blog</h1>

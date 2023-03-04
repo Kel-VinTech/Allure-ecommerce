@@ -1,7 +1,7 @@
 import "/src/scss/Navbar.scss";
 import Logo from "../Logo";
 import ProductCart from "../ProductCart";
-import { Link ,useLocation} from "react-router-dom";
+import { NavLink ,useLocation} from "react-router-dom";
 import { MdSearch,MdMenu, MdPerson } from "react-icons/md";
 import { useState } from "react";
 
@@ -11,52 +11,44 @@ const NavBar =() => {
     const isHome = location.pathname === '/';
     const isAbout = location.pathname === '/about';
     const homeStyle ={
-        position: isHome? "absolute" : isAbout ? "relative": "absolute",
+        position: isHome? "absolute" :  "relative",
         backgroundColor:isHome? "" : "#f1f5f2",
-        color:isHome ? "" : "#292929"
+        color: isHome ? "" : "blue" 
     }
-    // }
-    // const otherPage = {
-    //     position: 'relative',
-    //     backgroundColor: "#f1f5f2",
-    //     bottom: "40%",
-    // }
-    // const colorPage={
-    //     color: "#292929"
-    // }
+  
     return (
 
         
         <div className="navbar row"
         style={homeStyle}
         >
-            <Logo 
-            
-            />
+            <Logo />
             <nav className={Mobile? "nav-links-mobile" : "nav_links"}
             onClick={() => setMobile(false)}
             >
                 <ul>
-                    <li ><Link className="active-link" to="/"
+                    <li ><NavLink activeClassName="active-home" to="/"
                     style={{color: isHome ? '#E9E9E9': '#292929'}}
-                    >Home</Link></li>
-                    <li><Link to="/"
-                    style={{color: isHome ? '#E9E9E9': '#292929'}}>Products</Link></li>
+                    >Home</NavLink></li>
+
+                    <li><NavLink activeClassName="active-pages" to="/"
+                    style={{color: isHome ? '#E9E9E9': '#292929'}}>Products</NavLink></li>
                     
                         <div className="oval"
                         style={{borderColor: isHome ? '#E9E9E9': '#292929'}}
                         >
-                        <li><Link 
+                        <li><NavLink activeClassName="active-pages" 
                         style={{color: isHome ? '#E9E9E9': '#292929'}}
                         className="sales"
-                         to="/">SALES</Link></li>
+                         to="/">SALES</NavLink></li>
                         </div>
-                    <li><Link 
+                    <li><NavLink  activeClassName="active-pages"
                     style={{color: isHome ? '#E9E9E9': '#292929'}}
-                    to="/">Blog</Link></li>
-                    <li><Link
+                    to="#blog">Blog</NavLink></li>
+
+                    <li><NavLink activeClassName="active-about"
                     style={{color: isHome ? '#E9E9E9': '#292929'}}
-                    to="/about">About Us</Link></li>
+                    to="/about">About Us</NavLink></li>
                 </ul>
                 
             </nav>
