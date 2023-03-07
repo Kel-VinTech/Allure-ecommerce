@@ -1,7 +1,8 @@
 import React from 'react'
 import{
 NavBar,
- Footer
+ Footer,
+ BlogContent
 } from "../src/components";
 import {
   Home,
@@ -17,6 +18,7 @@ function App() {
       <NavBar />
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='/blog' element={<BlogContent />}/>
           <Route path='/about' element={<AboutUs />}/>
         </Routes>
         <Footer />

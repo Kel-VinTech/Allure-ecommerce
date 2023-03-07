@@ -1,0 +1,81 @@
+// large screen
+nav{
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 1.5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar li a:hover{
+    color: aqua;
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+.mobile-display{
+    display: none;
+}
+
+@media (max-width:768px){
+    nav{
+        .navbar{
+            display: none;
+        }
+        .nav-link-mobile{
+            position: fixed;
+            display: block;
+            list-style: none;
+            background-color: red;
+            top: 14%;
+            right: 0px;
+            width: 300px;
+            height: 100vh;
+            z-index: 1;
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            transition: .5s ease-in-out;
+
+        }
+        
+        ul li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:3rem 1rem;
+
+        }
+        
+        .mobile-display{
+            position: absolute;
+            display: block;
+            right: 20px;
+        }
+    }
+    }
