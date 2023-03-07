@@ -1,7 +1,7 @@
 // large screen
 nav{
     display:flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     top:0;
@@ -22,22 +22,48 @@ nav{
     position: relative;
 }
 
-#navbar li a{
-    text-decoration: none;
+.navbar li a{
+    color: #E9E9E9;
+    text-decoration: none;  
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;  
+    font-size: 17px; 
+
+}
+.navbar  li a:focus{
+    text-decoration-line: underline; 
+    font-weight: 600;    
+}
+
+// .navbar li a:hover{
+//     color: aqua;
+// }
+
+.sales{
+    border-radius: 100%;
+    padding: 14px;
+    margin: 10px;
+    font-weight: 400;
     font-size: 20px;
-    color: #fff;
+    position: relative;;
 }
 
-.navbar li a:hover{
-    color: aqua;
+.oval {
+    width: 100px;
+    height: 45px;
+    border: 1px solid #E9E9E9;
+    border-radius: 50%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-button{
-    border: none;
-    background: none;
-    font-size: 30px;
-    color: #fff;
+.oval :focus{
+    text-decoration: none;  
 }
+
 
 .mobile-display{
     display: none;
@@ -48,18 +74,19 @@ button{
         .navbar{
             display: none;
         }
+
         .nav-link-mobile{
             position: fixed;
             display: block;
             list-style: none;
-            background-color: red;
-            top: 14%;
+            background: #f1f5f2;
+            top: 10%;
             right: 0px;
-            width: 300px;
+            width: 83%;
             height: 100vh;
             z-index: 1;
             box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-            transition: .5s ease-in-out;
+            transition: .3s ease-in-out;
 
         }
         
@@ -73,9 +100,21 @@ button{
         }
         
         .mobile-display{
-            position: absolute;
             display: block;
-            right: 20px;
+            align-items: center;
+        }
+
+        .secondary_link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            font-size: 20px;
+            border: none;
+            background: none;
+            color: #292929;
         }
     }
     }

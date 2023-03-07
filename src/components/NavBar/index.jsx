@@ -8,42 +8,62 @@ import { useState } from "react";
 const NavBar =() => {
     const [mobile, setMobile] = useState(false) 
 
-    // const location = useLocation();
-    // const isHome = location.pathname === '/';
-    // const isAbout = location.pathname === '/about';
-    // const homeStyle ={
-    //     position: isHome? "absolute" :  "relative",
-    //     backgroundColor:isHome? "" : "#f1f5f2",
-    //     color: isHome ? "" : "blue" 
-    // }
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+    const isAbout = location.pathname === '/about';
+    const homeStyle ={
+        position: isHome? "absolute" :  "relative",
+        backgroundColor:isHome? "" : "#f1f5f2",
+        color: isHome ? "" : "blue" 
+    }
   
     return (
         <div>
-            <nav>
+            <nav className="row"
+            style={homeStyle}
+            >
                 <Logo />
                 <div>
                     <ul className={mobile? "nav-link-mobile" : "navbar"}
                     onClick={()=> setMobile(false)}
                     >
                         <li>
-                            <NavLink  to="/">Home</NavLink>
+                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/">
+                                Home
+                            </NavLink>
                         </li>
 
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/">
+                                Products
+                            </NavLink>
+                        </li>
+
+                        <div className="oval"
+                        style={{borderColor: isHome ? '#E9E9E9': '#292929'}}
+                        >   
+                            <li>
+                                    <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/"
+                                    className="sales">
+                                    SALE
+                                    </NavLink>
+                            </li>
+                        </div>
+                        <li>
+                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="blog">
+                            Blog
+                            </NavLink>
                         </li>
 
                         <li>
-                            <NavLink to="/">Home</NavLink>
-                        </li>
-
-                        <li>
-                            <NavLink  to="/">Home</NavLink>
+                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/about">
+                                About Us
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
 
-                <div className="secondary">
+                <div className="secondary_link ">
                     <NavLink  to="/">Home</NavLink>
                     <NavLink to="/">Home</NavLink>
 
