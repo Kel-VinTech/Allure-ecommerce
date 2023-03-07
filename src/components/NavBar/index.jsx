@@ -2,7 +2,9 @@ import "/src/scss/Nav.scss";
 import Logo from "../Logo";
 import ProductCart from "../ProductCart";
 import { NavLink ,useLocation} from "react-router-dom";
-import { MdSearch,MdMenu, MdPerson } from "react-icons/md";
+import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
+import {FiSearch,FiUser }from "react-icons/fi"
+import {BsCart4}from "react-icons/bs"
 import { useState } from "react";
 
 const NavBar =() => {
@@ -16,6 +18,11 @@ const NavBar =() => {
         backgroundColor:isHome? "" : "#f1f5f2",
         color: isHome ? "" : "blue" 
     }
+
+    const NavColor = {
+        color: mobile? "#292929" : isHome ? "#E9E9E9" : "#292929" ,
+        borderColor:mobile? "#292929": isHome ? '#E9E9E9': '#292929'
+    }
   
     return (
         <div>
@@ -28,35 +35,36 @@ const NavBar =() => {
                     onClick={()=> setMobile(false)}
                     >
                         <li>
-                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/">
+                            <NavLink style={NavColor} to="/"
+                            >
                                 Home
                             </NavLink>
                         </li>
 
                         <li>
-                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/">
+                            <NavLink style={NavColor} to="/">
                                 Products
                             </NavLink>
                         </li>
 
                         <div className="oval"
-                        style={{borderColor: isHome ? '#E9E9E9': '#292929'}}
+                        style={NavColor}
                         >   
                             <li>
-                                    <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/"
+                                    <NavLink style={NavColor} to="/"
                                     className="sales">
                                     SALE
                                     </NavLink>
                             </li>
                         </div>
                         <li>
-                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="blog">
+                            <NavLink style={NavColor} to="blog">
                             Blog
                             </NavLink>
                         </li>
 
                         <li>
-                            <NavLink style={{color: isHome ? '#E9E9E9': '#292929'}}to="/about">
+                            <NavLink style={NavColor} to="/about">
                                 About Us
                             </NavLink>
                         </li>
@@ -64,12 +72,21 @@ const NavBar =() => {
                 </div>
 
                 <div className="secondary_link ">
-                    <NavLink  to="/">Home</NavLink>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink  style={NavColor} to="/">
+                    <FiUser/>
+                    </NavLink>
+
+                    <NavLink  style={NavColor} to="/">
+                        <FiSearch/>
+                    </NavLink>
+ 
+                    <NavLink  style={NavColor} to="/">
+                        <BsCart4/><span>(0)</span>
+                    </NavLink>
 
                     <div className="mobile-display">
                         <button onClick={() => setMobile(!mobile)}>
-                            {mobile? "yes " :<MdMenu />}
+                            {mobile? <MdClose /> :<MdMenu />}
                         </button>
                     </div>
                 </div>
