@@ -80,12 +80,12 @@ const NavBar =() => {
                         <FiSearch/>
                     </NavLink>
  
-                    <NavLink  style={NavColor} to="/">
-                        <BsCart4/><span>(0)</span>
+                    <NavLink className="cart" style={NavColor} to="/">
+                        <BsCart4/><span>0</span>
                     </NavLink>
 
                     <div className="mobile-display">
-                        <button onClick={() => setMobile(!mobile)}>
+                        <button  style={NavColor} onClick={() => setMobile(!mobile)}>
                             {mobile? <MdClose /> :<MdMenu />}
                         </button>
                     </div>

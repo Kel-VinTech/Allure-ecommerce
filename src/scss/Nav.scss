@@ -71,7 +71,23 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:8px;
+    gap:17px;
+}
+
+.secondary_link svg{
+    font-size: 23px;
+}
+
+.cart{
+    display: block;
+    margin: 0 auto;
+    padding: 2px 0;
+}
+.cart span{
+    position: absolute;
+    transform: translate(-15px,0);
+    top: 43px;
+   
 }
 
 @media (max-width:768px){
@@ -130,13 +146,33 @@ nav{
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 11px;
+
+            button svg{
+                font-size: 23px;
+            }
         }
+        .secondary_link svg{
+            font-size: 23px;
+        }
+
         button{
-            font-size: 20px;
             border: none;
             background: none;
             color: #292929;
         }
+
+        .cart{
+            display: block;
+            margin: 0 auto;
+            padding: 2px 0;
+        }
+        .cart span{
+            position: absolute;
+            transform: translate(-15px,0);
+            top: 18px;
+           
+        }
+        
     }
     }
