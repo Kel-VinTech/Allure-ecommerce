@@ -42,7 +42,7 @@ const NavBar =() => {
                         </li>
 
                         <li>
-                            <NavLink style={NavColor} to="/">
+                            <NavLink style={NavColor} to="/products">
                                 Products
                             </NavLink>
                         </li>
