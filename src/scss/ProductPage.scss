@@ -1,6 +1,68 @@
 .product_store{
     width: 100%;
     position: relative;
-    padding:3rem 0;
     background: #f1f5f2;
+    max-width: 100%;
+}
+
+.product-shop{
+    display: flex;
+    justify-content: center;
+    padding:0 3rem;
+}
+
+aside{
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    font-family: 'Rubik';
+    font-style: normal;
+    color:#292929;
+
+
+     a{
+        color:#292929;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+     }
+
+ h2{
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.25rem;
+ }
+
+ .new-release{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 20px;
+ }
+ 
+ .select-category{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 15px;
+
+    .checks > input{
+        margin-bottom: 10px;
+    }
+    .checks > label{
+        padding-left: 7px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+ }
+ .price-category{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+ }
 }
