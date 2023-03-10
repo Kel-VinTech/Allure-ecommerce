@@ -42,7 +42,7 @@ const NavBar =() => {
                         </li>
 
                         <li>
-                            <NavLink style={NavColor} to="/products">
+                            <NavLink style={NavColor} to="/product">
                                 Products
                             </NavLink>
                         </li>
@@ -58,7 +58,7 @@ const NavBar =() => {
                             </li>
                         </div>
                         <li>
-                            <NavLink style={NavColor} to="blog">
+                            <NavLink style={NavColor} to="/blog">
                             Blog
                             </NavLink>
                         </li>

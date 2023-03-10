@@ -4,10 +4,11 @@ NavBar,
  Footer,
  BlogContent
 } from "../src/components";
+
 import {
   Home,
   AboutUs,
-  Products
+  Product
 } from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 import './scss/_reset.scss'
@@ -20,7 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/blog' element={<BlogContent />}/>
-          <Route path='/product' element={<Products />}/>
+          <Route path='/product' element={<Product />}/>
           <Route path='/about' element={<AboutUs />}/>
         </Routes>
         <Footer />

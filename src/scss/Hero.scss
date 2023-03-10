@@ -3,14 +3,16 @@
 
 section{
     font-family: 'Cardo', serif;
-    background: url(../assets/images/HEADER.png) no-repeat center center/cover;
+   
     min-height:100vh;
     max-width:500px;
     width:100%;  
  }
 
 
-
+.hero{
+    background: url(../assets/images/HEADER.png) no-repeat center center/cover;
+}
 .hero-content{
     position: absolute;
     display: flex;
