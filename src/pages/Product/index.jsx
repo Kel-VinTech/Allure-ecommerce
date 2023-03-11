@@ -1,7 +1,19 @@
+import { useState, useEffect } from "react";
 import "/src/scss/ProductPage.scss";
 import { Link } from "react-router-dom";
+import ProductList from "../../components/ProductUI/ProductList";
+import products from '/src/data/products.js';
 
 const Product = () => {
+    const [data, setData] = useState(products)
+
+    useEffect(() => {
+        const filteredProducts = products.filter(
+            (item) => item.category === "moisturizers"
+        );
+
+        setData(filteredProducts)
+    },[]);
     return(
        <section className="product_store">
         <div className="product-shop">
@@ -45,7 +57,7 @@ const Product = () => {
         </aside>
         <main>
             <div className="product-container">
-                <h3>hello</h3>
+                <ProductList data={data} />
             </div>
         </main>
         </div>

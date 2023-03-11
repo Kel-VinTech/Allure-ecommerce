@@ -1,0 +1,43 @@
+.single_product{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img{
+        width: 200px;
+    }
+    .product_content{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        span{
+            margin: 7px 0;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen
+ and (min-width:1024px)
+and (max-width:1600px){
+
+    // .single_product{
+    
+        
+    // }
+
+
+    // css from Product list
+    .store_grid{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 100%;
+    }
+}

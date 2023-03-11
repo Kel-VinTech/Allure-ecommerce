@@ -1,9 +1,17 @@
 import ProductCard from "./ProductCard"
+import "/src/scss/ProductUI.scss";
 
-const ProductList =() => {
+const ProductList =({data}) => {
+    console.log(data);
     return(
-        <div>
-            <ProductCard />
+        <div className="store_grid">
+            {
+            data.map(item =>(
+               <>
+               <ProductCard item={item} /> 
+               </>
+            ))
+        }
         </div>
     )
 }
