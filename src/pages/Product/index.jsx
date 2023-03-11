@@ -5,6 +5,9 @@ import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
 
 const Product = () => {
+
+    // filter the peducts base on the category
+    
     const [data, setData] = useState(products)
 
     useEffect(() => {
