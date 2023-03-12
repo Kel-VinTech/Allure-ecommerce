@@ -11,14 +11,34 @@
         flex-direction: column;
         text-align: left;
 
+        h3{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000;
+        }
         span{
             margin: 7px 0;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            color: #000;
         }
         a{
             display: flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+
+            p{
+
+            }
         }
     }
 }
@@ -27,11 +47,23 @@
  and (min-width:1024px)
 and (max-width:1600px){
 
-    // .single_product{
+     .single_product{
     
-        
-    // }
+        .product_content{
 
+            h3{
+                font-size:1.1rem;
+            }
+    
+            span{
+                font-size: 1.4rem;
+            }
+            a{
+                font-size: 20px;
+            }
+        }
+     }
+    
 
     // css from Product list
     
