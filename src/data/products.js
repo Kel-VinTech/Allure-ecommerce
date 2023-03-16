@@ -3,9 +3,9 @@ import productImg01 from "/src/assets/images/Rectangle 31.jpg"
 const products = [
     {
       id: "01",
-      productName: "Stone and Beam Westview ",
+      productName: "Revox Vit. C Serum ",
       imgUrl: productImg01,
-      category: "moisturizers",
+      category: "serum",
       price: 193.00,
       shortDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -21,9 +21,9 @@ const products = [
 
     {
     id: "02",
-    productName: "Stone and Beam Westview ",
+    productName: "Revox  Cleanser",
     imgUrl: productImg01,
-    category: "moisturizers",
+    category: "body scrub",
     price: 151.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
