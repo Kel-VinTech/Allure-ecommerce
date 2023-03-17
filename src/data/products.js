@@ -6,7 +6,7 @@ const products = [
       productName: "Revox Vit. C Serum ",
       imgUrl: productImg01,
       category: "serum",
-      price: 193.00,
+      price: 50.00,
       shortDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
       description:
@@ -24,7 +24,7 @@ const products = [
     productName: "Revox  Cleanser",
     imgUrl: productImg01,
     category: "body scrub",
-    price: 151.00,
+    price: 45.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -38,10 +38,10 @@ const products = [
   },
   {
     id: "03",
-    productName: "Stone and Beam Westview ",
+    productName: "Curology Face Cream",
     imgUrl: productImg01,
     category: "moisturizers",
-    price: 159.00,
+    price: 64.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
