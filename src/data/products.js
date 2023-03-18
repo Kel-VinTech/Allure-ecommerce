@@ -55,9 +55,9 @@ const products = [
   },
   {
     id: "04",
-    productName: "Stone and Beam Westview ",
+    productName: "Avant Shower Gel",
     imgUrl: productImg01,
-    category: "moisturizers",
+    category: "glow recipe",
     price: 139.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -89,10 +89,10 @@ const products = [
   },
   {
     id: "06",
-    productName: "Stone and Beam Westview ",
+    productName: "Coco Body Oil",
     imgUrl: productImg01,
-    category: "moisturizers",
-    price: 139.00,
+    category: "body scrub",
+    price: 84.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
