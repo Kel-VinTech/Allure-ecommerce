@@ -106,9 +106,9 @@ const products = [
   },
   {
     id: "07",
-    productName: "Stone and Beam Westview ",
+    productName: "Allie Rosewater",
     imgUrl: productImg01,
-    category: "moisturizers",
+    category: "glow recipe",
     price: 139.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
