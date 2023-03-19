@@ -123,10 +123,10 @@ const products = [
   },
   {
     id: "08",
-    productName: "Stone and Beam Westview ",
+    productName: "Avocado Face Oil ",
     imgUrl: productImg01,
-    category: "moisturizers",
-    price: 139.00,
+    category: "glow recipe",
+    price: 65.00,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
