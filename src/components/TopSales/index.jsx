@@ -7,6 +7,7 @@ import {Pagination} from 'swiper';
 import 'swiper/scss';
 import "swiper/scss/free-mode";
 import 'swiper/scss/pagination';
+import {motion} from "framer-motion"
 
 const TopSales = (props) => {
     return (
@@ -54,7 +55,7 @@ const TopSales = (props) => {
                 {data.map(item => (
                     <SwiperSlide key={item.id} className="single_container">
                     <div className="swiper-images">
-                        <img src={item.image} />
+                        <motion.img whileHover={{scale:0.9}} src={item.image} />
                     </div>
                     <h3>{item.title}</h3>
                     <div className="swiper-prices">
