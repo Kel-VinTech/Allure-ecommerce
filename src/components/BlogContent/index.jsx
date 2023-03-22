@@ -7,6 +7,7 @@ import {Pagination} from 'swiper';
 import 'swiper/scss';
 import "swiper/scss/free-mode";
 import 'swiper/scss/pagination';
+import {motion } from "framer-motion"
 
 
 const BlogContent = (props) => {
@@ -63,7 +64,7 @@ const BlogContent = (props) => {
               {data.map(user => (
                   <SwiperSlide key={user.id} className="single_container">
                     <div className="swiper_image">
-                        <img src={user.image} />
+                        <motion.img whileHover={{scale:0.9}}  src={user.image} />
                     </div>
                   <div className="swiper_text">
                     <h2 className="title">{user.title}</h2>
