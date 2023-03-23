@@ -41,7 +41,7 @@ const PopularContent = () => {
                             <img src={image2}/>
                                     <div className="text">
                                         <span className="title">PHILAE HAIR SERUM</span>
-                                        <span className="price">$60</span>
+                                        <span className="price">$60.00</span>
                                     </div>
                                     <div className="add-link">
                                             <Link to="#">Add to cart <MdEast/> </Link>
@@ -64,7 +64,7 @@ const PopularContent = () => {
                             <img src={image3}/>
                             <div className="text">
                                 <span className="title">ALLEY 2X CLEANSER</span>
-                                <span className="price">$60</span>
+                                <span className="price">$60.00</span>
                             </div>
                             <div className="add-link">
                                     <Link to="#">Add to cart <MdEast/> </Link>
