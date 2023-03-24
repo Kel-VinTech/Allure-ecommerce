@@ -7,6 +7,7 @@ import {FiSearch,FiUser }from "react-icons/fi"
 import {BsCart4}from "react-icons/bs"
 import { useState } from "react";
 
+
 const NavBar =() => {
     const [mobile, setMobile] = useState(false) 
 
@@ -28,6 +29,7 @@ const NavBar =() => {
         <div>
             <nav className="row"
             style={homeStyle}
+           
             >
                 <Logo />
                 <div>

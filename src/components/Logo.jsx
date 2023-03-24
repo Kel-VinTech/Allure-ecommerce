@@ -1,14 +1,17 @@
 import "/src/scss/Logo.scss";
 import { Link ,useLocation} from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Logo = () => {
     const location = useLocation();
     const isHome = location.pathname === '/';
     return (
         <header className="logo">
-            <h1
+            <motion.h1
             style={{color: isHome ? '#E9E9E9': '#292929'}}
-            >ALLURE.</h1>
+            initial={{y:-250}}
+            animate={{y:0}}
+            >ALLURE.</motion.h1>
         </header>
     )
 }
