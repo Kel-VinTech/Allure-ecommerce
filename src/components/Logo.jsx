@@ -9,8 +9,8 @@ const Logo = () => {
         <header className="logo">
             <motion.h1
             style={{color: isHome ? '#E9E9E9': '#292929'}}
-            initial={{y:-250}}
-            animate={{y:0}}
+            initial={{x:-250}}
+            animate={{x:0}}
             >ALLURE.</motion.h1>
         </header>
     )

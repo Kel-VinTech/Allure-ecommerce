@@ -2,17 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MdEast } from "react-icons/md";
 import '/src/scss/Hero.scss'
+import { motion } from "framer-motion"; 
 
 const HeroContent = () => {
     return (
     <section className="hero row"
     >
      
-        <div className="hero-content">
+        <motion.div className="hero-content"
+        initial={{x:-200}}
+        animate={{x:0}}
+        >
             <h1 className="hero-title">Allure : Skin for days</h1>
             <p className="hero-text">Skin care is a science, Allure makes it art. Reduce fine lines & <br/> wrinkles with alpha hydroxy acid skin care products. Say HI to a new found glow routine.</p>
              <button>Shop now</button>
-        </div>
+        </motion.div>
         <div className="products_collection">
            <ul>
                     <li><Link to="#">All</Link></li>
