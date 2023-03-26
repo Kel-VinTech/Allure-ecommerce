@@ -11,31 +11,25 @@ const MainContent = () => {
     return(
         <main className="row main">
             <div className="main-content">
-                <motion.img className="elipse" src={eli7}
-                initial={{x:-300}}
-                animate={{x:0}} />
-                <motion.img className="elipse7" src={eli7}
-                initial={{x:-300}}
-                animate={{x:0}} />
+                <img className="elipse" src={eli7}
+                 />
+                <img className="elipse7" src={eli7}
+                />
                 
                 
                <div className="content-message">
                     <div className="content">
-                        <motion.div className="content-text"
-                        initial={{x:-300}}
-                        animate={{x:0}}>
+                        <div className="content-text">
                         <h4>ABOUT US</h4>
                             <h2>EARTH IS OUR <br/>TRUE SOURCE <br/>OF BEAUTY</h2>
                             <p>Allure is a cosmetic brand of face <br/> oils,body care and wellness products <br/> for all skin types. </p>
-                        </motion.div>
+                        </div>
                     </div>
                     <button>LEARN MORE</button>
-                    <motion.div className="message"
-                    initial={{x:300}}
-                    animate={{x:0}}>
+                    <div className="message">
                         <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
                         <img className="image1" src={image1} />
-                    </motion.div>
+                    </div>
                </div>
             </div>
 
