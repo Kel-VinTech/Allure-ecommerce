@@ -10,7 +10,7 @@ const HeroContent = () => {
     >
      
         <motion.div className="hero-content"
-        initial={{x:-200}}
+        initial={{x:'-100vw'}}
         animate={{x:0}}
         >
             <h1 className="hero-title">Allure : Skin for days</h1>
