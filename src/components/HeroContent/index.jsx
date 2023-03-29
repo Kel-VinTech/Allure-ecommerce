@@ -12,7 +12,7 @@ const HeroContent = () => {
         <motion.div className="hero-content"
         initial={{x:'-100vw'}}
         animate={{x:0}}
-        transition={{delay:0.7}}
+        transition={{delay:0.5}}
         >
             <h1 className="hero-title">Allure : Skin for days</h1>
             <p className="hero-text">Skin care is a science, Allure makes it art. Reduce fine lines & <br/> wrinkles with alpha hydroxy acid skin care products. Say HI to a new found glow routine.</p>
