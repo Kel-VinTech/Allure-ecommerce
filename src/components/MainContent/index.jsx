@@ -17,7 +17,11 @@ const MainContent = () => {
                 />
                 
                 
-               <div className="content-message">
+               <motion.div className="content-message"
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true, amount:0.1}}
+               >
                     <div className="content">
                         <div className="content-text">
                         <h4>ABOUT US</h4>
@@ -30,7 +34,7 @@ const MainContent = () => {
                         <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
                         <img className="image1" src={image1} />
                     </div>
-               </div>
+               </motion.div>
             </div>
 
             <div className="content_2">
