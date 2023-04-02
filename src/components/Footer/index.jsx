@@ -2,6 +2,7 @@ import React from "react";
 import "/src/scss/Footer.scss";
 import { FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 const Footer = () => {
     return(
@@ -23,14 +24,15 @@ const Footer = () => {
                 <div className="foot_container">
                     <div className="foot_2_content">
 
-                        <div className="text">
+                        <motion.div className="text"
+                        init>
                             <h2>ALLURE.</h2>
                             <p className="mess">Skin care is a science, Allure makes it art.
                             <br/>Reduce fine lines & wrinkles with alpha hydroxy acid skin care products.
                             Say HI to a new found glow routine.</p>
                             <p className="copyright">Allurebeauty © 2023. All Rights Reserved.</p>
                             <p className="copyright">Made by - Kelvin.eth</p>
-                        </div>
+                        </motion.div>
                     
                         <hr />
 
