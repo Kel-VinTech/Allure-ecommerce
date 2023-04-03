@@ -25,7 +25,10 @@ const Footer = () => {
                     <div className="foot_2_content">
 
                         <motion.div className="text"
-                        init>
+                        initial={{x:'-100vw'}}
+                        animate={{x:0}}
+                        transition={{delay:0.5}}
+                        >
                             <h2>ALLURE.</h2>
                             <p className="mess">Skin care is a science, Allure makes it art.
                             <br/>Reduce fine lines & wrinkles with alpha hydroxy acid skin care products.
