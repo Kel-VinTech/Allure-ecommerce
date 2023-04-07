@@ -3,6 +3,8 @@ import "/src/scss/ProductPage.scss";
 import { Link } from "react-router-dom";
 import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
+import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
+
 
 const Product = () => {
         const [mobile, setMobile] = useState(false)
@@ -22,13 +24,23 @@ const Product = () => {
        <section className="product_store">
         <div className="heading-txt">
             <h2>Our Collections</h2>
-            <h3>Add filter</h3>
+            <button  onClick={() => setMobile(!mobile)}>
+                            {mobile? 
+                            <h3>Add filter
+                                <MdClose />
+                            </h3> :
+                            <h3>Add filter
+                            <MdMenu />
+                        </h3>}
+            </button>
         </div>
-        <div className="product-shop">
-        <aside className={mobile? "filter-mobile" : "filter"}
-                    onClick={()=> setMobile(false)}
+        <div className="product-shop ">
+        <aside 
+        className={mobile? "filter-aside" : "sidebar"}
+        onClick={()=> setMobile(false)}
             >
-            <h2>
+           <div className="aside_content">
+           <h2>
                 Sort by
             </h2>
             <div className="new-release">
@@ -64,6 +76,7 @@ const Product = () => {
                 <Link to="#">$150.00 - $200.00</Link>
                 <Link to="#">Above $200.00</Link>
             </div>
+           </div>
         </aside>
 
 

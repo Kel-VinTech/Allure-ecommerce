@@ -21,7 +21,7 @@
    }
 }
 
-aside{
+.sidebar{
     padding-right: 30px;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,73 @@ aside{
       }
    }
 
-   aside{
+   .sidebar{
+      display: none;
+   }
+
+   .filter-aside{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background: #f1f5f2;
+      left: 0;
+      width: 90%;
+      height: 100vh;
+      z-index: 1;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      transition: 4s ease-in-out;
+
+      .aside_content{
+         padding: 1rem 1.4rem;
+      }
+      a{
+         color:#292929;
+         text-decoration: none;
+         font-weight: 400;
+         font-size: 1rem;
+      }
+
+      a:focus{
+         text-decoration-line: underline; 
+      }
+
+      h2{
+         font-size: 1.3rem;
+         padding-bottom: 8px;
+         font-weight: 600;
+         font-size: 1.25rem;
+      }
+     
+      .new-release{
+         display: flex;
+         gap: 10px;
+         flex-direction: column;
+         padding-bottom: 20px;
+      }
       
+      .select-category{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         padding-bottom: 15px;
+     
+         .checks > input{
+             margin-bottom: 10px;
+         }
+         .checks > label{
+             padding-left: 7px;
+             font-family: 'Rubik';
+             font-style: normal;
+             font-weight: 400;
+             font-size: 1rem;
+         }
+      }
+      .price-category{
+         display: flex;
+         gap: 10px;
+         flex-direction: column;
+      }
+     
    }
 }
