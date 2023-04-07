@@ -5,10 +5,20 @@
     max-width: 100%;
 }
 
+
 .product-shop{
     display: flex;
     justify-content: center;
     padding:0 3rem;
+}
+
+.heading-txt{
+   text-align: center;
+   padding-bottom:1.5rem;
+
+   h3{
+      visibility: hidden;
+   }
 }
 
 aside{
@@ -68,4 +78,20 @@ aside{
     gap: 10px;
     flex-direction: column;
  }
+}
+
+@media (max-width:768px){
+
+   .heading-txt{
+      text-align: center;
+      padding-bottom:1.5rem;
+   
+      h3{
+         visibility: visible;
+      }
+   }
+
+   aside{
+      
+   }
 }

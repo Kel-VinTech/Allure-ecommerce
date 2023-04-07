@@ -5,8 +5,8 @@ import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
 
 const Product = () => {
-
-    // filter the peducts base on the category
+        const [mobile, setMobile] = useState(false)
+    // filter the products base on the category
     
     const [data, setData] = useState(products)
 
@@ -17,10 +17,17 @@ const Product = () => {
 
         setData(filteredProducts)
     },[]);
+
     return(
        <section className="product_store">
+        <div className="heading-txt">
+            <h2>Our Collections</h2>
+            <h3>Add filter</h3>
+        </div>
         <div className="product-shop">
-        <aside>
+        <aside className={mobile? "filter-mobile" : "filter"}
+                    onClick={()=> setMobile(false)}
+            >
             <h2>
                 Sort by
             </h2>
@@ -58,6 +65,8 @@ const Product = () => {
                 <Link to="#">Above $200.00</Link>
             </div>
         </aside>
+
+
         <main>
             <div className="product-container">
                 <ProductList data={data} />
