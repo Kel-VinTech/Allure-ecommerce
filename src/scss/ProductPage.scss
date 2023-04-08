@@ -16,6 +16,13 @@
    text-align: center;
    padding-bottom:1.5rem;
 
+   h2{
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.7rem;
+   }
+
    .filter-btn{
       display: none;
    }
@@ -86,6 +93,11 @@
       text-align: center;
       padding-bottom:1.5rem;
 
+   h2{
+      font-size: 1.4rem;
+      padding-bottom: 10px;
+   }
+
       .filter{
          display: flex;
          align-items: center;
@@ -103,6 +115,7 @@
          h3{
             font-family: 'Rubik';
             font-style: normal;
+            font-weight: 500;
             font-size: 1rem;
          }
          svg{
