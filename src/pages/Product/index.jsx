@@ -3,7 +3,8 @@ import "/src/scss/ProductPage.scss";
 import { Link } from "react-router-dom";
 import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
-import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
+
+import { MdChevronLeft,MdChevronRight } from "react-icons/md";
 
 
 const Product = () => {
@@ -24,19 +25,20 @@ const Product = () => {
        <section className="product_store">
         <div className="heading-txt">
             <h2>Our Collections</h2>
-            <button  onClick={() => setMobile(!mobile)}>
+            <button className="filter-btn"  onClick={() => setMobile(!mobile)}>
                             {mobile? 
-                            <h3>Add filter
-                                <MdClose />
-                            </h3> :
-                            <h3>Add filter
-                            <MdMenu />
-                        </h3>}
+                            <span className="filter">
+                            <h3>Add filter </h3>
+                            <MdChevronLeft />
+                            </span> :
+                        <span className="filter">
+                        <h3>Add filter
+                        </h3><MdChevronRight /></span>}
             </button>
         </div>
         <div className="product-shop ">
         <aside 
-        className={mobile? "filter-aside" : "sidebar"}
+        className={mobile? "filter-aside active" : "sidebar"}
         onClick={()=> setMobile(false)}
             >
            <div className="aside_content">

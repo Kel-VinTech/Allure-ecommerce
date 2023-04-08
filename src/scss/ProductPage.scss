@@ -16,8 +16,8 @@
    text-align: center;
    padding-bottom:1.5rem;
 
-   h3{
-      visibility: hidden;
+   .filter-btn{
+      display: none;
    }
 }
 
@@ -85,9 +85,29 @@
    .heading-txt{
       text-align: center;
       padding-bottom:1.5rem;
+
+      .filter{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap:2px;
+      }
    
-      h3{
-         visibility: visible;
+      .filter-btn{
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         outline: none;
+         border: none;
+
+         h3{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-size: 1rem;
+         }
+         svg{
+            font-size: 20px;
+         }
       }
    }
 
@@ -96,21 +116,26 @@
    }
 
    .filter-aside{
-      position: fixed;
+      position: absolute;
       display: flex;
       flex-direction: column;
-      list-style: none;
       background: #f1f5f2;
+      font-family: 'Rubik';
+      font-style: normal;
+      color:#2F4333;
+      top: 11%;
       left: 0;
       width: 90%;
       height: 100vh;
       z-index: 1;
       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-      transition: 4s ease-in-out;
+      transition: .8s ease-in-out;
+     
 
       .aside_content{
-         padding: 1rem 1.4rem;
+         padding: 1.3rem 1.4rem;
       }
+
       a{
          color:#292929;
          text-decoration: none;
