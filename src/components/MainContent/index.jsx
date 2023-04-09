@@ -72,18 +72,6 @@ const MainContent = () => {
                 </div>
                 
             </div>
-
-            {/* <div className="content_3">
-                
-                <div className="direction">
-                    <h2>Popular Products</h2>
-                    <div className="direction_icons">
-                        <FaAngleLeft className="direction_icons left"/>
-                        <FaAngleRight className="direction_icons right"/>
-                    </div>
-                    
-                </div>
-            </div> */}
             
         </main>
     )
