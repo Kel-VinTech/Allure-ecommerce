@@ -37,15 +37,15 @@ const MainContent = () => {
             <div className="content_2">
                 <h2>WHY YOU SHOULD CHOOSE ALLURE</h2>
                 <div className="grid_container">
-                    <div>
+                    <div className="row-line">
                         <div className="grid_text">
                             <h3>SKIN HEALTH</h3>
                             <p>Our products contain only natural variants that are essential for your skin, oil and additives contained 
                             in natural skincare have anti-inflammatory effects.</p>
                         </div>
                     </div>
-                    <div></div>
-                    <div>
+                    <div ></div>
+                    <div  className="row-line">
                         <div className="grid_text">
                             <h3>NATURAL INGREDIENTS</h3>
                             <p>Our skincare products are handmade in batches.
@@ -54,7 +54,7 @@ const MainContent = () => {
                     </div>
                     <div></div>
                     <div></div>
-                    <div>
+                    <div  className="row-line">
                         <div className="grid_text">
                             <h3>ORIGINALITY</h3>
                             <p>Our products are unique, original
@@ -62,7 +62,7 @@ const MainContent = () => {
                         </div>
                     </div>
                     <div></div>
-                    <div>
+                    <div  className="row-line">
                         <div className="grid_text">
                         <h3>GENTLE CARE</h3>
                             <p>The products do not only cleanse the skin, but also protects 
