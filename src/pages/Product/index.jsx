@@ -7,9 +7,12 @@ import products from '/src/data/products.js';
 import { MdChevronLeft,MdChevronRight } from "react-icons/md";
 
 
+
+
 const Product = () => {
         const [mobile, setMobile] = useState(false)
     // filter the products base on the category
+
     
     const [data, setData] = useState(products)
 
