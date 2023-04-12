@@ -14,7 +14,8 @@ const ProductCard = ({item}) => {
             productName: item.productName,
             image: item.imgUrl,
             price: item.price,
-        }))
+        }));
+        alert("Product added to cart")
     }
     return (
         <div className="single_product">
