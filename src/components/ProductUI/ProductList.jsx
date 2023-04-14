@@ -5,9 +5,9 @@ const ProductList =({data}) => {
     return(
         <div className="store_grid">
             {
-            data?.map(item,index =>(
+            data?.map((item, index) =>(
                <>
-               <ProductCard item={item} key={index} /> 
+               <ProductCard item={item} key={index}  /> 
                </>
             ))
         }
