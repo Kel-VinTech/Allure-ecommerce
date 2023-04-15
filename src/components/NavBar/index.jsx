@@ -1,14 +1,18 @@
 import "/src/scss/Nav.scss";
 import Logo from "../Logo";
-import ProductCart from "../ProductCart";
 import { NavLink ,useLocation} from "react-router-dom";
 import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
 import {FiSearch,FiUser }from "react-icons/fi"
-import {BsCart4}from "react-icons/bs"
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import {BsCart4}from "react-icons/bs"
 
 
 const NavBar =() => {
+
+    const totalQuantity = useSelector(state => state.cart.totalQty)
+
+
     const [mobile, setMobile] = useState(false) 
 
     const location = useLocation();
@@ -83,7 +87,7 @@ const NavBar =() => {
                     </NavLink>
  
                     <NavLink className="cart" style={NavColor} to="/">
-                        <BsCart4/><span>0</span>
+                        <BsCart4/><span>({totalQuantity})</span>
                     </NavLink>
 
                     <div className="mobile-display">
