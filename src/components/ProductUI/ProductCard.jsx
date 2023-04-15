@@ -2,8 +2,11 @@ import { MdEast } from "react-icons/md";
 import "/src/scss/ProductUI.scss";
 import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
+import { ToastContainer, toast } from 'react-toastify';
+
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
+
 
 const ProductCard = ({item}) => {
     const dispatch = useDispatch()
@@ -15,7 +18,7 @@ const ProductCard = ({item}) => {
             image: item.imgUrl,
             price: item.price,
         }));
-        alert("Product added to cart")
+        toast.success("Product added successfully")
     }
     return (
         <div className="single_product">

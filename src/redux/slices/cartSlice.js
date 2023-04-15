@@ -35,6 +35,7 @@ const cartSlice = createSlice({
 
         console.log(state.totalQty);
         console.log(state.cartItems);
+        console.log(newItem)
     },
   },
 });
