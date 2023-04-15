@@ -82,8 +82,15 @@ nav{
 }
 .cart span{
     position: absolute;
-    transform: translate(-15px,0);
-    top: 44px;
+    transform: translate(-19px,0);
+    top: 38px;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 25px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400; 
 }
 
 @media (max-width:768px){

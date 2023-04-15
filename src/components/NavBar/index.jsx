@@ -87,7 +87,7 @@ const NavBar =() => {
                     </NavLink>
  
                     <NavLink className="cart" style={NavColor} to="/">
-                        <BsCart4/><span>({totalQuantity})</span>
+                        <BsCart4/><span className="cart_items">{totalQuantity}</span>
                     </NavLink>
 
                     <div className="mobile-display">
