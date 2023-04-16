@@ -87,7 +87,10 @@ const Product = () => {
 
         <main>
             <div className="product-container">
-                <ProductList data={data} />
+                {
+                    data.length === 0? <h1>No products found!</h1>
+                    : <ProductList data={data} />
+                }
             </div>
         </main>
         </div>
