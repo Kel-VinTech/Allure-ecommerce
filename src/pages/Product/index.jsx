@@ -11,18 +11,21 @@ import { MdChevronLeft,MdChevronRight } from "react-icons/md";
 
 const Product = () => {
         const [mobile, setMobile] = useState(false)
-    // filter the products base on the category
-
     
     const [data, setData] = useState(products)
+    // filter the products base on the category
 
-    useEffect(() => {
-        const filteredProducts = products.filter(
-            (item) => item.category === "moisturizers"
-        );
+    const handleFilter = (e) => {
+        const filterValue = e.target.checked;
+        if(filterValue === "moisturizers") {
+            const filteredProducts = products.filter(
+                (item) => item.category === "moisturizers"
+                );
 
-        setData(filteredProducts)
-    },[]);
+            setData(filteredProducts);
+        }
+    };
+
 
     return(
        <section className="product_store">
@@ -39,7 +42,7 @@ const Product = () => {
                         </h3><MdChevronRight /></span>}
             </button>
         </div>
-        <div className="product-shop ">
+        <div  className="product-shop ">
         <aside 
         className={mobile? "filter-aside active" : "sidebar"}
         onClick={()=> setMobile(false)}
@@ -61,15 +64,15 @@ const Product = () => {
             </div>
             <div className="select-category">
                 <h2>Category</h2>
-                <div className="checks">
+                <div onClick={handleFilter} className="checks">
                     <input type="checkbox" name="scrub" id="scrub" />
                     <label htmlFor="scrub">Body scrubs</label><br/>
                     <input type="checkbox" name="Lip" id="Lip" />
                     <label htmlFor="Lip">Lip care</label><br/>
                     <input type="checkbox" name="Glow" id="Glow" />
                     <label htmlFor="Glow">Glow recipe</label><br/>
-                    <input type="checkbox" name="body scrub" id="" />
-                    <label htmlFor="scrub">Moisturizers</label><br/>
+                    <input type="checkbox" onChange={handleFilter} id="moisturizers"/>
+                    <label htmlFor="moisturizers">Moisturizers</label><br/>
                 </div>
             </div>
 
