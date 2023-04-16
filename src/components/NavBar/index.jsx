@@ -24,6 +24,11 @@ const NavBar =() => {
         color: isHome ? "" : "blue" 
     }
 
+    const cartBg = {
+        backgroundColor: isHome? "#fff": "#2F4333",
+        color: isHome? "#000" : "#fff"
+    }
+
     const NavColor = {
         color: mobile? "#292929" : isHome ? "#E9E9E9" : "#292929" ,
         borderColor:mobile? "#292929": isHome ? '#E9E9E9': '#292929'
@@ -87,7 +92,7 @@ const NavBar =() => {
                     </NavLink>
  
                     <NavLink className="cart" style={NavColor} to="/">
-                        <BsCart4/><span className="cart_items">{totalQuantity}</span>
+                        <BsCart4/><span style={cartBg} className="cart_items">{totalQuantity}</span>
                     </NavLink>
 
                     <div className="mobile-display">
