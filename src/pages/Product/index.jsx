@@ -15,20 +15,6 @@ const Product = () => {
     const [data, setData] = useState(products)
     // filter the products base on the category
 
-    const handleFilter = (e) => {
-        const filterValue = e.target.value;
-        if(filterValue === "moisturizers") {
-            const filteredProducts = products.filter(
-                (item) => item.category === "moisturizers"
-                );
-
-            setData(filteredProducts);
-        }
- 
-        
-    };
-     
-
     return(
        <section className="product_store">
         <div className="heading-txt">
@@ -66,14 +52,44 @@ const Product = () => {
             </div>
             <div className="select-category">
                 <h2>Category</h2>
-                <div onClick={handleFilter} className="checks">
-                    <input type="checkbox" name="scrub" id="scrub" />
+                <div  className="checks">
+                    <input type="checkbox" name="scrub" 
+                        onChange={() => {
+                            const filteredProducts = products.filter(
+                                (item) => item.category === "scrub"
+                                );
+                
+                            setData(filteredProducts);
+                        }}
+                    id="scrub" />
                     <label htmlFor="scrub">Body scrubs</label><br/>
-                    <input type="checkbox" name="Lip" id="Lip" />
+                    <input type="checkbox" name="Lip"
+                        onChange={() => {
+                            const filteredProducts = products.filter(
+                                (item) => item.category === "li["
+                                );
+                
+                            setData(filteredProducts);
+                        }}
+                    id="lip" />
                     <label htmlFor="Lip">Lip care</label><br/>
-                    <input type="checkbox" name="Glow" id="Glow" />
+                    <input type="checkbox" name="glow" 
+                        onChange={() => {
+                            const filteredProducts = products.filter(
+                                (item) => item.category === "glow"
+                                );
+                
+                            setData(filteredProducts);
+                        }}
+                    id="glow" />
                     <label htmlFor="Glow">Glow recipe</label><br/>
-                    <input type="checkbox" onChange={handleFilter} id="moisturizers"/>
+                    <input type="checkbox" onChange={() => {
+                        const filteredProducts = products.filter(
+                            (item) => item.category === "moisturizers"
+                            );
+            
+                        setData(filteredProducts);
+                    }} id="moisturizers"/>
                     <label htmlFor="moisturizers">Moisturizers</label><br/>
                 </div>
             </div>
