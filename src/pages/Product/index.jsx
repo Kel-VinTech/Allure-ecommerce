@@ -16,7 +16,7 @@ const Product = () => {
     // filter the products base on the category
 
     const handleFilter = (e) => {
-        const filterValue = e.target.checked;
+        const filterValue = e.target.value;
         if(filterValue === "moisturizers") {
             const filteredProducts = products.filter(
                 (item) => item.category === "moisturizers"
@@ -24,8 +24,20 @@ const Product = () => {
 
             setData(filteredProducts);
         }
+ 
+        
     };
+     // prices
+    //  const Filterprice = (e) => {
+    //     const filtered = products.filter((product) => product.price < 100);
+    //     setData(filtered);
 
+    //     const filtered2 = products.filter((product) => product.price >= 100 && product.price <= 150);
+    //     setData(filtered2);
+    //   };
+      
+
+      
 
     return(
        <section className="product_store">
@@ -76,13 +88,33 @@ const Product = () => {
                 </div>
             </div>
 
-            <div className="price-category">
+            <div   className="price-category">
                 <h2>Price</h2>
                 <Link to="#">All</Link>
-                <Link to="#">Below $100.00</Link>
-                <Link to="#">$100.00 - $150.00</Link>
-                <Link to="#">$150.00 - $200.00</Link>
-                <Link to="#">Above $200.00</Link>
+                <Link  to="#" 
+                    onClick={() => {
+                        const filtered = products.filter((product) => product.price < 100);
+                        setData(filtered);
+                    }}
+                >Below $100.00</Link>
+                <Link to="#"
+                    onClick={() => {
+                        const filtered = products.filter((product) => product.price >= 100 && product.price <= 150);
+                        setData(filtered);
+                    }}
+                >$100.00 - $150.00</Link>
+                <Link to="#"
+                onClick={() => {
+                    const filtered = products.filter((product) => product.price >= 150 && product.price <= 200);
+                    setData(filtered);
+                }}  
+                >$150.00 - $200.00</Link>
+                <Link to="#"
+                    onClick={() => {
+                        const filtered = products.filter((product) => product.price >= 200);
+                        setData(filtered);
+                    }}
+                >Above $200.00</Link>
             </div>
            </div>
         </aside>
