@@ -27,17 +27,7 @@ const Product = () => {
  
         
     };
-     // prices
-    //  const Filterprice = (e) => {
-    //     const filtered = products.filter((product) => product.price < 100);
-    //     setData(filtered);
-
-    //     const filtered2 = products.filter((product) => product.price >= 100 && product.price <= 150);
-    //     setData(filtered2);
-    //   };
-      
-
-      
+     
 
     return(
        <section className="product_store">
@@ -90,7 +80,12 @@ const Product = () => {
 
             <div   className="price-category">
                 <h2>Price</h2>
-                <Link to="#">All</Link>
+                <Link to="#"
+                    onClick={() => {
+                        const filtered = products.filter((product) => product.price);
+                        setData(filtered);
+                    }}
+                >All</Link>
                 <Link  to="#" 
                     onClick={() => {
                         const filtered = products.filter((product) => product.price < 100);
