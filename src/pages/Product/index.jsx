@@ -40,13 +40,19 @@ const Product = () => {
                 Sort by
             </h2>
             <div className="new-release">
-                <Link to="#" onClick={() => alert("hello")}>
+                <Link to="#">
                    New Release
                 </Link>
-                <Link to="#" onClick={() => alert("hello")}>
+                <Link to="#"  onClick={() => {
+                        const filtered = [...products].sort((a, b) => b.price - a.price);
+                        setData(filtered);
+                    }}>
                     Price : High to Low
                 </Link>
-                <Link to="#" onClick={() => alert("hello")}>
+                <Link to="#" onClick={() => {
+                    const filtered = [...products].sort((a,b) => a.price - b.price);
+                    setData(filtered)
+                }}>
                     Price : Low to High
                 </Link>
             </div>
