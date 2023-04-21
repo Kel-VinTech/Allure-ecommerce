@@ -16,14 +16,25 @@ const Product = () => {
     const [data, setData] = useState(products)
     // filter the products base on the category
 
+    // search
+    const handleSearch = (e) => {
+        const searchValue = e.target.value
+
+        const searchProducts = products.filter(item => item.productName.
+            toLowerCase().includes(searchValue.toLowerCase()))
+
+            setData(searchProducts);
+    }
+
     return(
        <section className="product_store">
         <div className="heading-txt">
             
             <h2>Our Collections</h2>
             <div className="search-container">
-                <input className="search-input" type="text" placeholder="Search..."/>
-                <FiSearch/>
+                <input className="search-input" type="text" placeholder="Search..."
+                onChange={handleSearch}/>
+                <FiSearch />
             </div>
             <button className="filter-btn"  onClick={() => setMobile(!mobile)}>
                             {mobile? 
