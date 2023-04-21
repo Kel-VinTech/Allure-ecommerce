@@ -6,7 +6,6 @@ import {FiUser }from "react-icons/fi"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
-import Search from "../Search";
 
 
 const NavBar =() => {
