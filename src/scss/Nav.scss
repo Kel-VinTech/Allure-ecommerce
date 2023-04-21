@@ -93,16 +93,15 @@ nav{
 
 .search-container {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 3rem;
 }
   
 .search-input {
     position: absolute;
-    top: 40px;
-    right: 0;
-    padding: 0.4rem;
-    width: 200px;
-    border: none;
+    padding: .4rem;
     outline: none;
 }
   
@@ -194,23 +193,5 @@ nav{
            
         }
         
-    }
-    .search-container {
-        position: relative;
-        display: block;
-    }
-      
-    .search-input {
-        position: absolute;
-        top: 40px;
-        right: 0;
-        padding: 0.4rem;
-        width: 200px;
-        border: none;
-        outline: none;
-    }
-      
-    .search-input::placeholder{
-        padding: .3rem;
     }
     }

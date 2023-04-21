@@ -5,6 +5,8 @@ import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
 
 import { MdChevronLeft,MdChevronRight } from "react-icons/md";
+import Search from "../../components/Search";
+import {FiSearch }from "react-icons/fi"
 
 
 
@@ -18,7 +20,12 @@ const Product = () => {
     return(
        <section className="product_store">
         <div className="heading-txt">
+            
             <h2>Our Collections</h2>
+            <div className="search-container">
+            <input className="search-input" type="text" placeholder="Search..."/>
+            <FiSearch/>
+      </div>
             <button className="filter-btn"  onClick={() => setMobile(!mobile)}>
                             {mobile? 
                             <span className="filter">
