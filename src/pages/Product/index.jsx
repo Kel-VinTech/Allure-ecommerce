@@ -23,9 +23,9 @@ const Product = () => {
             
             <h2>Our Collections</h2>
             <div className="search-container">
-            <input className="search-input" type="text" placeholder="Search..."/>
-            <FiSearch/>
-      </div>
+                <input className="search-input" type="text" placeholder="Search..."/>
+                <FiSearch/>
+            </div>
             <button className="filter-btn"  onClick={() => setMobile(!mobile)}>
                             {mobile? 
                             <span className="filter">

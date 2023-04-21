@@ -91,23 +91,7 @@ nav{
     font-weight: 400; 
 }
 
-.search-container {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem 3rem;
-}
-  
-.search-input {
-    position: absolute;
-    padding: .4rem;
-    outline: none;
-}
-  
-.search-input::placeholder{
-    padding: .3rem;
-}
+
 
 @media (max-width:768px){
     nav{
