@@ -2,7 +2,7 @@ import "/src/scss/Nav.scss";
 import Logo from "../Logo";
 import { NavLink ,useLocation} from "react-router-dom";
 import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
-import {FiSearch,FiUser }from "react-icons/fi"
+import {FiUser }from "react-icons/fi"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
