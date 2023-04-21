@@ -91,6 +91,28 @@ nav{
     font-weight: 400; 
 }
 
+
+
+.search-container {
+    position: relative;
+    display: block;
+}
+  
+.search-input {
+    position: absolute;
+    top: 30px;
+    padding: 0.3rem;
+    left: 0;
+    right: 0;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+  
+.search-input::placeholder{
+    padding: .3rem;
+}
+
 @media (max-width:768px){
     nav{
         .navbar{

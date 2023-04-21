@@ -89,7 +89,7 @@ const NavBar =() => {
                     </NavLink>
 
                     <NavLink  style={NavColor} to="/">
-                        {/* <FiSearch/> */}
+                        
                         <Search/>
                     </NavLink>
  

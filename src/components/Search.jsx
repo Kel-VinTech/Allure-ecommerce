@@ -1,9 +1,19 @@
+import "/src/scss/Nav.scss";
+import React, { useState } from 'react';
+import {FiSearch }from "react-icons/fi"
+
 const Search = () => {
+    
+  const [showInput, setShowInput] = useState(false);
+
+  const toggleInput = () => {
+    setShowInput(!showInput);
+  };
     return (
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search..."/>
-            <button id="search-button">Search</button>
-        </div>
+        <div className="search-container">
+        <FiSearch onClick={toggleInput}/>
+        {showInput && <input className="search-input" type="text" placeholder="Search..."/>}
+      </div>
     )
 }
 
