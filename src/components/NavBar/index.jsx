@@ -88,10 +88,6 @@ const NavBar =() => {
                     <FiUser/>
                     </NavLink>
 
-                    <NavLink  style={NavColor} to="/">
-                        
-                        <Search/>
-                    </NavLink>
  
                     <NavLink className="cart" style={NavColor} to="/">
                         <BsCart4/><span style={cartBg} className="cart_items">{totalQuantity}</span>

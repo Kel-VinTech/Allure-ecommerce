@@ -91,8 +91,6 @@ nav{
     font-weight: 400; 
 }
 
-
-
 .search-container {
     position: relative;
     display: block;
@@ -100,10 +98,9 @@ nav{
   
 .search-input {
     position: absolute;
-    top: 30px;
-    padding: 0.3rem;
-    left: 0;
+    top: 40px;
     right: 0;
+    padding: 0.4rem;
     width: 200px;
     border: none;
     outline: none;
@@ -197,5 +194,23 @@ nav{
            
         }
         
+    }
+    .search-container {
+        position: relative;
+        display: block;
+    }
+      
+    .search-input {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        padding: 0.4rem;
+        width: 200px;
+        border: none;
+        outline: none;
+    }
+      
+    .search-input::placeholder{
+        padding: .3rem;
     }
     }
