@@ -2,6 +2,7 @@ import { MdEast } from "react-icons/md";
 import "/src/scss/ProductUI.scss";
 import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
+import ProductDetails from "./ProductDetails";
 import { ToastContainer, toast } from 'react-toastify';
 
 import { useDispatch } from "react-redux";
@@ -26,7 +27,7 @@ const ProductCard = ({item}) => {
                 <motion.img whileHover={{scale:0.9}}  src={item.imgUrl} alt="" />
             </div>
             <div className="product_content">
-                <h3>{item.productName}</h3>
+                <Link to={`/src/pages/Product/index.jsx/${item._id}`}>{item.productName}</Link>
                 <span>${item.price}</span>
                 <Link to="#" onClick={addToCart}>
                     <p>Add to cart</p>

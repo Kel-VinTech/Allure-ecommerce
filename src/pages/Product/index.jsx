@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "/src/scss/ProductPage.scss";
 import { Link } from "react-router-dom";
 import ProductList from "../../components/ProductUI/ProductList";
@@ -11,6 +11,7 @@ import {FiSearch }from "react-icons/fi"
 
 
 const Product = () => {
+    const sortRef = useRef();
         const [mobile, setMobile] = useState(false)
     
     const [data, setData] = useState(products)
