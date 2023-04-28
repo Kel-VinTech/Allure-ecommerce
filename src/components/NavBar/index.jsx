@@ -2,7 +2,7 @@ import "/src/scss/Nav.scss";
 import Logo from "../Logo";
 import { NavLink ,useLocation} from "react-router-dom";
 import { MdSearch,MdMenu, MdPerson,MdClose } from "react-icons/md";
-import {FiUser }from "react-icons/fi"
+import {FiUser,FiSearch }from "react-icons/fi"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
@@ -87,7 +87,9 @@ const NavBar =() => {
                     <FiUser/>
                     </NavLink>
 
- 
+                    <NavLink  style={NavColor} to="#">
+                    <FiSearch />
+                    </NavLink>
                     <NavLink className="cart" style={NavColor} to="/">
                         <BsCart4/><span style={cartBg} className="cart_items">{totalQuantity}</span>
                     </NavLink>
