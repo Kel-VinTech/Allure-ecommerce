@@ -6,6 +6,10 @@ import {FiUser,FiSearch }from "react-icons/fi"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
+import { HashLink as Link} from "react-router-hash-link";
+import{
+     BlogContent
+    } from "/src/components";
 
 
 const NavBar =() => {
@@ -62,16 +66,16 @@ const NavBar =() => {
                         style={NavColor}
                         >   
                             <li>
-                                    <NavLink style={NavColor} to="/"
+                                    <Link smooth style={NavColor} to="#topsales"
                                     className="sales">
                                     SALE
-                                    </NavLink>
+                                    </Link>
                             </li>
                         </div>
                         <li>
-                            <NavLink style={NavColor} to="#blog">
+                            <Link style={NavColor} smooth to="#blog">
                             Blog
-                            </NavLink>
+                            </Link>
                         </li>
 
                         <li>
@@ -83,7 +87,7 @@ const NavBar =() => {
                 </div>
 
                 <div className="secondary_link ">
-                    <NavLink  style={NavColor} to="/">
+                    <NavLink  style={NavColor} to="#">
                     <FiUser/>
                     </NavLink>
 

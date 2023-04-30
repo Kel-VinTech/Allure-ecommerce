@@ -13,7 +13,7 @@ const TopSales = (props) => {
     return (
         <main>
             <div className="sale-content">
-              <div className="heading-container">
+              <div id="topsales" className="heading-container">
                   <h2>Top picks from <s>SALES</s> </h2>
                   <div className="Heading_icon">
                           <div className="directions-icon">
