@@ -40,4 +40,16 @@ and (max-width:1600px){
 
        
     }
+    .cart-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    button{
+       height: 30px;
+        width: 300px;
+        border: none;
+        background: red;
+    }
 }

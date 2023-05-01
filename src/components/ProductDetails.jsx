@@ -27,7 +27,12 @@ const ProductDetails =() =>{
                     </p>
                     <hr />
                 </div>
+                
             </div>
+            <div className="cart-button">
+                    <button>hello</button>
+                    <button>hawayu</button>
+                </div>
         </main>
     )
 }
