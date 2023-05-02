@@ -47,9 +47,10 @@ and (max-width:1600px){
         padding-top: 1.5rem;
     }
     button{
-       height: 30px;
+       height: 35px;
         width: 300px;
         border: none;
         background: red;
+        border-radius: 8px;
     }
 }

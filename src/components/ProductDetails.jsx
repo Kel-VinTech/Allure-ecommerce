@@ -31,7 +31,7 @@ const ProductDetails =() =>{
             </div>
             <div className="cart-button">
                     <button>hello</button>
-                    <button>hawayu</button>
+                    <button>ADD TO CART</button>
                 </div>
         </main>
     )
