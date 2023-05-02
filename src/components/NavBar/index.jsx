@@ -7,9 +7,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
 import { HashLink as Link} from "react-router-hash-link";
-import{
-     BlogContent
-    } from "/src/components";
+
 
 
 const NavBar =() => {

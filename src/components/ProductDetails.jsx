@@ -3,17 +3,13 @@ import products from '/src/data/products.js';
   
 
 const ProductDetails =() =>{
-    const id = useParams();
+    const {id} = useParams();
     const product = products.find((item) => item.id === id);
-
-    const {imgUrl,productName, price, shortDesc, description} = product;
+    // const {productName, imgUrl, price, shortDesc, description} = product
 
     return(
-        <div className="cart_container">
-            <div className="cart_img"></div>
-            <div className="cart_messages">
-
-            </div>
+        <div className="this">
+            <h1>productName</h1>
         </div>
     )
 }

@@ -1,14 +1,16 @@
 import React from 'react'
 import{
 NavBar,
- Footer,
- BlogContent
+ Footer
 } from "../src/components";
+
+import ProductDetails from "./components/ProductDetails";
+
 
 import {
   Home,
   AboutUs,
-  Product
+  Products
 } from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 import './scss/_reset.scss'
@@ -20,7 +22,8 @@ function App() {
       <NavBar />
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/product' element={<Product />}/>
+          <Route path='/product' element={<Products />}/>
+          <Route path='product/:id' element={<ProductDetails/>}/>
           <Route path='/about' element={<AboutUs />}/>
         </Routes>
         <Footer />
