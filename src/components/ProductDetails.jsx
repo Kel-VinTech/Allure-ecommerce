@@ -1,14 +1,19 @@
 import { useParams } from "react-router-dom"
 import products from '/src/data/products.js';
 import "/src/scss/ProductDetails.scss";
+import ProductList from "./ProductUI/ProductList";
   
 
 const ProductDetails =() =>{
     const {id} = useParams();
     const product = products.find(item => item.id === id);
-    const {productName, imgUrl, price, shortDesc, description} = product
+    const {productName, imgUrl, price, shortDesc, description,category} = product
+
+    const relatedProducts = products.filter((item) => item.category === category);
+
 
     return(
+
         <main className="row">
             <div className="cart-container">
                 <div className="cart-image">
@@ -32,7 +37,15 @@ const ProductDetails =() =>{
             <div className="cart-button">
                     <button>hello</button>
                     <button>ADD TO CART</button>
+            </div>
+
+            <div className="cart-related">
+                <h2>Related products</h2>
+                <p>View More</p>
+                <div className="related-content">
+                    <ProductList data={relatedProducts} />
                 </div>
+            </div>
         </main>
     )
 }
