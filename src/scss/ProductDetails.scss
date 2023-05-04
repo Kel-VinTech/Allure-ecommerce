@@ -47,23 +47,36 @@ and (max-width:1600px){
         padding-top: 1.5rem;
     }
     button{
-       height: 35px;
+        height: 40px;
         width: 300px;
         border: none;
-        background: red;
         border-radius: 8px;
+        background: #2F4333;
+        border-radius: 10px;
     }
 
     .cart-related{
         padding-top: 4rem;
         h2{
             text-align: center;
-            padding:1rem 0;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 65px;
+            color: #000000;
         }
         p{
             float: right;
             margin-bottom: 2rem;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 157.9%;
+            color: #2F4333;
         }
+       
         
     }
 }
