@@ -46,10 +46,15 @@ and (max-width:1600px){
         align-items: center;
         padding-top: 1.5rem;
     }
-    button{
+    .cart-button button{
         height: 40px;
         width: 300px;
         border-radius: 10px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 38px;
     }
     .btn-1{
         background: #fff;
@@ -86,4 +91,13 @@ and (max-width:1600px){
        
         
     }
+    .related-content{
+        padding-top: 4rem;
+    }
+
+     .product_content a {
+        display: flex;
+        align-items: center;
+    }
+
 }
