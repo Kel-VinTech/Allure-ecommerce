@@ -1,6 +1,7 @@
 @media screen
  and (min-width:1024px)
 and (max-width:1600px){
+    
     .cart-container{
         img{
             max-width: 300px;
@@ -80,7 +81,6 @@ and (max-width:1600px){
         }
         p{
             float: right;
-            margin-bottom: 2rem;
             font-family: 'Rubik';
             font-style: normal;
             font-weight: 400;
@@ -93,11 +93,10 @@ and (max-width:1600px){
     }
     .related-content{
         padding-top: 4rem;
+        .single_product .product_content .product-dir {
+            visibility: hidden;
+        }
     }
 
-     .product_content a {
-        display: flex;
-        align-items: center;
-    }
 
 }

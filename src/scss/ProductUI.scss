@@ -26,7 +26,15 @@
             font-size: 22px;
             color: #000;
         }
-        a{
+        .product-link{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #2F4333;
+            text-decoration: none;
+        }
+        .product-dir{
             display: flex;
             align-items: center;
             gap: 10px;
@@ -67,8 +75,8 @@ and (max-width:1600px){
             span{
                 font-size: 1.4rem;
             }
-            a{
-                font-size: 0.95rem;
+            .product-dir{
+                font-size: 0.9rem;
             }
         }
      }

@@ -27,9 +27,9 @@ const ProductCard = ({item}) => {
                 <motion.img whileHover={{scale:0.9}}  src={item.imgUrl} alt="" />
             </div>
             <div className="product_content">
-                <Link to={`${item.id}`}>{item.productName}</Link>
+                <Link className="product-link" to={`${item.id}`}>{item.productName}</Link>
                 <span>${item.price}</span>
-                <Link to="#" onClick={addToCart}>
+                <Link className="product-dir" to="#" onClick={addToCart}>
                     <p>Add to cart</p>
                     <MdEast />
                 </Link>

@@ -24,6 +24,7 @@ const NavBar =() => {
         position: isHome? "absolute" :  "relative",
         backgroundColor:isHome? "" : "#f1f5f2",
         color: isHome ? "" : "blue" 
+        
     }
 
     const cartBg = {

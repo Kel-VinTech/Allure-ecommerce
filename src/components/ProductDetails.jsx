@@ -2,15 +2,18 @@ import { useParams } from "react-router-dom"
 import products from '/src/data/products.js';
 import "/src/scss/ProductDetails.scss";
 import ProductList from "./ProductUI/ProductList";
+import { useState } from "react";
   
 
 const ProductDetails =() =>{
+
     const {id} = useParams();
     const product = products.find(item => item.id === id);
     const {productName, imgUrl, price, shortDesc, description,category} = product
 
     const relatedProducts = products.filter((item) => item.category === category);
 
+    const [relatedProduct, setRelatedProduct] = useState(true) 
 
     return(
 
@@ -43,7 +46,9 @@ const ProductDetails =() =>{
                 <h2>Related products</h2>
                 <p>View More</p>
                 <div className="related-content">
-                    <ProductList data={relatedProducts} />
+                    <ProductList data={relatedProducts}
+                    className={relatedProduct? "product-direction" : "" }
+                    />
                 </div>
             </div>
         </main>
