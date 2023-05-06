@@ -1,3 +1,98 @@
+.cart-container{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #292929;
+    font-style: normal;
+
+    .cart-text{
+        text-align: left;
+
+        h1{
+        font-family: 'Cardo';
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 60px;
+    }
+    h3{
+        font-family: 'Baskerville Old Face';
+        font-weight: 400;
+        font-size:1.6rem;
+        line-height: 64px;
+    }
+    
+    p{
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 157.6%;
+        padding: 2rem 0 2rem 0;
+        max-width: 100%;
+    }
+    }
+   
+
+   
+}
+.cart-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+.cart-button button{
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 38px;
+}
+.btn-1{
+    background: #fff;
+    color:#2F4333;
+    border: 1px solid #2F4333;
+}
+.btn-2{
+    background: #2F4333;
+    color: #fff;
+    border: none;
+}
+
+.cart-related{
+    padding-top: 4rem;
+    h2{
+        text-align: center;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 65px;
+        color: #000000;
+    }
+    p{
+        float: right;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 157.9%;
+        color: #2F4333;
+    }
+   
+    
+}
+.related-content{
+    padding-top: 4rem;
+    .single_product .product_content .product-dir {
+        visibility: hidden;
+    }
+}
+
+
 @media screen
  and (min-width:1024px)
 and (max-width:1600px){
@@ -8,6 +103,7 @@ and (max-width:1600px){
         }
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         color: #292929;
         font-style: normal;
         gap: 20%;
@@ -91,12 +187,7 @@ and (max-width:1600px){
        
         
     }
-    .related-content{
-        padding-top: 4rem;
-        .single_product .product_content .product-dir {
-            visibility: hidden;
-        }
-    }
+    
 
 
 }
