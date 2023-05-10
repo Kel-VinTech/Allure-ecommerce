@@ -96,7 +96,11 @@
 @media screen
  and (min-width:550px)
 and (max-width:1024px) {
-
+    .cart-container{
+        img{
+            max-width: 300px;
+        }
+    }
 }
 
 
