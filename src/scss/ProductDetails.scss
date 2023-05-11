@@ -98,8 +98,13 @@
 and (max-width:1024px) {
     .cart-container{
         img{
-            max-width: 300px;
+            max-width: 350px;
         }
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 10%;
     }
 }
 
