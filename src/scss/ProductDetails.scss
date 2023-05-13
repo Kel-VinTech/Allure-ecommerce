@@ -105,6 +105,14 @@ and (max-width:1024px) {
         justify-content: space-between;
         flex-direction: row;
         gap: 10%;
+
+        .cart-text{
+
+            h1{
+            font-size: 2rem;
+            line-height: 68px;
+            }
+        }
     }
 }
 
