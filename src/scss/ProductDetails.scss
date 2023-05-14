@@ -113,6 +113,17 @@ and (max-width:1024px) {
             line-height: 68px;
             }
         }
+
+       
+    }
+
+    .cart-button button{
+        height: 49px;
+        width: 340px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 38px;
     }
 }
 
