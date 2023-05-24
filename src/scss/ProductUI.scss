@@ -61,6 +61,27 @@
 }
 
 @media screen
+ and (min-width:550px)
+and (max-width:1024px){
+    .single_product{
+    
+        .product_content{
+
+            h3{
+                font-size:8rem;
+            }
+    
+            span{
+                font-size: 1.5rem;
+            }
+            .product-dir{
+                font-size: 0.9rem;
+            }
+        }
+     }
+}
+
+@media screen
  and (min-width:1024px)
 and (max-width:1600px){
 
