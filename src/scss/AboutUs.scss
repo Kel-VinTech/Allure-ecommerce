@@ -40,6 +40,54 @@
     }
 }
 
+
+@media screen
+ and (min-width:550px)
+and (max-width:1024px){
+    .about_container{
+        width: 100%;
+        position: relative;
+        padding:2rem 0;
+    
+        .single-item{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 100px;
+            align-items: center;
+            flex-direction: row;
+
+            
+        }
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Rubik';
+                font-style: normal;
+                width: 40%;
+
+
+            h3{
+                font-weight: 400;
+                font-size: 20px;
+                color: #292929;
+            }
+
+            .text{
+                font-weight: 400;
+                font-size: 28px;
+                padding: 20px 0;
+            }
+            .message{
+                font-weight: 300;
+                font-size: 23px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
 @media screen
  and (min-width:1024px)
 and (max-width:1600px){
