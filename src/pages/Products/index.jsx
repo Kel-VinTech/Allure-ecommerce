@@ -5,7 +5,6 @@ import ProductList from "../../components/ProductUI/ProductList";
 import products from '/src/data/products.js';
 
 import { MdChevronLeft,MdChevronRight } from "react-icons/md";
-import {FiSearch }from "react-icons/fi"
 
 
 
