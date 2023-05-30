@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import products from '/src/data/products.js';
 import "/src/scss/ProductDetails.scss";
 import ProductList from "./ProductUI/ProductList";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../redux/slices/cartSlice";
 import { toast } from 'react-toastify';
@@ -11,11 +11,11 @@ const ProductDetails =() =>{
 
     const {id} = useParams();
     const product = products.find(item => item.id === id);
-    const {productName, imgUrl, price, shortDesc, description,category} = product
+
+    const {productName, imgUrl, price, shortDesc, description,category} = product;
 
     const relatedProducts = products.filter((item) => item.category === category);
-
-    const [relatedProduct, setRelatedProduct] = useState(true) 
+ 
 
     const dispatch = useDispatch();
 
@@ -30,6 +30,10 @@ const ProductDetails =() =>{
         toast.success("Product added successfully")
     }
 
+    useEffect(() => {
+      window.scrollTo(0,0)
+    },[product])
+    
     return(
 
         <main className="row">
@@ -62,7 +66,6 @@ const ProductDetails =() =>{
                 <p>View More</p>
                 <div className="related-content">
                     <ProductList data={relatedProducts}
-                    className={relatedProduct? "product-direction" : "" }
                     />
                 </div>
             </div>
