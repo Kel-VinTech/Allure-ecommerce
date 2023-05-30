@@ -3,7 +3,9 @@ import products from '/src/data/products.js';
 import "/src/scss/ProductDetails.scss";
 import ProductList from "./ProductUI/ProductList";
 import { useState } from "react";
-  
+import { useDispatch } from "react-redux";
+import { cartActions } from "../redux/slices/cartSlice";
+import { toast } from 'react-toastify';
 
 const ProductDetails =() =>{
 
@@ -14,6 +16,19 @@ const ProductDetails =() =>{
     const relatedProducts = products.filter((item) => item.category === category);
 
     const [relatedProduct, setRelatedProduct] = useState(true) 
+
+    const dispatch = useDispatch();
+
+    const addToCart = () => {
+        dispatch(cartActions.addItems({
+            id,
+            image: imgUrl,
+            productName,
+            price,
+        })
+        )
+        toast.success("Product added successfully")
+    }
 
     return(
 
@@ -39,7 +54,7 @@ const ProductDetails =() =>{
             </div>
             <div className="cart-button">
                     <button className="btn-1">HELLO</button>
-                    <button className="btn-2">ADD TO CART</button>
+                    <button className="btn-2" onClick={addToCart}>ADD TO CART</button>
             </div>
 
             <div className="cart-related">
