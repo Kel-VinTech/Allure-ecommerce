@@ -31,11 +31,7 @@ const Product = () => {
         <div className="heading-txt">
             
             <h2>Our Collections</h2>
-            {/* <div className="search-container">
-                <input className="search-input" type="text" placeholder="Search..."
-                onChange={handleSearch}/>
-                <FiSearch />
-            </div> */}
+            
             <button className="filter-btn"  onClick={() => setMobile(!mobile)}>
                             {mobile? 
                             <span className="filter">
