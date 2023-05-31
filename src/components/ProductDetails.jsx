@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import products from '/src/data/products.js';
 import "/src/scss/ProductDetails.scss";
 import ProductList from "./ProductUI/ProductList";
-import { useState ,useEffect} from "react";
+import { useEffect} from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../redux/slices/cartSlice";
 import { toast } from 'react-toastify';

@@ -93,7 +93,7 @@ const NavBar =() => {
                     <NavLink  style={NavColor} to="#">
                     <FiSearch />
                     </NavLink>
-                    <NavLink className="cart" style={NavColor} to="/">
+                    <NavLink className="cart" style={NavColor} to="/cart">
                         <BsCart4/><span style={cartBg} className="cart_items">{totalQuantity}</span>
                     </NavLink>
 

@@ -9,6 +9,7 @@ import ProductDetails from "./components/ProductDetails";
 
 import {
   Home,
+  Cart,
   AboutUs,
   Products
 } from "../src/pages"
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/product' element={<Products />}/>
           <Route path='product/:id' element={<ProductDetails/>}/>
+          <Route path='/cart' element={<Cart/>}/>
           <Route path='/about' element={<AboutUs />}/>
         </Routes>
         <Footer />
