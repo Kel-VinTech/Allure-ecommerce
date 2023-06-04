@@ -5,7 +5,9 @@ const Cart = () => {
     return <main>
         <div className="cart">
     <div className="cart-link">
-        <Link to="#"></Link>
+        <Link to="#">Shopping cart</Link>
+        <Link to="#">Shopping cart</Link>
+        <Link to="#">Shopping cart</Link>
     </div>
         </div>
     </main>
