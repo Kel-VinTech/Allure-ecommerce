@@ -1,0 +1,16 @@
+main{
+
+    .cart{
+        padding: 2rem 0;
+
+        .cart-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .a{
+                gap: 20px;
+            }
+        }
+    }
+}

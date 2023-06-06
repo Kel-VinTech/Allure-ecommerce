@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "/src/scss/Cart.scss";
 
 const Cart = () => {
     return <main>
