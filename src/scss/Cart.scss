@@ -7,6 +7,8 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
+            border: 1px solid #000;
 
             .a{
                 gap: 20px;
