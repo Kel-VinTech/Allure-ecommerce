@@ -4,20 +4,26 @@ main{
         padding: 2rem 0;
         position: relative;
 
-        .cart-link{
+        .cart-heading{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            
+
+            .cart-links{
+                display: flex;
+                gap: 20px;
+                padding: 0.5rem 0;
+
+                a{
+                    text-decoration: none;
+                }
+            }
         }
         .cart-line{
             border: 1px solid #000;
-            width: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 25%;
         }
     }
 }
