@@ -27,3 +27,13 @@ main{
         }
     }
 }
+
+
+@media screen
+ and (min-width:550px)
+and (max-width:1024px) {
+  .main {
+    max-width: 100%; 
+  }
+
+}
