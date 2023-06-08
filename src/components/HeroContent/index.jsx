@@ -16,7 +16,7 @@ const HeroContent = () => {
         >
             <h1 className="hero-title">Allure : Skin for days</h1>
             <p className="hero-text">Skin care is a science, Allure makes it art. Reduce fine lines & <br/> wrinkles with alpha hydroxy acid skin care products. Say HI to a new found glow routine.</p>
-             <button>Shop now</button>
+             <Link to="/product">Shop now</Link>
         </motion.div>
         <div className="products_collection">
            <ul>
