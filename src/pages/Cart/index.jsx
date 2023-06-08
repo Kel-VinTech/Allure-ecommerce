@@ -5,11 +5,14 @@ import "/src/scss/Cart.scss";
 const Cart = () => {
     return <main>
         <div className="cart">
-    <div className="cart-link">
-        <Link to="#">Shopping cart</Link>
-        <Link to="#">Shipping details</Link>
-        <Link to="#">Payment details</Link>
-    </div>
+            <div className="cart-link">
+                <div className="links">
+                <Link to="#">Shopping cart</Link>
+                <Link to="#">Shipping details</Link>
+                <Link to="#">Payment details</Link>
+                </div>
+                <div className="cart-line"></div>
+            </div>
         </div>
     </main>
 }

@@ -2,17 +2,22 @@ main{
 
     .cart{
         padding: 2rem 0;
+        position: relative;
 
         .cart-link{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 20px;
+        }
+        .cart-line{
             border: 1px solid #000;
-
-            .a{
-                gap: 20px;
-            }
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
