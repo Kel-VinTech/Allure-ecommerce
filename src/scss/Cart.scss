@@ -25,14 +25,22 @@ main{
                     color: #cccaca;
                     
                 }
+
+                // .cart-line2{
+                //     border: 0.01px solid #292929;
+                //     width: 100%;
+                //     margin-top: 1.3rem;
+                // }
                 
             }
         }
         .cart-line{
             border: 0.01px solid #cccaca;
             width: 30%;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
+
+        
 
         .cart-items{
             display: flex;
@@ -73,7 +81,7 @@ main{
                             font-family: 'Rubik';
                             font-style: normal;
                             font-weight: 500;
-                            font-size: 1.1rem;
+                            font-size: 1.3rem;
                             color: #292929;
                         }
 
@@ -95,6 +103,12 @@ main{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+
+                    i{
+                        color: #888888;
+                        font-size: 2.2rem;
+                        
+                    }
 
                     h2{
                         font-family: "Cardo";

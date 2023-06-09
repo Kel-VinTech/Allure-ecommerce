@@ -5,6 +5,7 @@ import image1 from "/src/assets/images/Rectangle 12.png"
 import { motion } from "framer-motion";
 import { cartActions } from "../../redux/slices/cartSlice";
 import { useSelector,useDispatch } from "react-redux";
+import {TiDeleteOutline} from "react-icons/ti"
 
 
 
@@ -17,7 +18,9 @@ const Cart = () => {
         }
     }
 
-    const cartItems = useSelector(state => state.cart.cartItems)
+    const cartItems = useSelector((state) => state.cart.cartItems)
+    const totalAmount = useSelector((state) => state.cart.totalAmount)
+    const totalQuantity = useSelector(state => state.cart.totalQty)
 
     return <main>
         <div className="cart-check">
@@ -26,7 +29,7 @@ const Cart = () => {
                 <NavLink to="#"
                 style={NavLinkStyle}
                 >Shopping cart
-                <div className="cart-line1"></div>
+                <div className="cart-line2"></div>
                 </NavLink>
                 <NavLink to="checkout"
                 >Shipping details</NavLink>
@@ -55,7 +58,7 @@ const Cart = () => {
                             <div className="checkout-details">
                                 <div className="text">
                                     <p>Products in cart :</p>
-                                    <p className="text-info-right">6 items</p>
+                                    <p className="text-info-right">{totalQuantity} items</p>
                                 </div>
                                 <div className="text">
                                     <p>Shipping :</p>
@@ -63,10 +66,10 @@ const Cart = () => {
                                 </div>
                                 <div className="text">
                                     <p>Total :</p>
-                                    <p className="text-info-right">$114.00</p>
+                                    <p className="text-info-right">${totalAmount}.00</p>
                                 </div>
                             </div>
-                            <Link className="checkout-link" to="#">Proceed to checkout</Link>
+                            <Link className="checkout-link" to="/checkout">Proceed to checkout</Link>
                         </div>
                         </div>  
                     </section>
@@ -80,7 +83,14 @@ const Cart = () => {
 
 
 const Tr = ({item}) => {
+
+    const dispatch = useDispatch();
+
+    const deleteProduct = () => {
+        dispatch(cartActions.deleteItem(item.id))
+    }
     return (
+        
         <section className="cart-section-2" >
             
 
@@ -97,7 +107,10 @@ const Tr = ({item}) => {
                     </div>
                 </div>
                 <div className="items-functions">
-                    <button>delete</button>
+                    <i
+                    ><TiDeleteOutline
+                    onClick={deleteProduct}
+                    /></i>
                     <h2>${item.price}</h2>
                 </div>
 
