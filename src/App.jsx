@@ -11,7 +11,8 @@ import {
   Home,
   Cart,
   AboutUs,
-  Products
+  Products,
+  Checkout
 } from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 import './scss/_reset.scss'
@@ -26,6 +27,8 @@ function App() {
           <Route path='/product' element={<Products />}/>
           <Route path='product/:id' element={<ProductDetails/>}/>
           <Route path='/cart' element={<Cart/>}/>
+            {/* <Route path='checkout' element={<Checkout/>} />
+          </Route> */}
           <Route path='/about' element={<AboutUs />}/>
         </Routes>
         <Footer />

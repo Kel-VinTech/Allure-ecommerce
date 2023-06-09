@@ -65,7 +65,7 @@ const ProductDetails =() =>{
                 <h2>Related products</h2>
                 <p>View More</p>
                 <div className="related-content">
-                    <ProductList data={relatedProducts}
+                    <ProductList  data={relatedProducts}
                     />
                 </div>
             </div>
