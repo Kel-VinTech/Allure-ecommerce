@@ -16,7 +16,7 @@ const ProductCard = ({item}) => {
         dispatch(cartActions.addItems({
             id:item.id,
             productName: item.productName,
-            image: item.imgUrl,
+            imgUrl: item.imgUrl,
             price: item.price,
         }));
         toast.success("Product added successfully")

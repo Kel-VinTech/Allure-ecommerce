@@ -1,17 +1,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
-section{
-    font-family: 'Cardo', serif;
-   
-    min-height:100vh;
-    max-width:500px;
-    width:100%;  
- }
-
+// .hero{
+//     font-family: 'Cardo', serif;
+//     min-height:100vh;
+//     max-width:500px;
+//     width:100%;  
+//  }
 
 .hero{
     background: url(../assets/images/HEADER.png) no-repeat center center/cover;
+    font-family: 'Cardo', serif;
+    min-height:100vh;
+    max-width:100%;
+    width:100%; 
 }
 .hero-content{
     position: absolute;
