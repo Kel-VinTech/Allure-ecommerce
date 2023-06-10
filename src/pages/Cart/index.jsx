@@ -102,7 +102,7 @@ const Tr = ({item}) => {
                         <h2>{item.productName}</h2>
                         <p>Clearamane</p>
                         <p>Size: <span>200ml / 3.3 fl oz</span></p>
-                        <button>1</button>
+                        <span>1</span>
                     </div>
                 </div>
                 <div className="items-functions">
