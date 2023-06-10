@@ -1,8 +1,7 @@
 main{
 
     .cart-check{
-        padding: 2rem 0;
-        min-width: 1200;
+        padding: 1rem 0;
 
         .cart-heading{
             display: flex;
@@ -14,7 +13,7 @@ main{
             .cart-links{
                 display: flex;
                 gap: 20px;
-                padding: 1rem 0;
+                padding: .6rem 0;
 
                 a{
                     text-decoration: none;
