@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink, useLocation,Link } from "react-router-dom";
 import "/src/scss/Cart.scss";
-import image1 from "/src/assets/images/Rectangle 12.png"
 import { motion } from "framer-motion";
 import { cartActions } from "../../redux/slices/cartSlice";
 import { useSelector,useDispatch } from "react-redux";
@@ -24,16 +23,16 @@ const Cart = () => {
 
     return <main>
         <div className="cart-check">
-            <div className="cart-heading">
+            <div className="cart-heading row">
                 <div className="cart-links">
-                <NavLink to="#"
-                style={NavLinkStyle}
-                >Shopping cart
-                <div className="cart-line2"></div>
-                </NavLink>
-                <NavLink to="checkout"
-                >Shipping details</NavLink>
-                <NavLink to="#">Payment details</NavLink>
+                    <NavLink to="#"
+                    style={NavLinkStyle}
+                    >Shopping cart
+                    {/* <div className="cart-line2"></div> */}
+                    </NavLink>
+                    <NavLink to="checkout"
+                    >Shipping details</NavLink>
+                    <NavLink to="#">Payment details</NavLink>
                 
                 </div>
                 <div className="cart-line"></div>               

@@ -1,10 +1,10 @@
 import React from "react";
-import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
 
 import eli7 from '/src/assets/images/Ellipse 8.png';
 import image1 from '/src/assets/images/Rectangle 4.png'
 import "/src/scss/Main.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 const MainContent = () => {
@@ -26,7 +26,7 @@ const MainContent = () => {
                             <p>Allure is a cosmetic brand of face <br/> oils,body care and wellness products <br/> for all skin types. </p>
                         </div>
                     </div>
-                    <button>LEARN MORE</button>
+                    <Link to="/about">LEARN MORE</Link>
                     <div className="message">
                         <p>We are a brand and representation <br/> for everyone  who believes that <br/> beauty does not come from a <br/> snapshot, but from a sequence.</p>
                         <img className="image1" src={image1} />

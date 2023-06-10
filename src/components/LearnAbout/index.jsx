@@ -2,7 +2,7 @@ import data from '/src/data/LearnAbout.js';
 import "/src/scss/LearnAbout.scss";
 
 
-const LearnAbout = (props) => {
+const LearnAbout = () => {
     return (
         <main>
             <h2 className="head-text">Learn about necessities</h2>
