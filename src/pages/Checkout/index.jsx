@@ -8,6 +8,8 @@ import {TiDeleteOutline} from "react-icons/ti"
 const Checkout = () => {
 
     const cartItems = useSelector((state) => state.cart.cartItems)
+    const totalAmount = useSelector((state) => state.cart.totalAmount)
+    const totalQuantity = useSelector(state => state.cart.totalQty)
 
     const NavLinkStyle = ({isActive})=> {
         return {
@@ -73,7 +75,26 @@ const Checkout = () => {
                                 <Tr item={item} key={index} />
                            
                            ))}
+                    <div className="cart-foot-info">
+                        <div className="cart-checkout2">
+                                <div className="checkout-details">
+                                    <div className="text">
+                                        <p>Products in cart :</p>
+                                        <p className="text-info-right">{totalQuantity} items</p>
+                                    </div>
+                                    <div className="text">
+                                        <p>Shipping :</p>
+                                        <p className="text-info-right">$2.50</p>
+                                    </div>
+                                    <div className="text">
+                                        <p>Total :</p>
+                                        <p className="text-info-right">${totalAmount}.00</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
+                
 
             </div>
          </div>
@@ -86,16 +107,16 @@ const Checkout = () => {
 const Tr = ({item}) => {
 
     const dispatch = useDispatch();
+   
 
     const deleteProduct = () => {
         dispatch(cartActions.deleteItem(item.id))
     }
     return (
         
-        <section className="cart-section-2" >
+        <section className="checkout-section" >
             
-
-                <div className="items">
+                <div className="checkout_items">
                 <div className="items-details">
                     <div className="item-image">
                         <img src={item.imgUrl} alt="" />
@@ -116,9 +137,8 @@ const Tr = ({item}) => {
                 </div>
 
                 </div>
-                <div className="cart-line1"></div>
-                
-                                </section>
+                <div className="cart-line1"></div>                  
+        </section>
     )
 }
 

@@ -4,6 +4,7 @@ main{
     
 
         .checkout-details{
+
             display: flex;
             justify-content: space-between;
             gap: 30px;
@@ -18,7 +19,7 @@ main{
                 form{
                     display: flex;
                     flex-direction: column;
-                    width: 85%;
+                    width: 90%;
 
                     label{
                          margin: .7rem 0;
@@ -70,9 +71,112 @@ main{
                 
             }
             .checkout-items{
-                width: 120%;
+                width: 110%;
+
+                .checkout-section{
+
+                    .cart-line1{
+                        border: 0.01px solid #cccaca;
+                        width: 100%;
+                        margin-top:.7rem;
+                    }
+                    .checkout_items{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 1.3rem 0;
+    
+                            .items-details{
+                                display: flex;
+                                gap: 24px;
+                                
+                                img{
+                                    max-width: 120px;
+                                }
+
+                                .item-text{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+            
+                                    h2{
+                                        
+                                        font-family: 'Rubik';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 1.3rem;
+                                        color: #292929;
+                                    }
+            
+                                    p{
+                                        font-family: 'Rubik';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: .8rem;
+                                        color: #888888;
+            
+                                        span{
+                                            color: #292929; 
+                                        }
+                                    }
+                                }
+                            }
+
+                            .items-functions{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+            
+                                i{
+                                    color: #888888;
+                                    font-size: 2rem;
+                                    
+                                }
+            
+                                h2{
+                                    font-family: "Cardo";
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 1.4rem;
+                                    color: #292929;
+                                }
+                            }
+                    }
+                    
+                }
+                
+
+                
+                    .cart-foot-info{
+                        
+                        padding:1.7rem 0;
+
+                        .checkout-details{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+    
+                            .text{
+                                display: flex;
+                                justify-content: space-between;
+    
+                                p{
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    color: #888888;
+                                    font-family: 'Rubik', sans-serif;
+                                    
+                                }
+    
+                                .text-info-right{
+                                    color: #292929;
+                                }
+                            }
+                    }
+                }
             }
         }
-
-    }
+                
+        
+   }
 }
