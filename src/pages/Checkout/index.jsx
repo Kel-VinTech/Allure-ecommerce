@@ -71,7 +71,7 @@ const Checkout = () => {
                         <label htmlFor="checkbox">Get updates about new arrivals & exclusive offers </label>
                     </div>
 
-                    <Link to="#">Proceed to payment</Link>
+                    <button type="submit" to="#">Proceed to payment</button>
                     </form>
                 </div>
                 <div className="checkout-items">

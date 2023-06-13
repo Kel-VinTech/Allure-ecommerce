@@ -12,7 +12,9 @@ import {
   Cart,
   AboutUs,
   Products,
-  Checkout
+  Checkout,
+  SignUp,
+  Login
 } from "../src/pages"
 import { Route, Routes} from "react-router-dom"
 import './scss/_reset.scss'
@@ -29,6 +31,8 @@ function App() {
           <Route path='/cart' element={<Cart/>}/>
             <Route path='checkout' element={<Checkout/>} />
           <Route path='/about' element={<AboutUs />}/>
+          <Route path='signup' element={<SignUp/>} />
+          <Route path='login' element={<Login/>} />
         </Routes>
         <Footer />
     </div>
