@@ -15,7 +15,7 @@ const Login = () => {
                 <h2 className="login-text">Login</h2>
                 <div className="login-details">
                     <form action="#">
-                        <input type="text" name="" id="" placeholder="Enter your email" required 
+                        <input type="email" name="" id="" placeholder="Enter your email" required 
                             value={email} onChange={e => setEmail(e.target.value)}
                         />
                         <input type="text" name="" id="" placeholder="Enter your Password" required

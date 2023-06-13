@@ -30,7 +30,7 @@ const Cart = () => {
                     >Shopping cart
                     <div className="cart-line2"></div>
                     </NavLink>
-                    <NavLink to="/checkout"
+                    <NavLink to="#"
                     >Shipping details</NavLink>
                     <NavLink to="#">Payment details</NavLink>
                 
