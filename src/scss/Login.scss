@@ -1,0 +1,97 @@
+main{
+
+
+    .login-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+
+        .login-text{
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #2f4333;
+                font-family: 'Rubik', sans-serif;
+                margin-bottom: .6rem;
+            
+        }
+
+        .login-details{
+            background: #2f4333;
+            width: 100%;
+            padding: 2rem 1rem;
+
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                
+            
+            
+                input{
+                    padding: .6rem 1rem;
+                    background: #F2F2F2;
+                    border: 0.5px solid #747474;
+                    border-radius: 3px;
+                    width: 94%;
+                    
+                }
+
+                input::placeholder{
+                    color: #888888;
+                    padding: .6rem;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .8rem;
+                }
+
+                input:focus{
+                    outline: none;
+                }
+
+                button{
+                    padding:12px 35px;
+                    border-radius: 3px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    border: none;
+                    color: #2f4333;
+                    background: #fff;
+                    font-family: 'Rubik', sans-serif;
+                    text-decoration: none;
+                    text-align: center;
+                    margin: 1.5rem 0;
+                }
+            }
+
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                    
+                    
+                    color: #fff;
+                    font-family: 'Rubik', sans-serif;
+
+                p{
+                    font-size: .85rem;
+                    font-weight: 400;
+                }
+                a{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

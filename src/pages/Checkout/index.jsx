@@ -19,6 +19,10 @@ const Checkout = () => {
         }
     }
 
+    const validateForm = () => {
+     let x=1;
+    }
+
     return <main>
         <div className="cart-check row">
             <div className="cart-heading">
@@ -39,7 +43,7 @@ const Checkout = () => {
 
             <div className="checkout-details row">
                 <div className="form-details">
-                    <form action="#" method="get">
+                    <form action="#" method="get" >
     
 
                     <label htmlFor="text">Full Name</label>
