@@ -1,0 +1,31 @@
+main{
+    .payment-text{
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+
+            svg{
+                font-size: 1.3rem;
+                color: #747474;
+            }
+
+            p{
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #747474;
+            }
+        }
+    }
+}

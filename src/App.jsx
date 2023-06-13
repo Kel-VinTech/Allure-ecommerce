@@ -13,6 +13,7 @@ import {
   AboutUs,
   Products,
   Checkout,
+  Payment,
   SignUp,
   Login
 } from "../src/pages"
@@ -30,6 +31,7 @@ function App() {
           <Route path='product/:id' element={<ProductDetails/>}/>
           <Route path='/cart' element={<Cart/>}/>
             <Route path='checkout' element={<Checkout/>} />
+            <Route path='payment' element={<Payment/>} />
           <Route path='/about' element={<AboutUs />}/>
           <Route path='signup' element={<SignUp/>} />
           <Route path='login' element={<Login/>} />

@@ -13,15 +13,11 @@ const Checkout = () => {
 
     const NavLinkStyle = ({isActive})=> {
         return {
-            fontWeight: isActive ? "bold" : "normal",
             color : isActive ? "#292929": "",
             
         }
     }
 
-    const validateForm = () => {
-     let x=1;
-    }
 
     return <main>
         <div className="cart-check row">
@@ -36,7 +32,6 @@ const Checkout = () => {
                     <div className="cart-line2"></div>
                     </NavLink>
                     <NavLink to="#">Payment details</NavLink>
-                
                 </div>
                 <div className="cart-line"></div>               
             </div>
