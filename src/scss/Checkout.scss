@@ -22,11 +22,20 @@ main{
 
                     label{
                          margin: .7rem 0;
+                         font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        color: #888888;
                     }
+
+
                     input{
                         width: 100%;
-                        padding: .5rem 0;
-                        
+                        padding: .6rem 0;
+                        background: #F2F2F2;
+                        border: 0.5px solid #747474;
+                        border-radius: 5px;
     
                         ::placeholder{
                             padding: 0 1rem;

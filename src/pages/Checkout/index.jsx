@@ -40,6 +40,7 @@ const Checkout = () => {
                     <form action="" method="get">
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" />
+                    {/* Get updates about new arrivals & exclusive offers */}
                     
                     
                     <label htmlFor="text">Full Name</label>
