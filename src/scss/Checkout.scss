@@ -13,6 +13,7 @@ main{
             .form-details{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 width: 100%;
                 gap: 10px;
 
@@ -20,6 +21,11 @@ main{
                     display: flex;
                     flex-direction: column;
                     width: 90%;
+
+                    .checkbox{
+                        display: flex;
+                        gap: 30px;
+                    }
 
                     label{
                          margin: .7rem 0;
@@ -32,15 +38,23 @@ main{
 
 
                     input{
-                        width: 100%;
-                        padding: .6rem 0;
+                        padding: .6rem 1rem;
                         background: #F2F2F2;
                         border: 0.5px solid #747474;
                         border-radius: 5px;
-    
-                        ::placeholder{
-                            padding: 0 1rem;
-                        }
+                    }
+
+                    input::placeholder{
+                        color: #888888;
+                        padding: .7rem;
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: .8rem;
+                    }
+
+                    input:focus{
+                        outline: none;
                     }
     
                     .location{
@@ -50,6 +64,9 @@ main{
     
                         label{
                             text-align: center;
+                        }
+                        input{
+                            padding: .6rem 1rem;
                         }
                     }
 

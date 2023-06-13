@@ -39,32 +39,37 @@ const Checkout = () => {
 
             <div className="checkout-details row">
                 <div className="form-details">
-                    <form action="" method="get">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" />
-                    {/* Get updates about new arrivals & exclusive offers */}
-                    
-                    
+                    <form action="#" method="get">
+    
+
                     <label htmlFor="text">Full Name</label>
-                    <input type="text" name="text" id="text" />
+                    <input type="text" name="text" id="text" required />
 
                     <label htmlFor="address">Address</label>
-                    <input type="text" name="address" id="address" />
+                    <input type="text" name="address" id="address" required/>
 
                     <label htmlFor="city">City</label>
-                    <input type="text" name="city" id="city" />
+                    <input type="text" name="city" id="city" required />
 
                     <div className="location">
                         <label htmlFor="country">Country</label>
                         <label htmlFor="postal">Postal code</label>
                     </div>
                     <div className="location">
-                        <input type="text" name="country" id="country" />
-                        <input type="text" name="postal" id="postal" />
+                        <input type="text" name="country" id="country" required/>
+                        <input type="text" name="postal" id="postal"  placeholder="001001" required/>
                     </div>
 
                     <label htmlFor="phone" >Phone number</label>
-                    <input type="text" name="phone" id="phone" placeholder="08123456785" />
+                    <input type="text" name="phone" id="phone" placeholder="08123456785" required/>
+
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" id="email"  required/>
+                    
+                    <div className="checkbox">
+                        <input type="checkbox" id="checkbox" required />
+                        <label htmlFor="checkbox">Get updates about new arrivals & exclusive offers </label>
+                    </div>
 
                     <Link to="#">Proceed to payment</Link>
                     </form>
