@@ -28,10 +28,11 @@ const Payment = () => {
                         >Shopping cart
                         </NavLink>
                         <NavLink to="/checkout"
-                        style={NavLinkStyle}
                         >Shipping details
                         </NavLink>
-                        <NavLink to="#">Payment details
+                        <NavLink to="#"
+                         style={NavLinkStyle}
+                        >Payment details
                         <div className="cart-line2"></div></NavLink>
                     </div>
                     <div className="cart-line"></div>               

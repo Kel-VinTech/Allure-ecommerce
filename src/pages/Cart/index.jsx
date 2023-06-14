@@ -11,7 +11,6 @@ import {TiDeleteOutline} from "react-icons/ti"
 const Cart = () => {
     const NavLinkStyle = ({isActive})=> {
         return {
-            fontWeight: isActive ? "bold" : "normal",
             color : isActive ? "#292929": "",
             
         }
