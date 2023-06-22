@@ -5,6 +5,10 @@ import { useSelector,useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
 import {BiLock} from "react-icons/bi"
 
+import carbon from "/src/assets/images/carbon_radio-button-checked.png"
+import master from "/src/assets/images/Mastercard - png 0.png"
+import visa from "/src/assets/images/Visa Inc. - png 0.png"
+
 
 const Payment = () => {
 
@@ -49,15 +53,20 @@ const Payment = () => {
                             <div className="card-details_head">
                                 <div className="logo">
                                     <span>
-                                    <BiLock/>
-                                    <BiLock/>
+                                    <img className="circle_card" src={carbon} alt="" />
+                                    <p>Credit card</p>
                                     </span>
-                                    <span>
-                                    <BiLock/>
-                                    <BiLock/>
-                                    </span>
+                                    <div className="card-images">
+                                        <img className="card_image" src={master} alt="" />
+                                        <img className="card_image" src={visa} alt="" />
+                                    </div>
                                 </div>
-                                <p>Safe money transfer using your bank account;Visa , Mastercard or Verve.</p>
+                                <p className="describe">Safe money transfer using your bank 
+                                account;Visa , Mastercard or Verve.</p>
+
+                                <form action="#">
+                                    
+                                </form>
                             </div>
 
                         </div>
