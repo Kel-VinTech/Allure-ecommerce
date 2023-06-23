@@ -66,8 +66,11 @@ const Checkout = () => {
                     <input type="email" name="email" id="email"  required/>
                     
                     <div className="checkbox">
-                        <input type="checkbox" id="checkbox" required />
-                        <label htmlFor="checkbox">Get updates about new arrivals & exclusive offers </label>
+   
+                        <label htmlFor="checkbox">
+                            <input type="checkbox" id="checkbox" required />
+                            Get updates about new arrivals & exclusive offers
+                         </label>
                     </div>
 
                     <button type="submit" to="#">Proceed to payment</button>

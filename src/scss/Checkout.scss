@@ -1,199 +1,192 @@
-main{
-    .cart-check{
-        padding: 1rem 0;
-    
+main {
+  .cart-check {
+    padding: 1rem 0;
 
-        .checkout-details{
+    .checkout-details {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
 
+      .form-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+
+          .checkbox {
+            display: flex;
+            gap: 30px;
+          }
+
+          label {
+            margin: 0.7rem 0;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #888888;
+          }
+
+          input {
+            padding: 0.6rem 1rem;
+            background: #f2f2f2;
+            border: 0.5px solid #747474;
+            border-radius: 5px;
+          }
+
+          input::placeholder {
+            color: #888888;
+            padding: 0.7rem;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+          }
+
+          input:focus {
+            outline: none;
+          }
+
+          .location {
             display: flex;
             justify-content: space-between;
-            gap: 30px;
+            gap: 10px;
 
+            label {
+              text-align: center;
+            }
+            input {
+              padding: 0.6rem 1rem;
+            }
+          }
 
-            .form-details{
+          button {
+            padding: 12px 35px;
+            border-radius: 3px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            background: #2f4333;
+            color: #fff;
+            font-family: "Rubik", sans-serif;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 1.5rem;
+          }
+        }
+      }
+      .checkout-items {
+        width: 110%;
+
+        .checkout-section {
+          .cart-line1 {
+            border: 0.01px solid #cccaca;
+            width: 100%;
+            margin-top: 0.7rem;
+          }
+          .checkout_items {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.3rem 0;
+
+            .items-details {
+              display: flex;
+              gap: 24px;
+
+              img {
+                max-width: 120px;
+              }
+
+              .item-text {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                gap: 10px;
+                justify-content: space-between;
 
-                form{
-                    display: flex;
-                    flex-direction: column;
-                    width: 90%;
-
-                    .checkbox{
-                        display: flex;
-                        gap: 30px;
-                    }
-
-                    label{
-                         margin: .7rem 0;
-                         font-family: 'Rubik';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 1rem;
-                        color: #888888;
-                    }
-
-
-                    input{
-                        padding: .6rem 1rem;
-                        background: #F2F2F2;
-                        border: 0.5px solid #747474;
-                        border-radius: 5px;
-                    }
-
-                    input::placeholder{
-                        color: #888888;
-                        padding: .7rem;
-                        font-family: 'Rubik';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: .8rem;
-                    }
-
-                    input:focus{
-                        outline: none;
-                    }
-    
-                    .location{
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 10px;
-    
-                        label{
-                            text-align: center;
-                        }
-                        input{
-                            padding: .6rem 1rem;
-                        }
-                    }
-
-                    button{
-                        padding:12px 35px;
-                        border-radius: 3px;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        cursor: pointer;
-                        border: none;
-                        background: #2f4333;
-                        color: #fff;
-                        font-family: 'Rubik', sans-serif;
-                        text-decoration: none;
-                        text-align: center;
-                        margin-top: 1.5rem;
-                    }
+                h2 {
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 1.3rem;
+                  color: #292929;
                 }
-                
+
+                p {
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 0.8rem;
+                  color: #888888;
+
+                  span {
+                    color: #292929;
+                  }
+                }
+              }
             }
-            .checkout-items{
-                width: 110%;
 
-                .checkout-section{
+            .items-functions {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
 
-                    .cart-line1{
-                        border: 0.01px solid #cccaca;
-                        width: 100%;
-                        margin-top:.7rem;
-                    }
-                    .checkout_items{
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 1.3rem 0;
-    
-                            .items-details{
-                                display: flex;
-                                gap: 24px;
-                                
-                                img{
-                                    max-width: 120px;
-                                }
+              i {
+                color: #888888;
+                font-size: 2rem;
+              }
 
-                                .item-text{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-            
-                                    h2{
-                                        
-                                        font-family: 'Rubik';
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: 1.3rem;
-                                        color: #292929;
-                                    }
-            
-                                    p{
-                                        font-family: 'Rubik';
-                                        font-style: normal;
-                                        font-weight: 500;
-                                        font-size: .8rem;
-                                        color: #888888;
-            
-                                        span{
-                                            color: #292929; 
-                                        }
-                                    }
-                                }
-                            }
-
-                            .items-functions{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-            
-                                i{
-                                    color: #888888;
-                                    font-size: 2rem;
-                                    
-                                }
-            
-                                h2{
-                                    font-family: "Cardo";
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 1.4rem;
-                                    color: #292929;
-                                }
-                            }
-                    }
-                    
-                }
-                
-
-                
-                    .cart-foot-info{
-                        
-                        padding:1.7rem 0;
-
-                        .checkout-details{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 20px;
-    
-                            .text{
-                                display: flex;
-                                justify-content: space-between;
-    
-                                p{
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    cursor: pointer;
-                                    color: #888888;
-                                    font-family: 'Rubik', sans-serif;
-                                    
-                                }
-    
-                                .text-info-right{
-                                    color: #292929;
-                                }
-                            }
-                    }
-                }
+              h2 {
+                font-family: "Cardo";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: #292929;
+              }
             }
+          }
         }
-                
-        
-   }
+
+        .cart-foot-info {
+          padding: 1.7rem 0;
+
+          .checkout-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .text {
+              display: flex;
+              justify-content: space-between;
+
+              p {
+                font-size: 1rem;
+                font-weight: 400;
+                cursor: pointer;
+                color: #888888;
+                font-family: "Rubik", sans-serif;
+              }
+
+              .text-info-right {
+                color: #292929;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// media queries for mobile
+
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+  .main {
+    max-width: 100%;
+  }
 }
