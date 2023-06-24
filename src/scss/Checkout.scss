@@ -20,8 +20,11 @@ main {
           width: 90%;
 
           .checkbox {
-            display: flex;
-            gap: 30px;
+            padding-top: 10px;
+
+            input {
+              margin-right: 8px;
+            }
           }
 
           label {
