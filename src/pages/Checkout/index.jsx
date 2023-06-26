@@ -50,14 +50,17 @@ const Checkout = () => {
                     <label htmlFor="city">City</label>
                     <input type="text" name="city" id="city" required />
 
-                    <div className="location">
-                        <label htmlFor="country">Country</label>
-                        <label htmlFor="postal">Postal code</label>
-                    </div>
-                    <div className="location">
-                        <input type="text" name="country" id="country" required/>
-                        <input type="text" name="postal" id="postal"  placeholder="001001" required/>
-                    </div>
+                        <span id="location">
+                            <div className="location">
+                            <label htmlFor="country">Country</label>
+                            <input type="text" name="country" id="country" required/>
+                            
+                        </div>
+                        <div className="location">
+                            <label htmlFor="postal">Postal code</label>
+                            <input type="text" name="postal" id="postal"  placeholder="001001" required/>
+                        </div>
+                    </span>
 
                     <label htmlFor="phone" >Phone number</label>
                     <input type="text" name="phone" id="phone" placeholder="08123456785" required/>

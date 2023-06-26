@@ -56,16 +56,19 @@ main {
             outline: none;
           }
 
-          .location {
+          #location {
             display: flex;
             justify-content: space-between;
-            gap: 10px;
+            padding: 10px 0;
+            width: 100%;
 
             label {
               text-align: center;
+              padding: 5px 0;
             }
             input {
               padding: 0.6rem 1rem;
+              width: 90%;
             }
           }
 
@@ -191,5 +194,20 @@ main {
 @media screen and (min-width: 550px) and (max-width: 1024px) {
   .main {
     max-width: 100%;
+    form {
+      #location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        label {
+          text-align: center;
+        }
+        input {
+          padding: 0.6rem 1rem;
+        }
+      }
+    }
   }
 }
