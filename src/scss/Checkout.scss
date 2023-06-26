@@ -59,6 +59,7 @@ main {
           #location {
             display: flex;
             justify-content: space-between;
+            gap: 18px;
             padding: 10px 0;
             width: 100%;
 
@@ -68,7 +69,7 @@ main {
             }
             input {
               padding: 0.6rem 1rem;
-              width: 90%;
+              width: 100%;
             }
           }
 
@@ -192,22 +193,12 @@ main {
 // media queries for mobile
 
 @media screen and (min-width: 550px) and (max-width: 1024px) {
-  .main {
+  main {
     max-width: 100%;
-    form {
-      #location {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
 
-        label {
-          text-align: center;
-        }
-        input {
-          padding: 0.6rem 1rem;
-        }
-      }
+    .main .cart-check .checkout-details {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

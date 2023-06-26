@@ -23,7 +23,7 @@ const Cart = () => {
     return <main>
         <div className="cart-check row">
             <div className="cart-heading">
-                <div className="cart-links">
+                <div className="cart-links row">
                     <NavLink to="#"
                     style={NavLinkStyle}
                     >Shopping cart
@@ -34,7 +34,7 @@ const Cart = () => {
                     <NavLink to="#">Payment details</NavLink>
                 
                 </div>
-                <div className="cart-line"></div>               
+                {/* <div className="cart-line"></div>                */}
             </div>
 
            <div className="cart-items row">
