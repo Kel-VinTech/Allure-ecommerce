@@ -22,7 +22,7 @@ const Checkout = () => {
     return <main>
         <div className="cart-check row">
             <div className="cart-heading">
-                <div className="cart-links">
+                <div className="cart-links row">
                     <NavLink to="/cart"
                     >Shopping cart
                     </NavLink>
@@ -32,8 +32,7 @@ const Checkout = () => {
                     <div className="cart-line2"></div>
                     </NavLink>
                     <NavLink to="#">Payment details</NavLink>
-                </div>
-                <div className="cart-line"></div>               
+                </div>           
             </div>
 
             <div className="checkout-details row">
