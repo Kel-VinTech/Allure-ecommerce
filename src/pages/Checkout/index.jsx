@@ -78,7 +78,7 @@ const Checkout = () => {
                     <button type="submit" to="#">Proceed to payment</button>
                     </form>
                 </div>
-                <div className="checkout-items">
+                <div className="checkout-items row">
                 {
                             cartItems.map((item, index) => (
                                 <Tr item={item} key={index} />
