@@ -75,7 +75,6 @@ const Checkout = () => {
                          </label>
                     </div>
 
-                    <button type="submit" to="#">Proceed to payment</button>
                     </form>
                 </div>
                 <div className="checkout-items row">
@@ -84,8 +83,15 @@ const Checkout = () => {
                                 <Tr item={item} key={index} />
                            
                            ))}
-                    <div className="cart-foot-info">
+                    
+                </div>
+                
+                
+            </div>
+            <div className="cart-foot-info">
                         <div className="cart-checkout2">
+                        <button type="submit" to="#">Proceed to payment</button>
+
                                 <div className="checkout-details">
                                     <div className="text">
                                         <p>Products in cart :</p>
@@ -102,10 +108,6 @@ const Checkout = () => {
                                 </div>
                         </div>
                     </div>
-                </div>
-                
-
-            </div>
          </div>
     </main>
 }
