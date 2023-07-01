@@ -158,31 +158,30 @@ main {
             }
           }
         }
+      }
+    }
+    .cart-foot-info {
+      padding: 1.7rem 0;
 
-        .cart-foot-info {
-          padding: 1.7rem 0;
+      .checkout-details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
-          .checkout-details {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .text {
+          display: flex;
+          justify-content: space-between;
 
-            .text {
-              display: flex;
-              justify-content: space-between;
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            color: #888888;
+            font-family: "Rubik", sans-serif;
+          }
 
-              p {
-                font-size: 1rem;
-                font-weight: 400;
-                cursor: pointer;
-                color: #888888;
-                font-family: "Rubik", sans-serif;
-              }
-
-              .text-info-right {
-                color: #292929;
-              }
-            }
+          .text-info-right {
+            color: #292929;
           }
         }
       }
