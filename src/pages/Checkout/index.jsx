@@ -20,7 +20,7 @@ const Checkout = () => {
 
 
     return <main>
-        <div className="cart-check">
+        <div className="cart-check row">
             <div className="cart-heading">
                 <div className="cart-links">
                     <NavLink to="/cart"
@@ -77,7 +77,7 @@ const Checkout = () => {
 
                     </form>
                 </div>
-                <div className="checkout-items row">
+                <div className="checkout-items">
                 {
                             cartItems.map((item, index) => (
                                 <Tr item={item} key={index} />
@@ -85,11 +85,10 @@ const Checkout = () => {
                            ))}
                     
                 </div>
-                
-                
             </div>
-            <div className="cart-foot-info row">
-                        <div className="cart-checkout2">
+            
+                <div className="cart-foot-info row">
+                        <div className="cart-checkout2 row">
                         <button type="submit" to="#">Proceed to payment</button>
 
                                 <div className="checkout-details">
