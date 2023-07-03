@@ -20,7 +20,7 @@ const Checkout = () => {
 
 
     return <main>
-        <div className="cart-check row">
+        <div className="cart-check">
             <div className="cart-heading">
                 <div className="cart-links">
                     <NavLink to="/cart"
@@ -86,7 +86,7 @@ const Checkout = () => {
                     
                 </div>
             </div>
-            
+
                 <div className="cart-foot-info row">
                         <div className="cart-checkout2 row">
                         <button type="submit" to="#">Proceed to payment</button>
