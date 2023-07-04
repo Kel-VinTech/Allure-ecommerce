@@ -90,7 +90,7 @@ main {
         }
       }
       .checkout-items {
-        width: 110%;
+        width: 100%;
 
         .checkout-section {
           .cart-line1 {
@@ -195,10 +195,13 @@ main {
   main {
     max-width: 100%;
     .cart-check {
+      .cart-links {
+        padding: 0 1.5rem;
+        width: 100%;
+      }
       .checkout-details {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
       }
     }
   }

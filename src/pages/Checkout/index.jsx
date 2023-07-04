@@ -35,8 +35,8 @@ const Checkout = () => {
                 </div>           
             </div>
 
-            <div className="checkout-details row">
-                <div className="form-details">
+            <div className="checkout-details">
+                <div className="form-details row">
                     <form action="#" method="get" >
     
 
@@ -77,7 +77,7 @@ const Checkout = () => {
 
                     </form>
                 </div>
-                <div className="checkout-items">
+                <div className="checkout-items row">
                 {
                             cartItems.map((item, index) => (
                                 <Tr item={item} key={index} />
@@ -87,7 +87,7 @@ const Checkout = () => {
                 </div>
             </div>
 
-                <div className="cart-foot-info row">
+                <div className="cart-foot-info">
                         <div className="cart-checkout2 row">
                         <button type="submit" to="#">Proceed to payment</button>
 
