@@ -72,21 +72,6 @@ main {
               width: 100%;
             }
           }
-
-          button {
-            padding: 12px 35px;
-            border-radius: 3px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            border: none;
-            background: #2f4333;
-            color: #fff;
-            font-family: "Rubik", sans-serif;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 1.5rem;
-          }
         }
       }
       .checkout-items {
@@ -161,27 +146,41 @@ main {
       }
     }
     .cart-foot-info {
-      padding: 1.7rem 0;
+      padding: 1rem 0;
 
-      .checkout-details {
+      .cart-checkout2 {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        justify-content: space-between;
+        flex-direction: row;
 
-        .text {
+        .pay_button {
+          background: #2f4333;
+          color: #fff;
+          font-family: "Rubik", sans-serif;
+          text-decoration: none;
+          text-align: center;
+        }
+
+        .checkout-details {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
+          gap: 20px;
 
-          p {
-            font-size: 1rem;
-            font-weight: 400;
-            cursor: pointer;
-            color: #888888;
-            font-family: "Rubik", sans-serif;
-          }
+          .text {
+            display: flex;
+            justify-content: space-between;
 
-          .text-info-right {
-            color: #292929;
+            p {
+              font-size: 1rem;
+              font-weight: 400;
+              cursor: pointer;
+              color: #888888;
+              font-family: "Rubik", sans-serif;
+            }
+
+            .text-info-right {
+              color: #292929;
+            }
           }
         }
       }

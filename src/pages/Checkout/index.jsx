@@ -89,7 +89,8 @@ const Checkout = () => {
 
                 <div className="cart-foot-info">
                         <div className="cart-checkout2 row">
-                        <button type="submit" to="#">Proceed to payment</button>
+                        <Link className="pay_button" to="#">Proceed to payment</Link>
+                        
 
                                 <div className="checkout-details">
                                     <div className="text">

@@ -21,9 +21,9 @@ const Cart = () => {
     const totalQuantity = useSelector(state => state.cart.totalQty)
 
     return <main>
-        <div className="cart-check row">
+        <div className="cart-check">
             <div className="cart-heading">
-                <div className="cart-links row">
+                <div className="cart-links">
                     <NavLink to="#"
                     style={NavLinkStyle}
                     >Shopping cart
@@ -67,7 +67,7 @@ const Cart = () => {
                                     <p className="text-info-right">${totalAmount}.00</p>
                                 </div>
                             </div>
-                            <Link className="checkout-link" to="/checkout">Proceed to checkout</Link>
+                            <Link className="checkout_link" to="/checkout">Proceed to checkout</Link>
                         </div>
                         </div>  
                     </section>
