@@ -1,6 +1,6 @@
 main {
   .cart-check {
-    padding: 1rem 0;
+    // padding: 1rem 0;
 
     .checkout-details {
       display: flex;
@@ -145,20 +145,25 @@ main {
         }
       }
     }
-    .cart-foot-info {
-      padding: 1rem 0;
+    .checkout-foot-info {
+      // padding: 1rem 0;
 
-      .cart-checkout2 {
+      .foot-checkout2 {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        flex-direction: row;
 
         .pay_button {
           background: #2f4333;
           color: #fff;
+          padding: 12px 40px;
+          border-radius: 3px;
+          font-size: 1.1rem;
+          font-weight: 500;
+          cursor: pointer;
+          border: none;
           font-family: "Rubik", sans-serif;
           text-decoration: none;
-          text-align: center;
         }
 
         .checkout-details {

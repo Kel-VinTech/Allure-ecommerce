@@ -87,27 +87,28 @@ const Checkout = () => {
                 </div>
             </div>
 
-                <div className="cart-foot-info">
-                        <div className="cart-checkout2 row">
-                        <Link className="pay_button" to="#">Proceed to payment</Link>
-                        
+            <div className="checkout-foot-info">
+                    <div className="foot-checkout2 row">
+                    <Link className="pay_button" to="#">Proceed to payment</Link>
+                    
+                    
 
-                                <div className="checkout-details">
-                                    <div className="text">
-                                        <p>Products in cart :</p>
-                                        <p className="text-info-right">{totalQuantity} items</p>
-                                    </div>
-                                    <div className="text">
-                                        <p>Shipping :</p>
-                                        <p className="text-info-right">$2.50</p>
-                                    </div>
-                                    <div className="text">
-                                        <p>Total :</p>
-                                        <p className="text-info-right">${totalAmount}.00</p>
-                                    </div>
-                                </div>
+                        <div className="checkout-details">
+                            <div className="text">
+                                <p>Products in cart :</p>
+                                <p className="text-info-right">{totalQuantity} items</p>
+                            </div>
+                            <div className="text">
+                                <p>Shipping :</p>
+                                <p className="text-info-right">$2.50</p>
+                            </div>
+                            <div className="text">
+                                <p>Total :</p>
+                                <p className="text-info-right">${totalAmount}.00</p>
+                            </div>
                         </div>
                     </div>
+            </div>
          </div>
     </main>
 }
