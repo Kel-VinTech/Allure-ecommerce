@@ -1,10 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdEast } from "react-icons/md";
 import '/src/scss/Hero.scss'
 import { motion } from "framer-motion"; 
 
+import ProductList from "../../components/ProductUI/ProductList";
+import products from '/src/data/products.js';
+
 const HeroContent = () => {
+    const [data, setData] = useState(products)
+    
     return (
     <section className="hero row"
     >
