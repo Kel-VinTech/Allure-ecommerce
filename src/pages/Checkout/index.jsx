@@ -89,7 +89,7 @@ const Checkout = () => {
 
             <div className="checkout-foot-info">
                     <div className="foot-checkout2 row">
-                    <Link className="pay_button" to="#">Proceed to payment</Link>
+                    <Link className="pay_button" to="/payment">Proceed to payment</Link>
                     
                     
 
