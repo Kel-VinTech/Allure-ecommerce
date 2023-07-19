@@ -42,7 +42,7 @@ main {
         .card-details {
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
           border-radius: 8px;
-          width: 75%;
+          width: 100%;
           display: flex;
           padding: 1rem;
 
@@ -162,6 +162,10 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      .card-details {
+        width: 100%;
+      }
     }
   }
 }
