@@ -32,118 +32,120 @@ main {
       }
     }
 
-    .payment-items {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      width: 100%;
-
-      .card-details {
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
-        width: 75%;
+    .payment-content {
+      .payment-items {
         display: flex;
-        padding: 1rem;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
 
-        .card-details_head {
-          width: 90%;
+        .card-details {
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+          width: 75%;
+          display: flex;
+          padding: 1rem;
 
-          .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0.7rem 0;
+          .card-details_head {
             width: 90%;
 
-            span {
+            .logo {
               display: flex;
-              justify-content: center;
-              gap: 10px;
+              justify-content: space-between;
+              align-items: center;
+              margin: 0.7rem 0;
+              width: 90%;
 
-              img {
-                width: 20px;
+              span {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                img {
+                  width: 20px;
+                }
+
+                p {
+                  font-family: "Rubik";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 1rem;
+                  color: #292929;
+                }
               }
 
-              p {
-                font-family: "Rubik";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1rem;
-                color: #292929;
+              .card-images {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                .card_image {
+                  max-width: 40px;
+                }
               }
             }
 
-            .card-images {
-              display: flex;
-              justify-content: center;
-              gap: 10px;
-
-              .card_image {
-                max-width: 40px;
-              }
+            .describe {
+              padding-left: 1.4rem;
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1rem;
+              color: #3a3a3a;
             }
           }
+        }
+        .info-summary {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 0.7rem;
 
-          .describe {
-            padding-left: 1.4rem;
+          .cart-line3 {
+            border: 0.3px solid #cccaca;
+            margin: 2rem 0;
+          }
+
+          h2 {
             font-family: "Rubik";
             font-style: normal;
             font-weight: 400;
             font-size: 1rem;
-            color: #3a3a3a;
+            color: #292929;
           }
-        }
-      }
-      .info-summary {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0 0.7rem;
 
-        .cart-line3 {
-          border: 0.3px solid #cccaca;
-          margin: 2rem 0;
-        }
+          p {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.1rem;
+          }
 
-        h2 {
-          font-family: "Rubik";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1rem;
-          color: #292929;
-        }
-
-        p {
-          font-family: "Rubik";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1.1rem;
-        }
-
-        .cart-checkout2 {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-
-          .checkout-details {
+          .cart-checkout2 {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
 
-            .text {
+            .checkout-details {
               display: flex;
-              justify-content: space-between;
+              flex-direction: column;
+              gap: 20px;
 
-              p {
-                font-size: 1rem;
-                font-weight: 400;
-                cursor: pointer;
-                color: #888888;
-                font-family: "Rubik", sans-serif;
-              }
+              .text {
+                display: flex;
+                justify-content: space-between;
 
-              .text-info-right {
-                color: #292929;
+                p {
+                  font-size: 1rem;
+                  font-weight: 400;
+                  cursor: pointer;
+                  color: #888888;
+                  font-family: "Rubik", sans-serif;
+                }
+
+                .text-info-right {
+                  color: #292929;
+                }
               }
             }
           }
@@ -155,10 +157,11 @@ main {
 
 @media screen and (min-width: 350px) and (max-width: 1024px) {
   main {
-    .payment-information {
+    .payment-items {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
+      align-items: center;
     }
   }
 }
