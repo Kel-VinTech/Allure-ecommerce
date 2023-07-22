@@ -1,5 +1,6 @@
 main {
   .payment-information {
+    justify-content: space-between;
     .payment-text {
       display: flex;
       justify-content: space-between;
@@ -154,5 +155,10 @@ main {
 
 @media screen and (min-width: 350px) and (max-width: 1024px) {
   main {
+    .payment-information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
