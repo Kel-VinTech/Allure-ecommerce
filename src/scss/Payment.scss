@@ -1,162 +1,158 @@
-main{
-    .payment-information{
+main {
+  .payment-information {
+    .payment-text {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 25px;
 
-    
-        .payment-text{
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 25px;
+      h2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      span {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
 
-            h2{
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 1rem;
-            }
-            span{
-                display: flex;
-                justify-content: center;
-                gap: 6px;
-
-                svg{
-                    font-size: 1.3rem;
-                    color: #747474;
-                }
-
-                p{
-                    font-family: 'Rubik';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1rem;
-                    color: #747474;
-                }
-            }
+        svg {
+          font-size: 1.3rem;
+          color: #747474;
         }
 
-        .payment-items{
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            width: 100%;
-         
-
-            .card-details{
-                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-                border-radius: 8px;
-                width: 75%;
-                display: flex;
-                padding: 1rem;
-
-                .card-details_head{
-                    width: 90%;
-
-                    .logo{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin: .7rem 0;
-                        width: 90%;
-
-                        span{
-                            display: flex;
-                            justify-content: center;
-                            gap:10px;
-
-                           img{
-                                width: 20px;
-                            }
-
-                            p{
-                                font-family: 'Rubik';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 1rem;
-                                color: #292929;
-                            }
-                        }
-
-                        .card-images{
-                            display: flex;
-                            justify-content: center;
-                            gap:10px;
-
-                            .card_image{
-                                max-width: 40px;
-                            }
-                        }
-
-                    }
-
-                    .describe{
-                        padding-left: 1.4rem;
-                        font-family: 'Rubik';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 1rem;
-                        color: #3A3A3A;
-                    }
-                }
-
-            }
-            .info-summary{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                padding: 0 .7rem;
-
-                .cart-line3{
-                    border: 0.3px solid #cccaca;
-                    margin:2rem 0;
-                }
-
-                h2{
-                    font-family: 'Rubik';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1rem;
-                    color: #292929;
-                }
-
-                p{
-                    font-family: 'Rubik';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.1rem;
-                }
-
-
-                .cart-checkout2{
-                    display: flex;
-                    flex-direction: column;
-                    gap:30px;
-
-                    .checkout-details{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-
-                        .text{
-                            display: flex;
-                            justify-content: space-between;
-
-                            p{
-                                font-size: 1rem;
-                                font-weight: 400;
-                                cursor: pointer;
-                                color: #888888;
-                                font-family: 'Rubik', sans-serif;
-                                
-                            }
-
-                            .text-info-right{
-                                color: #292929;
-                            }
-                        }
-                    }
-            }
-
-            } 
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          color: #747474;
         }
-           
+      }
     }
+
+    .payment-items {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+
+      .card-details {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 75%;
+        display: flex;
+        padding: 1rem;
+
+        .card-details_head {
+          width: 90%;
+
+          .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.7rem 0;
+            width: 90%;
+
+            span {
+              display: flex;
+              justify-content: center;
+              gap: 10px;
+
+              img {
+                width: 20px;
+              }
+
+              p {
+                font-family: "Rubik";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #292929;
+              }
+            }
+
+            .card-images {
+              display: flex;
+              justify-content: center;
+              gap: 10px;
+
+              .card_image {
+                max-width: 40px;
+              }
+            }
+          }
+
+          .describe {
+            padding-left: 1.4rem;
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #3a3a3a;
+          }
+        }
+      }
+      .info-summary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.7rem;
+
+        .cart-line3 {
+          border: 0.3px solid #cccaca;
+          margin: 2rem 0;
+        }
+
+        h2 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          color: #292929;
+        }
+
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.1rem;
+        }
+
+        .cart-checkout2 {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          .checkout-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .text {
+              display: flex;
+              justify-content: space-between;
+
+              p {
+                font-size: 1rem;
+                font-weight: 400;
+                cursor: pointer;
+                color: #888888;
+                font-family: "Rubik", sans-serif;
+              }
+
+              .text-info-right {
+                color: #292929;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 1024px) {
+  main {
+  }
 }
