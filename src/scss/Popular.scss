@@ -1,177 +1,166 @@
-main{
-    width: 100%;
+main {
+  width: 100%;
 
-    .elipse8 {
-        position: absolute;
-        left: -60px;
-        width: 550px;
-        margin-top: 58px;
-        // top: 0;
-      }
-      .elipse9 {
-        position: absolute;
-        margin: 100px 10px;
-        left: -46px;
-        width: 320.99px;
-      }
+  .elipse8 {
+    position: absolute;
+    left: -60px;
+    width: 550px;
+    margin-top: 58px;
+    // top: 0;
+  }
+  .elipse9 {
+    position: absolute;
+    margin: 100px 10px;
+    left: -46px;
+    width: 320.99px;
+  }
 
-    .popular_cards{
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        margin-bottom: 30px;
-        img{
-            max-width:100%;
-        }
-        .single_card{
-            padding:1rem;
-        }
-        .second{
-            position: relative;
-            z-index: 1;
-        }
-        .text{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            margin: 8px 0;
-
-            span{
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 17px;
-            }
-            
-        }
-        .single_card{
-            .add-link a{
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                text-decoration: none;
-                color: #2F4333;
-                font-family: Rubik;
-                font-size: 1rem;
-                font-weight: 500;
-            }
-        }
+  .popular_cards {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin-bottom: 30px;
+    img {
+      max-width: 100%;
     }
-}
+    .single_card {
+      padding: 1rem;
+    }
+    .second {
+      position: relative;
+      z-index: 1;
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 8px 0;
 
+      span {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+    .single_card {
+      .add-link a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: #2f4333;
+        font-family: Rubik;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
 
 // media queries
-@media screen
- and (min-width:550px)
-and (max-width:1024px){
-    main{
-        .popular_cards{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        .first-content{
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-        }
-        .first{
-            top: -150px;
-            position: relative;
-        }
-        .second{
-            position: relative;
-            // left: 300px;
-            top: 100px;
-            right: 30px;
-        }
-
-        .third{
-            float: right;
-        }
-        .fourth{
-            position: relative;
-            left: -30px;
-        }
-        .second-content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-        .elipse8 {
-            position: absolute;
-            left: -60px;
-            width: 350px;
-            margin-top: 58px;
-            // top: 0;
-          }
-          .elipse9 {
-            position: absolute;
-            margin: 83px 10px;
-            left: -45px;
-            width: 179.99px;
-          }
+@media screen and (min-width: 768px) {
+  main {
+    .popular_cards {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
+    .first-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .first {
+      top: -150px;
+      position: relative;
+    }
+    .second {
+      position: relative;
+      // left: 300px;
+      top: 100px;
+      right: 30px;
+    }
+
+    .third {
+      float: right;
+    }
+    .fourth {
+      position: relative;
+      left: -30px;
+    }
+    .second-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .elipse8 {
+      position: absolute;
+      left: -60px;
+      width: 350px;
+      margin-top: 58px;
+      // top: 0;
+    }
+    .elipse9 {
+      position: absolute;
+      margin: 83px 10px;
+      left: -45px;
+      width: 179.99px;
+    }
+  }
 }
 
-@media screen
- and (min-width:1024px)
-and (max-width:1600px){
-    main{
-        .popular_cards{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        .first-content{
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-        }
-        .first{
-            top: -150px;
-            position: relative;
-        }
-        .second{
-            position: relative;
-            // left: 300px;
-            top: 200px;
-        }
-
-        .third{
-            float: right;
-        }
-        .fourth{
-            position: relative;
-            left: -150px;
-        }
-        .second-content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-        .elipse8 {
-            position: absolute;
-            left: -100px;
-            width: 407px;
-            margin-top: 58px;
-            // top: 0;
-          }
-          .elipse9 {
-            position: absolute;
-            margin: 100px -12px;
-            left: -50px;
-            width: 270.99px;
-          }
+@media screen and (min-width: 1024px) {
+  main {
+    .popular_cards {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .first-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .first {
+      top: -150px;
+      position: relative;
+    }
+    .second {
+      position: relative;
+      // left: 300px;
+      top: 200px;
     }
 
+    .third {
+      float: right;
+    }
+    .fourth {
+      position: relative;
+      left: -150px;
+    }
+    .second-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .elipse8 {
+      position: absolute;
+      left: -100px;
+      width: 407px;
+      margin-top: 58px;
+      // top: 0;
+    }
+    .elipse9 {
+      position: absolute;
+      margin: 100px -12px;
+      left: -50px;
+      width: 270.99px;
+    }
+  }
 }

@@ -1,116 +1,103 @@
-.single_product{
+.single_product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  img {
+    max-width: 100%;
+  }
+  .product_content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    text-align: left;
 
-    img{
-        max-width: 100%;
+    h3 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #000;
     }
-    .product_content{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-
-        h3{
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            color: #000;
-        }
-        span{
-            margin: 7px 0;
-            font-family: 'Cardo';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 22px;
-            color: #000;
-        }
-        .product-link{
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1rem;
-            color: #2F4333;
-            text-decoration: none;
-        }
-        .product-dir{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 0.8rem;
-            color: #2F4333;
-
-        }
+    span {
+      margin: 7px 0;
+      font-family: "Cardo";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: #000;
     }
+    .product-link {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #2f4333;
+      text-decoration: none;
+    }
+    .product-dir {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #2f4333;
+    }
+  }
 }
 
+.store_grid {
+  display: grid;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 3rem;
+}
 
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+  .single_product {
+    .product_content {
+      .product-link {
+        font-size: 1.7rem;
+      }
 
-.store_grid{
+      span {
+        font-size: 1.5rem;
+      }
+      .product-dir {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .single_product {
+    .product_content {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+      }
+      .product-dir {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // css from Product list
+
+  .store_grid {
     display: grid;
     justify-content: space-between;
     gap: 40px;
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding-bottom: 3rem;
-}
-
-@media screen
- and (min-width:550px)
-and (max-width:1024px){
-    .single_product{
-    
-        .product_content{
-
-            .product-link{
-                font-size:1.7rem;
-            }
-    
-            span{
-                font-size: 1.5rem;
-            }
-            .product-dir{
-                font-size: 1rem;
-            }
-        }
-     }
-}
-
-@media screen
- and (min-width:1024px)
-and (max-width:1600px){
-
-     .single_product{
-    
-        .product_content{
-
-            h3{
-                font-size:1.1rem;
-            }
-    
-            span{
-                font-size: 1.4rem;
-            }
-            .product-dir{
-                font-size: 0.9rem;
-            }
-        }
-     }
-    
-
-    // css from Product list
-    
-    .store_grid{
-        display: grid;
-        justify-content: space-between;
-        gap: 40px;
-        max-width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        padding-bottom: 3rem;
-    }
+  }
 }

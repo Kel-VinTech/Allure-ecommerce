@@ -6,7 +6,6 @@ import {FiUser,FiSearch }from "react-icons/fi"
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import {BsCart4}from "react-icons/bs"
-import { HashLink as Link} from "react-router-hash-link";
 
 
 
@@ -45,44 +44,42 @@ const NavBar =() => {
             >
                 <Logo />
                 <div>
-                    <ul className={mobile? "nav-link-mobile" : "navbar"}
-                    onClick={()=> setMobile(false)}
-                    >
-                        <li>
-                            <NavLink style={NavColor} to="/"
-                            >
-                                Home
-                            </NavLink>
-                        </li>
+                    <ul className={mobile ? "nav-link-mobile" : "navbar"} onClick={() => setMobile(false)}>
+                                    <li>
+                                        <a href="/" style={NavColor}>
+                                        Home
+                                        </a>
+                                    </li>
 
-                        <li>
-                            <NavLink style={NavColor} to="/product">
-                                Products
-                            </NavLink>
-                        </li>
+                                    <li>
+                                        <a href="/product" style={NavColor}>
+                                        Products
+                                        </a>
+                                    </li>
 
-                        <div className="oval"
-                        style={NavColor}
-                        >   
-                            <li>
-                                    <Link smooth style={NavColor} to="#topsales"
-                                    className="sales">
-                                    SALE
-                                    </Link>
-                            </li>
-                        </div>
-                        <li>
-                            <Link style={NavColor} smooth to="#blog">
-                            Blog
-                            </Link>
-                        </li>
+                                    <div className="oval" style={NavColor}>
+                                        <li>
+                                        <a href="#topsales" style={NavColor} className="sales">
+                                            SALE
+                                        </a>
+                                        </li>
+                                    </div>
 
-                        <li>
-                            <NavLink style={NavColor} to="/about">
-                                About Us
-                            </NavLink>
-                        </li>
-                    </ul>
+                                    <li>
+                                        <a href="#blog" style={NavColor}>
+                                        Blog
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/about" style={NavColor}>
+                                        About Us
+                                        </a>
+                                    </li>
+                                    </ul>
+
+
+
                 </div>
 
                 <div className="secondary_link ">

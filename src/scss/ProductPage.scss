@@ -1,223 +1,222 @@
-.product_store{
-    width: 100%;
-    position: relative;
-    background: #f1f5f2;
-    max-width: 100%;
+.product_store {
+  width: 100%;
+  position: relative;
+  background: #f1f5f2;
+  max-width: 100%;
 }
 
 .search-container {
-   position: relative;
-   display: flex;
-   justify-content:  flex-end;
-   align-items: center;
-   padding: 0.5rem 2rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 2rem;
 }
- 
+
 .search-input {
-   position: relative;
-   padding: .4rem 1rem;
-   outline: none;
+  position: relative;
+  padding: 0.4rem 1rem;
+  outline: none;
 }
 
-.search-container svg{
-   position: absolute;
-   padding-right: 0.3rem;
-   font-size: 1.5rem;
-}
- 
-
-.product-shop{
-    display: flex;
-    justify-content: center;
-    padding:0 3rem;
+.search-container svg {
+  position: absolute;
+  padding-right: 0.3rem;
+  font-size: 1.5rem;
 }
 
-.heading-txt{
-   text-align: center;
-   padding-bottom:1.5rem;
-
-   h2{
-      font-family: 'Rubik';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.7rem;
-   }
-
-   .filter-btn{
-      display: none;
-   }
+.product-shop {
+  display: flex;
+  justify-content: center;
+  padding: 0 3rem;
 }
 
-.sidebar{
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    font-family: 'Rubik';
+.product-shop img {
+  max-width: 100%; /* prevent image from overflowing container */
+  width: 250px; /* or any fixed/relative size you want */ /* keep aspect ratio */
+  /* crops nicely if necessary */
+}
+
+.heading-txt {
+  text-align: center;
+  padding-bottom: 1.5rem;
+
+  h2 {
+    font-family: "Rubik";
     font-style: normal;
-    color:#292929;
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
 
+  .filter-btn {
+    display: none;
+  }
+}
 
-     a{
-        color:#292929;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 1rem;
-     }
+.sidebar {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-family: "Rubik";
+  font-style: normal;
+  color: #292929;
 
-     a:focus{
-        text-decoration-line: underline; 
-     }
+  a {
+    color: #292929;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 
- h2{
+  a:focus {
+    text-decoration-line: underline;
+  }
+
+  h2 {
     font-size: 1.3rem;
     padding-bottom: 8px;
     font-weight: 600;
     font-size: 1.25rem;
- }
+  }
 
- .new-release{
+  .new-release {
     display: flex;
     gap: 10px;
     flex-direction: column;
     padding-bottom: 20px;
- }
- 
- .select-category{
+  }
+
+  .select-category {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 15px;
 
-    .checks > input{
-        margin-bottom: 10px;
+    .checks > input {
+      margin-bottom: 10px;
     }
-    .checks > label{
-        padding-left: 7px;
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
+    .checks > label {
+      padding-left: 7px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
     }
- }
- .price-category{
+  }
+  .price-category {
     display: flex;
     gap: 10px;
     flex-direction: column;
- }
-
- 
+  }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .heading-txt {
+    text-align: center;
+    padding-bottom: 1.5rem;
 
-   .heading-txt{
-      text-align: center;
-      padding-bottom:1.5rem;
-
-   h2{
+    h2 {
       font-size: 1.4rem;
       padding-bottom: 10px;
-   }
+    }
 
-      .filter{
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         gap:2px;
+    .filter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .filter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+
+      h3 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
       }
-   
-      .filter-btn{
-         display: inline-flex;
-         align-items: center;
-         justify-content: center;
-         outline: none;
-         border: none;
-
-         h3{
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1rem;
-         }
-         svg{
-            font-size: 20px;
-         }
+      svg {
+        font-size: 20px;
       }
-   }
+    }
+  }
 
-   .sidebar{
-      display: none;
-   }
+  .sidebar {
+    display: none;
+  }
 
-   .filter-aside{
-      position: absolute;
+  .filter-aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #f1f5f2;
+    font-family: "Rubik";
+    font-style: normal;
+    color: #2f4333;
+    top: 6%;
+    left: 0;
+    width: 90%;
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    transition: 0.8s ease-in-out;
+
+    .aside_content {
+      padding: 1.3rem 1.4rem;
+    }
+
+    a {
+      color: #292929;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    a:focus {
+      text-decoration-line: underline;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      padding-bottom: 8px;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .new-release {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+
+    .select-category {
       display: flex;
       flex-direction: column;
-      background: #f1f5f2;
-      font-family: 'Rubik';
-      font-style: normal;
-      color:#2F4333;
-      top: 6%;
-      left: 0;
-      width: 90%;
-      height: 100vh;
-      z-index: 1;
-      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-      transition: .8s ease-in-out;
-     
+      gap: 10px;
+      padding-bottom: 15px;
 
-      .aside_content{
-         padding: 1.3rem 1.4rem;
+      .checks > input {
+        margin-bottom: 10px;
       }
-
-      a{
-         color:#292929;
-         text-decoration: none;
-         font-weight: 400;
-         font-size: 1rem;
+      .checks > label {
+        padding-left: 7px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
       }
-
-      a:focus{
-         text-decoration-line: underline; 
-      }
-
-      h2{
-         font-size: 1.3rem;
-         padding-bottom: 8px;
-         font-weight: 600;
-         font-size: 1.25rem;
-      }
-     
-      .new-release{
-         display: flex;
-         gap: 10px;
-         flex-direction: column;
-         padding-bottom: 20px;
-      }
-      
-      .select-category{
-         display: flex;
-         flex-direction: column;
-         gap: 10px;
-         padding-bottom: 15px;
-     
-         .checks > input{
-             margin-bottom: 10px;
-         }
-         .checks > label{
-             padding-left: 7px;
-             font-family: 'Rubik';
-             font-style: normal;
-             font-weight: 400;
-             font-size: 1rem;
-         }
-      }
-      .price-category{
-         display: flex;
-         gap: 10px;
-         flex-direction: column;
-      }
-     
-   }
+    }
+    .price-category {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
 }
